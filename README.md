@@ -1,5 +1,12 @@
 # TrickEye.github.io
 
-[link](_posts/2021-11-26-firstFile.md)
+## Please note that this site is still under construction.
 
-Actually I wonder why can't i name like [this](_posts/2021-10-12-TheTogglingBehaviorOfJ-KFlip-Flop.md)
+you can still view some of the blogs randomly.
+
+[**jump!**](_posts/2021-10-12-J-K-Flip-Flop.md)
+
+Or, you can tell me any advice you have. Thank you!
+
+<iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__fxHDXxURVY2Q1VMODFFVjUzUVFHTDhPMkJFVU1RUy4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
