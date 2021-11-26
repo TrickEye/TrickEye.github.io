@@ -1,5 +1,4 @@
 ---
-layout: post
 title: J-K Flip-Flop
 ---
 
