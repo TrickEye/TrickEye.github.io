@@ -1,7 +1,6 @@
 ---
 layout: post
 title: J-K Flip-Flop
-tags: [Study posts, BUAA, CO]
 ---
 
 
