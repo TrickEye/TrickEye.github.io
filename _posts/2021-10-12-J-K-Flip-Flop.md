@@ -1,3 +1,10 @@
+---
+layout: post
+title: J-K Flip-Flop
+tags: [Study posts, BUAA, CO]
+---
+
+
 # The toggling behavior of J-K Flip-Flop.
 
 TrickEye, 2021-10-12
