@@ -1,3 +1,7 @@
+---
+title: TrickEye's Personal Blog | Under Construction
+---
+
 # TrickEye.github.io
 
 ## Please note that this site is still under construction.
