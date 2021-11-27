@@ -10,6 +10,8 @@ you can still view some of the blogs randomly.
 
 [**jump!**](_posts/2021-10-12-J-K-Flip-Flop.md)（其实完全没有随机）
 
+[about me](about.html)
+
 Or, you can tell me any advice you have. Thank you!
 
 Update: 有人在匿名问卷里面用禁咒我不说是谁
