@@ -20,7 +20,7 @@ title: About | TrickEye
 - 北京航空航天大学计算机学院本科生（大二）
 - 来自四川成都
 - 单身！请速速加[我的账号](#contacts)，谢谢！
-- A proud Ravenclaw student in Hogwarts. | 拉文克劳学生（[`wizardingWorld`](https://www.wizardingworld.com)测评结果，不是网易游戏！）
+- A proud Ravenclaw student in Hogwarts. 拉文克劳学生（[`wizardingWorld`](https://www.wizardingworld.com)测评结果，不是网易游戏！）
 - 游泳50米蛙泳能进一分钟内
 
 ## How to make TrickEye happy? | TrickEye的奇怪爱好
