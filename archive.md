@@ -2,7 +2,7 @@
 title: Archive | TrickEye's Personal Blog
 ---
 
-# [J-K Flip-Flop](_posts/2021-10-12-J-K-Flip-Flop.html)
+# [J-K Flip-Flop](/2021/10/12/J-K-Flip-Flop.html)
 
 TrickEye, 2021-10-12.
 
