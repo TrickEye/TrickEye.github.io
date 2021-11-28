@@ -84,6 +84,8 @@ title: About | TrickEye
 
 - QQ: 985270209
 
-[back to top](#关于我的一些好东西)
+# EOF
 
-[back to home](/)
+## [back to top](#关于我的一些好东西)
+
+## [Back Home](/index.html)
