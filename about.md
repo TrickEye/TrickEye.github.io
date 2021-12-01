@@ -34,6 +34,8 @@ title: About | TrickEye
 
   - Update on 2021-11-27: 55秒！
 
+  - Update on 2021-11-30: 52秒！
+  
 - 我可以熟练的安装、配置VSCode的C语言开发环境！
 
   - VSCode是世界第一编辑器！如果不是，我可以叫人写一个拓展把VSCode窗口改成《世界第一编辑器》
@@ -86,6 +88,6 @@ title: About | TrickEye
 
 # EOF
 
-## [back to top](#关于我的一些好东西)
+## [back to Top](#关于我的一些好东西)
 
 ## [Back Home](/index.html)
