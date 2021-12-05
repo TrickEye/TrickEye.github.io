@@ -34,7 +34,11 @@ description: This is a java program aimed at generating a no-collision-system fr
     The physical calculation refresh rate is 200 fps.
     The graphical refresh rate is 30 fps.
 
-[Download.](../_assets/PinBall.jar)(I am not sure if this works.)
+[Download.](../_assets/PinBall.jar)(I am not sure if this works.)(No it doesn't, never mind)
+
+[GitHub Release](https://github.com/TrickEye/NoCollisionSystem/releases/tag/Release)
+
+[Bhpan Download](https://bhpan.buaa.edu.cn:443/link/5C2AC063FF8244C880558D447438DF70)
 
     TrickEye, 10:20, 2021-12-5.
 
