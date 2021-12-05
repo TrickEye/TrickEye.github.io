@@ -13,7 +13,7 @@ description: This is a java program aimed at generating a no-collision-system fr
 
     If you are interested in collaborating with me, you can contact me with email: 
     
-- [TrickEye@buaa.edu.cn](mailto://trickeye@buaa.edu.cn)
+- [TrickEye@buaa.edu.cn](mailto:trickeye@buaa.edu.cn)
 
 # Iteration 0 | Version 0.1
 
