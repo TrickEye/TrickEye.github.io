@@ -15,6 +15,21 @@ description: This is a java program aimed at generating a no-collision-system fr
     
 - [TrickEye@buaa.edu.cn](mailto:trickeye@buaa.edu.cn)
 
+# Iteration 1 | Version 0.5
+
+    This version includes some bug fixes and a new start screen GUI.
+
+    Bug Fix: I have mistakenly use diameter as radius. This has caused wrong collision behavior of the balls. Now the collision behaviour is much more appropiate.
+
+    New Feature: A new start screen GUI!
+
+    To run the software is much more convenient now.
+    You can simply click the *.jar file you have downloaded.
+
+[GitHub Release](https://github.com/TrickEye/NoCollisionSystem/releases/tag/v0.5)
+
+[Bhpan Download](https://bhpan.buaa.edu.cn:443/link/18B37F1E26382F609D85F3C35CD9200B)
+
 # Iteration 0 | Version 0.1
 
     This version provides the basic illustration of the fundamental features of the project. 
