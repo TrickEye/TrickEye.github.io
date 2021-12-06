@@ -8,6 +8,8 @@ title: TrickEye's Personal Blog | Under Construction
 
 you can still view some of the blogs randomly.
 
+[Java大作业快速入口](_posts/2021-12-5-No-Collision-System-Dynamic-Update.md)
+
 [**jump!**](_posts/2021-10-12-J-K-Flip-Flop.md)（其实完全没有随机）
 
 [**about me**](about.html)
