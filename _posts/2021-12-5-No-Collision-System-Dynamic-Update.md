@@ -30,6 +30,8 @@ description: This is a java program aimed at generating a no-collision-system fr
 
 [Bhpan Download](https://bhpan.buaa.edu.cn:443/link/18B37F1E26382F609D85F3C35CD9200B)
 
+    TrickEye, 10:50, 2021-12-6.
+
 # Iteration 0 | Version 0.1
 
     This version provides the basic illustration of the fundamental features of the project. 
