@@ -37,6 +37,8 @@ If you are interested in collaborating with me, you can contact me with email:
 
 [Bhpan Download](https://bhpan.buaa.edu.cn:443/link/D7DD9FF86DE5F074E2844AA39CBCF070)
 
+    TrickEye, 00:28, 2021-12-11.
+
 # Iteration 2 | Version 1.0
 
 Thank you all for joining me in going further to the next great step of the project. Today we are celebrating the release of the first ready-to-publish version of the software. 
