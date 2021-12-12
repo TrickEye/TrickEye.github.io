@@ -19,4 +19,4 @@ Author: 崔怿恺 | TrickEye
 
 - 用户可以直接点击jar文件启动程序的起始界面
 
-![image](_assets/image1.jpg)
+![image](../_assets/image1.jpg)
