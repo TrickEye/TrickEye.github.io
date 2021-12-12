@@ -19,11 +19,11 @@ If you are interested in collaborating with me, you can contact me with email:
 
 - 完善了菜单的所有功能，为上交作业做好准备
 - 完善了键盘和鼠标滚轮控制功能
-- 更新了设计文档。请参阅：[Document - No-Collision-System-Illustrator](_posts\2021-12-12-No-Collision-System-Illustrator-Document.md)
+- 更新了设计文档。请参阅：[Document - No-Collision-System-Illustrator](https://trickeye.github.io/2021/12/12/No-Collision-System-Illustrator-Document)
 
 [GitHub Release](https://github.com/TrickEye/NoCollisionSystem/releases/tag/v1.3)
 
-[Bhpan Download](https://bhpan.buaa.edu.cn:443/link/FDCA46BA25915B9EBA0DAA986733FFBE)
+[Bhpan Download](https://bhpan.buaa.edu.cn:443/link/55728E3A423869060C38B1EF367EDC99)
 
 # 第三次迭代，版本1.2 - Iteration 3 | Version 1.2
 
