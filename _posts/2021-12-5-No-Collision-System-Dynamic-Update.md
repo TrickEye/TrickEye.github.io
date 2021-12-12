@@ -7,13 +7,23 @@ description: This is a java program aimed at generating a no-collision-system fr
     
 This is a page where I record the whole developing process of my Java program. For the next few days I'll dynamically update some of my important iterations of the software. If you are interested, go check it out every now and then!
 
-Please note that this project is and only is Java-friendly. All releases are published with a *.jar File, which requires a Java Environment to run. Your Java version should be above: Java 1.8.*
+Please note that this project is and only is Java-friendly. All releases are published with a "***.jar" File, which requires a Java Environment to run. Your Java version should be above: Java 17.*
 
-This whole project is open-source, as you can find all necessary files in my GitHub repo: TrickEye/NoCollsionSystem. And a great many thanks to GitHub user JohnBuffer and his project NoCol, without which this program would be impossible.
+This whole project is open-source, as you can find all necessary files in my GitHub repo: TrickEye/NoCollsionSystem.
 
 If you are interested in collaborating with me, you can contact me with email: 
     
 - [TrickEye@buaa.edu.cn](mailto:trickeye@buaa.edu.cn)
+
+# 第四次迭代，版本1.3 - Iteration 4 | Version 1.3
+
+- 完善了菜单的所有功能，为上交作业做好准备
+- 完善了键盘和鼠标滚轮控制功能
+- 更新了设计文档。请参阅：[Document | No-Collision-System-Illustrator](_posts\2021-12-12-No-Collision-System-Illustrator-Document.md)
+
+[GitHub Release](https://github.com/TrickEye/NoCollisionSystem/releases/tag/v1.3)
+
+[Bhpan Download](https://bhpan.buaa.edu.cn:443/link/FDCA46BA25915B9EBA0DAA986733FFBE)
 
 # 第三次迭代，版本1.2 - Iteration 3 | Version 1.2
 
