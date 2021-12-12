@@ -19,7 +19,7 @@ If you are interested in collaborating with me, you can contact me with email:
 
 - 完善了菜单的所有功能，为上交作业做好准备
 - 完善了键盘和鼠标滚轮控制功能
-- 更新了设计文档。请参阅：[Document | No-Collision-System-Illustrator](_posts\2021-12-12-No-Collision-System-Illustrator-Document.md)
+- 更新了设计文档。请参阅：[Document - No-Collision-System-Illustrator](_posts\2021-12-12-No-Collision-System-Illustrator-Document.md)
 
 [GitHub Release](https://github.com/TrickEye/NoCollisionSystem/releases/tag/v1.3)
 

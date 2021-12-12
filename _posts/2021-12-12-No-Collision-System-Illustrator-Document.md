@@ -22,7 +22,7 @@ Author: 崔怿恺 | TrickEye
 
 软件更新记录网站：(v0.1 - v1.3)
 
-[No Collision System | Dynamically Updated | TrickEye’s Personal Blog](https://trickeye.github.io/2021/12/05/No-Collision-System-Dynamic-Update.html)
+[No Collision System - Dynamically Updated - TrickEye’s Personal Blog](https://trickeye.github.io/2021/12/05/No-Collision-System-Dynamic-Update.html)
 
 ## 二、操作教程
 
