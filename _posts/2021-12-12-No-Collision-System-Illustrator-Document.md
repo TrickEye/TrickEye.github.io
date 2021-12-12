@@ -6,7 +6,9 @@ Author: 崔怿恺 | TrickEye
 # 无碰撞体系演示工具设计文档
 
 崔怿恺，北京航空航天大学计算机学院
+
 20373866
+
 [trickeye@buaa.edu.cn](mailto:trickeye@buaa.edu.cn)
 
 ## 一、项目简介
@@ -15,10 +17,13 @@ Author: 崔怿恺 | TrickEye
 
 文件下载：
 
-[GitHub Release(v1.3)](https://github.com/TrickEye/NoCollisionSystem/releases/tag/v1.3)
-[Bhpan Download(v1.3)](https://bhpan.buaa.edu.cn:443/link/FDCA46BA25915B9EBA0DAA986733FFBE)
-[GitHub Repo(All Versions)](https://github.com/TrickEye/NoCollisionSystem/tree/v1.3)
-[Bhpan Download(All Versions)](https://bhpan.buaa.edu.cn:443/link/3ABBC4EC268C36931B82DAB5FDFBD508)
+- [GitHub Release(v1.3)](https://github.com/TrickEye/NoCollisionSystem/releases/tag/v1.3)
+
+- [Bhpan Download(v1.3)](https://bhpan.buaa.edu.cn:443/link/55728E3A423869060C38B1EF367EDC99)
+
+- [GitHub Repo(All Versions)](https://github.com/TrickEye/NoCollisionSystem/tree/v1.3)
+
+- [Bhpan Download(All Versions)](https://bhpan.buaa.edu.cn:443/link/3ABBC4EC268C36931B82DAB5FDFBD508)
 
 软件更新记录网站：(v0.1 - v1.3)
 
