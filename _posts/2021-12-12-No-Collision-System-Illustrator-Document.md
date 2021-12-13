@@ -216,7 +216,7 @@ Java.io.*
 
 请参阅：
 
-[No Collision System | Dynamically Updated | TrickEye’s Personal Blog](https://trickeye.github.io/2021/12/05/No-Collision-System-Dynamic-Update.html)
+[No Collision System - Dynamically Updated - TrickEye’s Personal Blog](https://trickeye.github.io/2021/12/05/No-Collision-System-Dynamic-Update.html)
 
 GitHub Repo : [TrickEye/NoCollisionSystem](https://github.com/TrickEye/NoCollisionSystem)
 
