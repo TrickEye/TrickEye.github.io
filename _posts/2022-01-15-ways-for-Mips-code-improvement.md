@@ -1,9 +1,9 @@
 ---
-title: 【Mars】汇编代码的美化建议 及 Challenge题心得体会
+title: 汇编代码的美化建议 及 Challenge题心得体会
 description: TrickEye's Personal Blog
 ---
 
-# 【Mars】汇编代码的美化建议 及 Challenge题心得体会
+# 汇编代码的美化建议 及 Challenge题心得体会
 
 
 ## 一、缩进、空白行的使用：
