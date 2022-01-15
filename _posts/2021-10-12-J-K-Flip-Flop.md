@@ -11,7 +11,7 @@ JK触发器，得名于发明者Jack Kilby，与其他触发器最显著的不�
 
 ## J-K触发器结构(Simplified)
 
-![image-20211012193713822](C:\Users\TrickEye\AppData\Roaming\Typora\typora-user-images\image-20211012193713822.png)
+![image-1](https://s3.bmp.ovh/imgs/2022/01/0aae38e42b40d8a1.png)
 
 上图是一个被简化的J-K触发器，这个触发器结构可以比较好的实现 `{J, K} = {0, 0} or {0, 1} or {1, 0}` 的指定功能
 
@@ -33,13 +33,13 @@ Physics & Astronomy Department in Georgia State University 提供的介绍提到
 
 此版本的J-K触发器在达到条件 `{J, K} = {1, 1}` 时，其翻转功能在任何满足 `Clk = 1` 条件下都会被触发，并且翻转速度由电路本身的电信号传播速率决定。这使得任意时刻的输出值都不能通过时钟状态来推测（如图）
 
-![image-20211012201020006](C:\Users\TrickEye\AppData\Roaming\Typora\typora-user-images\image-20211012201020006.png)
+![image-2](https://s3.bmp.ovh/imgs/2022/01/d102379b44c07fe1.png)
 
 ### 避免：
 
 下面介绍主从J-K触发器(Master-Slave J-K Flip-Flop)。其好处在于`J`的值被传输到输出并不是立即的，而是延后了半个时钟周期。这使得反馈到输出也不是立即的，自然有效地避免了不受控的震荡现象。
 
-![image-20211012201449590](C:\Users\TrickEye\AppData\Roaming\Typora\typora-user-images\image-20211012201449590.png)
+![image-3](https://s3.bmp.ovh/imgs/2022/01/77bfc7e9d8761f21.png)
 
 主从J-K触发器可以视作是级联的两个J-K触发器，分别受控制与一对相反的时钟信号。`J`和`K`输入的是主触发器，其输出分别是`M`和`~M`。此二者分别作为从触发器的`J`输入和`K`输入，从触发器的输出`Q`和`~Q`作为整个主从触发器的输出，同时反馈到主触发器的输入端。
 
@@ -51,7 +51,7 @@ Physics & Astronomy Department in Georgia State University 提供的介绍提到
 
 因此可知，主从J-K触发器可以比较好的解决J-K触发器存在的不受控空翻情况，可以在 `{J, K} = {1, 1} ` 情况下，每一次钟控信号只发生一次翻转，能够实现设想的翻转功能。
 
-![image-20211012203541527](C:\Users\TrickEye\AppData\Roaming\Typora\typora-user-images\image-20211012203541527.png)
+![image-4](https://s3.bmp.ovh/imgs/2022/01/15369c657d6bcb31.png)
 
 ## 应用：
 
