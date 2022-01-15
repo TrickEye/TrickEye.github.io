@@ -9,6 +9,11 @@ title: Archive - BUAA-CO Series | TrickEye's Personal Blog
 
 ---
 
+# 讨论区作品
+- 这是搬运自计算机组成课上实验平台讨论区中本人的作品
+
+---
+
 # BUAA_CO_Project0
 - 正在肝，请找我催更
 
