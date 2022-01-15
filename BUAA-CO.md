@@ -1,5 +1,5 @@
 ---
-title: archive - BUAA-CO Series
+title: Archive - BUAA-CO Series | TrickEye's Personal Blog
 ---
 
 # 理论课程_关于JK触发器的一些探讨
