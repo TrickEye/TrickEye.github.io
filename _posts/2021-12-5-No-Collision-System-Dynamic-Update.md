@@ -1,11 +1,11 @@
 ---
-title: No Collision System | Dynamically Updated | TrickEye's Personal Blog
+title: No Collision System | TrickEye's Personal Blog
 description: This is a java program aimed at generating a no-collision-system from a randomly-generated status of distribution of the balls. 
 --- 
 
 # Words Above All:
     
-This is a page where I record the whole developing process of my Java program. For the next few days I'll dynamically update some of my important iterations of the software. If you are interested, go check it out every now and then!
+This is a page where I record the whole developing process of my Java program. 
 
 Please note that this project is and only is Java-friendly. All releases are published with a "***.jar" File, which requires a Java Environment to run. Your Java version should be above: Java 17.*
 
