@@ -13,6 +13,10 @@ title: Archive | TrickEye's Personal Blog
 
 ---
 
+# [My Beijing 2022](/2022/01/28/Beijing2022-Diary.html)
+
+---
+
 # [J-K Flip-Flop](/2021/10/12/J-K-Flip-Flop.html)
 
 TrickEye, 2021-10-12.
