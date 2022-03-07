@@ -4,6 +4,8 @@ title: Archive | TrickEye's Personal Blog
 
 # Archive
 
+# [magneto-optical effect](/2022/03/07/magneto-optical-effect.md)
+
 # [BUAA-CO Series](/BUAA-CO.md)
 - 这里记录了一些北航计算机学院2020级计算机组成原理课程的小思考和总结的内容。
 - 内容具体包含理论课的一些思考，课下总结和课上心得体会。
