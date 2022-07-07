@@ -91,6 +91,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://TrickEye.github.io/guidance/3-annotation/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://TrickEye.github.io/tags/</loc>
          <lastmod>2022-07-07</lastmod>
          <changefreq>daily</changefreq>
