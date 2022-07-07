@@ -16,6 +16,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://TrickEye.github.io/tags/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://TrickEye.github.io/_posts/2021-10-12-J-K-Flip-Flop/</loc>
          <lastmod>2022-07-07</lastmod>
          <changefreq>daily</changefreq>
@@ -67,6 +72,26 @@
     </url>
     <url>
          <loc>https://TrickEye.github.io/_posts/BUAA_CO/BUAA-CO/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TrickEye.github.io/guidance/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TrickEye.github.io/guidance/1-meta/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TrickEye.github.io/guidance/2-admonition/</loc>
+         <lastmod>2022-07-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TrickEye.github.io/tags/</loc>
          <lastmod>2022-07-07</lastmod>
          <changefreq>daily</changefreq>
     </url>

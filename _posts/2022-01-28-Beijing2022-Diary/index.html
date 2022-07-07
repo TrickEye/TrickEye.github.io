@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -53,12 +53,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="purple">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -67,7 +71,7 @@
       
         
         <a href="#chapt-1-this-is-start-of-something-beautiful" class="md-skip">
-          Skip to content
+          跳转至
         </a>
       
     </div>
@@ -79,7 +83,7 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="../.." title="TrickEye&#39;s Blog" class="md-header__button md-logo" aria-label="TrickEye's Blog" data-md-component="logo">
       
   
@@ -106,6 +110,28 @@
       </div>
     </div>
     
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
     
     
       <label class="md-header__button md-icon" for="__search">
@@ -115,24 +141,26 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -143,13 +171,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/trickeye/trickeye.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/trickeye/trickeye.github.io/" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    GitHub
+    TrickEye.github.io
   </div>
 </a>
       </div>
@@ -163,6 +191,97 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      TrickEye's Personal Blog
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../about/" class="md-tabs__link">
+      About Me
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../archive/" class="md-tabs__link">
+      Archive
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../2021-10-12-J-K-Flip-Flop/" class="md-tabs__link md-tabs__link--active">
+         posts
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../guidance/" class="md-tabs__link">
+        Guidance
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -175,8 +294,10 @@
                   <div class="md-sidebar__inner">
                     
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="TrickEye&#39;s Blog" class="md-nav__button md-logo" aria-label="TrickEye's Blog" data-md-component="logo">
       
@@ -188,13 +309,13 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/trickeye/trickeye.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/trickeye/trickeye.github.io/" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    GitHub
+    TrickEye.github.io
   </div>
 </a>
     </div>
@@ -252,6 +373,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -259,18 +395,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_4">
+        <label class="md-nav__link" for="__nav_5">
            posts
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label=" posts" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
            posts
         </label>
@@ -432,21 +568,23 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_11" type="checkbox" id="__nav_5_11" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_11">
+        <label class="md-nav__link" for="__nav_5_11">
           BUAA CO
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="BUAA CO" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_11">
+        <label class="md-nav__title" for="__nav_5_11">
           <span class="md-nav__icon md-icon"></span>
           BUAA CO
         </label>
@@ -479,6 +617,82 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Guidance
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guidance" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Guidance
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance/" class="md-nav__link">
+        使用指引
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance/1-meta/" class="md-nav__link">
+        meta
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance/2-admonition/" class="md-nav__link">
+        admonition文本框
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -492,7 +706,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
   
@@ -509,15 +723,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/trickeye/trickeye.github.io/edit/master/docs/_posts/2022-01-28-Beijing2022-Diary.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+
+  
 
 
 
 <p><img alt="" src="https://s3.bmp.ovh/imgs/2022/03/f2e5cec9f4368a69.jpg" />
 法国军礼！</p>
-<h1 id="chapt-1-this-is-start-of-something-beautiful">Chapt. 1 - 一切美好自此开始 | This Is Start Of Something Beautiful.</h1>
+<h1 id="chapt-1-this-is-start-of-something-beautiful">Chapt. 1 - 一切美好自此开始 | This Is Start Of Something Beautiful.<a class="headerlink" href="#chapt-1-this-is-start-of-something-beautiful" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h1>
 <p>本章的英文标题引自 <code>Ed Sheeran</code> 的歌曲 <code>This</code> 歌词首句。</p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=17565994&auto=1&height=66"></iframe>
 
@@ -538,7 +751,7 @@
 <p>我本可以说，您好，谢谢，本可以正常挂掉电话然后好好得瑟一番，但是这一切似乎来的很突然，很平凡，那天午后的阳光穿过金黄色的银杏透过寝室的窗户在我的书桌上留下斑驳的树影，与前一天，与后一天没有些许差别。</p>
 <hr />
 <p>因此我的志愿者故事从多年前的一次遗憾开始，从几个月前的一次遗憾步入正轨，之后或许也会有许多遗憾，但是在那么多遗憾之中，穿插着无数美好，无数感动。</p>
-<h1 id="chapt2">Chapt.2 何处无月？</h1>
+<h1 id="chapt2">Chapt.2 何处无月？<a class="headerlink" href="#chapt2" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h1>
 <p>欢迎来到阪泉。</p>
 <p>这会是我在未来的几十日说的最多的一句话了。</p>
 <p>海坨山在我们的西北，那里有YAS和YSC。京礼高速从阪泉内外环交界处穿过，我们每天都会沿着它会到驻地，这可能就是足以定位阪泉的信息了。阪泉里有一群志愿者，一帮经理和主任，一家特许商店，从阪泉往外一百米便是海坨山脉下好不容易找出的一块典型的华北平原，温带，甚至亚寒带季风气候下的森林与我在奥林匹克森林公园中所见的别无二致，灰黄色的树落光了叶子，地上草草率率张了几根草，只是在这里绝对找不到其他的人。</p>
@@ -584,8 +797,8 @@
 <p>“那请您来当宣传。”</p>
 </li>
 </ul>
-<h1 id="chapt3">Chapt.3 祝您观赛愉快！</h1>
-<h2 id="25">2月5日 | 第一次迎接观众 | 软性验票</h2>
+<h1 id="chapt3">Chapt.3 祝您观赛愉快！<a class="headerlink" href="#chapt3" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h1>
+<h2 id="25">2月5日 | 第一次迎接观众 | 软性验票<a class="headerlink" href="#25" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h2>
 <p>软性验票其实就是在蛇形阵的入口安放两个门神，验证观众持票、按需控制流量。</p>
 <p>“欢迎大家来到延庆赛区！请准备好门票和身份证件！”</p>
 <p>“您好先生，请您出示一下门票好吗？”一位大叔啥也不顾直接往里面冲。“您好，咱们让后边的观众先通行吧，谢谢”这位大家一时半会翻不出门票来。“您好这位观众请您止步，安检区里面的观众人数较多，咱们稍势等候吧，谢谢您的配合。”</p>
@@ -593,12 +806,12 @@
 <p>之前演练了无数遍，设想了好多可能遇到的突发情况，商量过好多要说的话，到最后什么也没有用了，最有用的只有临场发挥和礼貌、友善、高情商。之前演练过无数遍观众的进场，但是当大巴车一辆接着一辆开进下客区时，只剩下了紧张。那可是三百多号人呢，大家叽叽喳喳地下车，兴奋的以为来到了YSC，结果发现这地方好像有些像服务区啊，怎么啥都没有，也不像雪游龙啊。观众们全部涌进厕所和特许商店，又一窝蜂排在了软检面前，一刹那鸡飞狗跳，一时间都慌了神。</p>
 <p>但是好在观众们的热情能解决我们所有的紧张。观众们问我们的帽子暖不暖和，我说很暖和；观众们问咋们是哪些学校的，我说我们是北航，也有些同学是北化。那天的夕阳如同在阪泉看到的每一次夕阳一样美的令人唏嘘，有好些观众舍得与我们拍照。后来副经理说“观众舍得在我们这里拍照那是看得起我们，给我们面子”，我也希望我在他们的手机里面，能陪伴他们度过一段美好的冬奥时间。</p>
 <p>那两位小女孩与我合了影，而后来群VCC看到了她们在雪游龙与冰墩墩的合影，我打趣地说，这么看来，运用等量代换的方法可以证明，我也是冰墩墩了。</p>
-<h2 id="26">2月6日 | 第二次迎接观众 | 脏区秩序引导</h2>
+<h2 id="26">2月6日 | 第二次迎接观众 | 脏区秩序引导<a class="headerlink" href="#26" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h2>
 <p>昨日的暴风雨已经过去，所有人在大雨滂沱之后收拾好了一切狼藉。对点位做好了及时的调整，为了承担高强度的观众压力，开放了新的安检通道。一切行动都朝着今晚完美解决观众入场问题而努力。</p>
 <p>当晚车队还是浩浩荡荡地开来了，这次的观众们却比上次的观众有组织有纪律得多。不上厕所，不逛商店，径直前来排队。</p>
 <p>这次站在了两个票检门的岔路口，负责平衡两个票检门的观众秩序。观众们总是喜欢看着眼前的情况自顾自地选择路线，看起来岔路A要短一些，就都一窝蜂来到了这里，我的任务就是尽量平衡两个岔路口，不要冷落了一边。</p>
 <p>似乎这些观众朋友们有点太有组织了，即使我们脏区那么多人，旗子都摇累了，也很难找到互动的机会。</p>
-<h2 id="_1">第三个工作岗位 | 票检棚的落日</h2>
+<h2 id="_1">第三个工作岗位 | 票检棚的落日<a class="headerlink" href="#_1" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h2>
 <p>作为冬奥会的官方票务，大麦的人估计会因为不能向公众售票，不能大赚一笔而伤心，但是在票检棚旁边的票务办公室里面，票务工作人员们倒是挺乐呵的。他们的工作条件和我们相比应该差远了，没有免费的赞助商小食品，没有免费的纪念品（或许有？）没有爱他们的业务领域经理（这个他们绝对没有），不知道他们会怎么怀念这次冬奥会，会怎么怀念在阪泉的朝朝暮暮。</p>
 <p>票务要干的事就是撕票，至少我在来阪泉之前是这样以为的。去年冬天成都七中的一个在线文档叫<a href="https://docs.qq.com/doc/DRWtwQUVYc2F1a0dP">林荫中街一号的故事</a>，文中我悄悄地留了一句“如果你有幸搞到了一张北京冬奥会延庆赛区的票，请到阪泉来找我，我会亲手撕你的票（字面意思）”</p>
 <p>但是撕票可不只是票检棚的全部。我的意思是说，单就撕票这一个工作来说，我需要尽可能不要撕坏观众的票，尽可能加快速度不要影响观众心情。如果撕票就是全部的话，我会每天都在对撕坏观众的票的恐惧中度过的。事实上，整个服务周期以来，我只撕过一次票。不过倒是领略了冬奥会门票的精美。</p>
@@ -606,31 +819,38 @@
 <p>有几位小朋友来刷身份证，好巧不巧那机器人脸识别摄像头朝向是给成年人设计的。小朋友们离画面起码还有半米远。给我整的十分尴尬，不得不动用了我的工科男的语言组织能力拜托家长把小朋友抱起来验证。好在家长还算配合，更好在还好我没有一阵慌乱之中上手自己把人家小朋友抱起来。</p>
 <p>后来发现那个机器可以以底座为轴向下旋转来调整摄像头朝向。谢谢票务大哥指出这点，但是这样扳机器真的不雅观！</p>
 <p>票检棚设在志愿者之家门口，恰好不会被阪泉的低矮建筑群挡住落日，没有观众的时候，我们就会和票务主管，票务办公室的人们一起在票检棚门口拍照，或者在脏区和脏区的志愿者们侃大山。票检棚的落日也算是每天晚上不变的美景了。</p>
-<h2 id="_2">第四个工作岗位 | 净区引导 | 白茫茫一片真干净</h2>
+<h2 id="_2">第四个工作岗位 | 净区引导 | 白茫茫一片真干净<a class="headerlink" href="#_2" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h2>
 <p>净区是指经过票检和安检，没有安全风险的观众才能到达的区域。</p>
 
               
             </article>
             
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
         
       </main>
       
         <footer class="md-footer">
   
     
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../2022-01-15-ways-for-Mips-code-improvement/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 汇编代码的美化建议 及 Challenge题心得体会" rel="prev">
+        <a href="../2022-01-15-ways-for-Mips-code-improvement/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 汇编代码的美化建议 及 Challenge题心得体会" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Previous
+                上一页
               </span>
               汇编代码的美化建议 及 Challenge题心得体会
             </div>
@@ -639,11 +859,11 @@
       
       
         
-        <a href="../2022-03-07-magneto-optical-effect/" class="md-footer__link md-footer__link--next" aria-label="Next: 基础物理实验-法拉第磁光效应" rel="next">
+        <a href="../2022-03-07-magneto-optical-effect/" class="md-footer__link md-footer__link--next" aria-label="下一页: 基础物理实验-法拉第磁光效应" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Next
+                下一页
               </span>
               基础物理实验-法拉第磁光效应
             </div>
@@ -667,6 +887,22 @@
   
 </div>
       
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/TrickEye" target="_blank" rel="noopener" title="GitHub主页" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailo:trickeye@buaa.edu.cn" target="_blank" rel="noopener" title="向我发邮件" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m511.6 36.86-64 415.1a32.008 32.008 0 0 1-31.65 27.147c-4.188 0-8.319-.815-12.29-2.472l-122.6-51.1-50.86 76.29C226.3 508.5 219.8 512 212.8 512c-11.5 0-20.8-9.3-20.8-20.8v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96 122.3 360.3 19.69 317.5C8.438 312.8.812 302.2.062 289.1s5.47-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -675,10 +911,16 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.tabs.link", "content.code.annotate", "search.suggest"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

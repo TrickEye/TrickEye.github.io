@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -53,12 +53,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="purple">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -67,7 +71,7 @@
       
         
         <a href="#challenge" class="md-skip">
-          Skip to content
+          跳转至
         </a>
       
     </div>
@@ -79,7 +83,7 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="../.." title="TrickEye&#39;s Blog" class="md-header__button md-logo" aria-label="TrickEye's Blog" data-md-component="logo">
       
   
@@ -106,6 +110,28 @@
       </div>
     </div>
     
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
     
     
       <label class="md-header__button md-icon" for="__search">
@@ -115,24 +141,26 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -143,13 +171,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/trickeye/trickeye.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/trickeye/trickeye.github.io/" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    GitHub
+    TrickEye.github.io
   </div>
 </a>
       </div>
@@ -163,6 +191,97 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      TrickEye's Personal Blog
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../about/" class="md-tabs__link">
+      About Me
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../archive/" class="md-tabs__link">
+      Archive
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../2021-10-12-J-K-Flip-Flop/" class="md-tabs__link md-tabs__link--active">
+         posts
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../guidance/" class="md-tabs__link">
+        Guidance
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -175,8 +294,10 @@
                   <div class="md-sidebar__inner">
                     
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="TrickEye&#39;s Blog" class="md-nav__button md-logo" aria-label="TrickEye's Blog" data-md-component="logo">
       
@@ -188,13 +309,13 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/trickeye/trickeye.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/trickeye/trickeye.github.io/" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    GitHub
+    TrickEye.github.io
   </div>
 </a>
     </div>
@@ -252,6 +373,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -259,18 +395,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_4">
+        <label class="md-nav__link" for="__nav_5">
            posts
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label=" posts" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
            posts
         </label>
@@ -400,7 +536,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
   
@@ -409,7 +545,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目录
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -544,21 +680,23 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_11" type="checkbox" id="__nav_5_11" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_11">
+        <label class="md-nav__link" for="__nav_5_11">
           BUAA CO
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="BUAA CO" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_11">
+        <label class="md-nav__title" for="__nav_5_11">
           <span class="md-nav__icon md-icon"></span>
           BUAA CO
         </label>
@@ -591,6 +729,82 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Guidance
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guidance" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Guidance
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance/" class="md-nav__link">
+        使用指引
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance/1-meta/" class="md-nav__link">
+        meta
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance/2-admonition/" class="md-nav__link">
+        admonition文本框
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -604,7 +818,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
   
@@ -613,7 +827,7 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      目录
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
@@ -717,15 +931,14 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/trickeye/trickeye.github.io/edit/master/docs/_posts/2022-01-15-ways-for-Mips-code-improvement.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+
+  
 
 
 
-<h1 id="challenge">汇编代码的美化建议 及 Challenge题心得体会</h1>
-<h2 id="_1">一、缩进、空白行的使用：</h2>
-<h3 id="1-tab">一、1. 缩进——Tab键真是歪歪滴诶嘶</h3>
+<h1 id="challenge">汇编代码的美化建议 及 Challenge题心得体会<a class="headerlink" href="#challenge" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h1>
+<h2 id="_1">一、缩进、空白行的使用：<a class="headerlink" href="#_1" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h2>
+<h3 id="1-tab">一、1. 缩进——Tab键真是歪歪滴诶嘶<a class="headerlink" href="#1-tab" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h3>
 <p>在MARS中，缩进的意义是大于美观的，因为在运行界面，用户的缩进是得以保留的（如下图）</p>
 <p><img alt="image.png" src="https://s3.bmp.ovh/imgs/2022/01/e5b868e585e307fd.png" /></p>
 <p>因此可以在程序解释运行时，清晰地观察程序在哪一个代码块。众所周知，Mips指令集是没有大括号这一说的，因此能够对代码进行逻辑上的划分的只有缩进。</p>
@@ -735,13 +948,13 @@
 <li>标签的命名和使用应当成对，采用驼峰命名法，有xxxBegin，就一定有xxxEnd，这样就可以视作C语言的大括号配对了</li>
 <li>实现C语言for循环、if分支语句的内容，在标签之下缩进一个Tab，并直到遇到与这个标签对应的End标签之前，维持该缩进量</li>
 </ul>
-<h3 id="2-enter">一、2. 空白行——Enter键也是歪歪滴诶嘶</h3>
+<h3 id="2-enter">一、2. 空白行——Enter键也是歪歪滴诶嘶<a class="headerlink" href="#2-enter" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h3>
 <p>对于空白行而言，虽然在运行界面空白行是被省略的，但是适当的添加空白行可以对代码进行逻辑上的切割，个人建议如下：</p>
 <ul>
 <li>可以被翻译成同一句C语言的内容，彼此之间不空行</li>
 <li>实现不同C语言语句的内容留一空行</li>
 </ul>
-<h2 id="_2">二、注释的使用：</h2>
+<h2 id="_2">二、注释的使用：<a class="headerlink" href="#_2" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h2>
 <p>写注释可以怡情，可以博彩，可以长才</p>
 <p>由于汇编语言的特性，经常自己写的东西自己都看不懂，这个时候注释就很有必要了。就我个人而言，写注释的场景无非有三：</p>
 <ul>
@@ -749,16 +962,16 @@
 <li>提醒正在debug的我这一段别乱改</li>
 <li>提醒未来看代码的我这一段在干嘛</li>
 </ul>
-<h3 id="1">二、1. 提醒正在写代码的我下一段要干啥</h3>
+<h3 id="1">二、1. 提醒正在写代码的我下一段要干啥<a class="headerlink" href="#1" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h3>
 <p>我经常于一个功能的结束，或是即将调用一个子过程时，写一段如下的代码：</p>
-<pre><code class="language-assembly"># input Ends Here #####################
+<div class="highlight"><pre><span></span><code># input Ends Here #####################
 # Registers Still in Use:   Storing:
 #   s0                      n
 #   s1                      m
 #######################################
-</code></pre>
+</code></pre></div>
 <p>在使用非常low的DFS搜索汉密尔顿回路时，也这样写：</p>
-<pre><code class="language-Assembly">DfsStart:
+<div class="highlight"><pre><span></span><code>DfsStart:
     # int DFS(int from, int numSearched) ##
     # Registers in use:     Storing:
     #   $31                 returnAddress
@@ -766,13 +979,13 @@
     #   a1                  numSearched
     #   v0                  returnValue
     #######################################
-</code></pre>
+</code></pre></div>
 <p>这样可以时刻提醒自己什么寄存器里面存的有东西，之后写的代码别乱<code>li</code> or <code>move</code> or <code>lw</code>，之后如果要调用子过程，或者递归，涉及到压当前状态进栈的时候，就可以不遗漏要压的寄存器。</p>
-<h3 id="2-debug">二、2. 提醒正在debug的我这一段别乱改</h3>
+<h3 id="2-debug">二、2. 提醒正在debug的我这一段别乱改<a class="headerlink" href="#2-debug" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h3>
 <p>大佬是不需要debug的，所以大佬不用看这一段。</p>
 <p>众所周知，C语言简简单单的一个 <code>for (int i = 0; i &lt; n; i++)</code> 放到汇编语言，就会变得~~又臭又长~~（富有形式美），而且写完代码过后debug阶段还容易乱改导致Bug越De越多，很难绷得住。</p>
 <p>那么如下的代码：</p>
-<pre><code class="language-assembly">li $t0, 0
+<div class="highlight"><pre><span></span><code>li $t0, 0
 ForBegin:
     slt $t1, $t0, $s0
     beq $t1, $0, ForEnd
@@ -780,9 +993,9 @@ ForBegin:
     addi $t1, $t1, 1
     j ForBegin
 ForEnd:
-</code></pre>
+</code></pre></div>
 <p>是否可以改成：</p>
-<pre><code class="language-assembly">li $t0, 0                   # for (int t0 = 0;
+<div class="highlight"><pre><span></span><code>li $t0, 0                   # for (int t0 = 0;
 ForBegin:
     slt $t1, $t0, $s0
     beq $t1, $0, ForEnd     # t0 &lt; s0;
@@ -794,12 +1007,12 @@ ForBegin:
     addi $t0, $t0, 1
     j ForBegin              # t0++)
 ForEnd:
-</code></pre>
+</code></pre></div>
 <p>这样的好处就是提醒十分钟后Debug的自己，这一段是我写的for循环，别乱改，要改只能在 <code>Contents Here</code> 和 <code>Contents End Here</code> 之间修改</p>
-<h3 id="3">二、3. 提醒未来看代码的我这一段在干嘛</h3>
+<h3 id="3">二、3. 提醒未来看代码的我这一段在干嘛<a class="headerlink" href="#3" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h3>
 <p>众所周知，C语言简简单单的一个 <code>array[temp1][temp2] = temp3</code> 放到汇编语言，也会变得~~又臭又长~~（富有形式美），鄙人不才，这句C语言翻译成汇编就变成了将近十行，很难绷得住。</p>
 <p>那么假设如下的代码：</p>
-<pre><code class="language-assembly">.data
+<div class="highlight"><pre><span></span><code>.data
     array: .space 1000
 .text
 # Registers  in Use:        Storing:
@@ -819,41 +1032,41 @@ mflo $t4
 la $t5, array
 add $t4, $t4, $t5
 sw $t3, 0($t4)
-</code></pre>
+</code></pre></div>
 <p>实际上就是在计算 <code>array[temp1][temp2]</code> 的位置，并且将其值赋为 <code>temp3</code>.</p>
 <p>因此可以适时地在之后留一空行，并使用备注：</p>
-<pre><code class="language-assembly"># t4 = t1 * n + t2 + &amp;array[0]
+<div class="highlight"><pre><span></span><code># t4 = t1 * n + t2 + &amp;array[0]
 # Mem[t4] = t3
-</code></pre>
-<h2 id="dfs">三、调用子过程简析——以DFS为例</h2>
+</code></pre></div>
+<h2 id="dfs">三、调用子过程简析——以DFS为例<a class="headerlink" href="#dfs" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h2>
 <p>虽然调用子过程好像并不是一个切题的主题，但是我还是放了上来权当作学习笔记了QAQ</p>
 <p>DFS是这样一个搜索过程：全局维护一个 <code>visit[]</code> 数组用于显示是否访问过某一元素，对每一个被搜索的起点，对他做一定的操作，然后递归地搜索这个元素能够达到的其他元素</p>
 <p>如下是一份检测图是否连通的的C语言代码</p>
-<pre><code class="language-c">int n;  // number of nodes
-int visited[maxn] = {0};
-int graph[maxn][maxn];
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w">  </span><span class="c1">// number of nodes</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">visited</span><span class="p">[</span><span class="n">maxn</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="n">graph</span><span class="p">[</span><span class="n">maxn</span><span class="p">][</span><span class="n">maxn</span><span class="p">];</span><span class="w"></span>
 
-int Dfs(int from, int numSearched) {
-    visited[from] = 1;
-    numSearched++;
-    if (numSearched == n) {
-        return 1;
-    }
-    for (int i = 0; i &lt; n; i++) {
-        if (graph[from][i] &amp;&amp; visit[i] == 0) {
-            if (Dfs(i)) {
-                return  1;
-            }
-        }
-    }
-    numSearched--;
-    visited[from] = 0;
-    return 0;
-}
-</code></pre>
+<span class="kt">int</span><span class="w"> </span><span class="nf">Dfs</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">from</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">numSearched</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">visited</span><span class="p">[</span><span class="n">from</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">numSearched</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">numSearched</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">graph</span><span class="p">[</span><span class="n">from</span><span class="p">][</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">visit</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Dfs</span><span class="p">(</span><span class="n">i</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="k">return</span><span class="w">  </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">numSearched</span><span class="o">--</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">visited</span><span class="p">[</span><span class="n">from</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
 <p>教程中已经给大家提供了 <code>Factorial</code> 的写法，采用了 <code>Factorial</code> 标签和 <code>work</code> 标签分离的形式，但是我太菜了我不会根据那个例程仿写Dfs，因此选择了翻译以上C语言代码的方式</p>
 <p>第一部分：变量声明，函数准备</p>
-<pre><code class="language-assembly">.data
+<div class="highlight"><pre><span></span><code>.data
     visit: .space 1000
     graph: .space 1000
 .text
@@ -866,9 +1079,9 @@ DfsStart:
     #   a1                  numSearched
     #   v0                  returnValue
     ############################################
-</code></pre>
+</code></pre></div>
 <p>第二部分：对当前点做操作，大家自己写就行了</p>
-<pre><code class="language-assembly">    # visited[from] = 1;    略
+<div class="highlight"><pre><span></span><code>    # visited[from] = 1;    略
     # numSearched++;        略
     bne $a1, $s0, IfDfsEnd
     IfDfsStart:
@@ -877,9 +1090,9 @@ DfsStart:
     IfDfsEnd:
     nop
     # if (numSearched == n) return 1;
-</code></pre>
+</code></pre></div>
 <p>第三部分：循环、准备调用子过程</p>
-<pre><code class="language-assembly">    # for(int t0 = 0;                   略
+<div class="highlight"><pre><span></span><code>    # for(int t0 = 0;                   略
     ForDfsBegin:
         # t0 &lt; n;                       略
 
@@ -908,9 +1121,9 @@ DfsStart:
         nop
         # t0++)                         略
     ForDfsEnd:
-</code></pre>
+</code></pre></div>
 <p>第四部分：准备调用子过程，<strong>（重点）</strong>(插入在上一部分的显著标明的位置)</p>
-<pre><code class="language-assembly">            ######################################
+<div class="highlight"><pre><span></span><code>            ######################################
             # Going to call Dfs(t0, numSearched) #
             # Registers in use:     Storing:
             #   $31                 ReturnAddress
@@ -941,16 +1154,16 @@ DfsStart:
             lw $a0, -4($sp)
             lw $31, 0($sp)
             # 以上五句，填进去啥样，取出来啥样
-</code></pre>
+</code></pre></div>
 <p>第五部分：善后，略</p>
 <p>至此，一份使用了递归思想的汇编代码便写成了。</p>
-<h2 id="_3">总结、后记、致谢</h2>
+<h2 id="_3">总结、后记、致谢<a class="headerlink" href="#_3" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h2>
 <p>总结起来，我想分享的建议无非就是：好好写缩进，好好写注释。</p>
 <p>缩进和注释永远是维持代码可读性的最好的办法，即使高级语言也需要适时的缩进和注释提示编程者必要的信息，以及美化代码的结构。而汇编语言本来就比高级语言可读性差，逻辑链条不明显，更需要注释和缩进来帮助Coder或者Debugger理解逻辑。</p>
 <p>我只是提供了我习惯下的注释、缩进的书写方式，显然每个人的代码风格都不一样，我不提倡所有人都像我这样写，但是我坚决反对完全不写注释，完全没有缩进的代码风格（~~那样还不如写机器码~~）</p>
 <p>此外，对于其他MarkDown作者而言，如果需要插入Mips的代码，您可以在代码框右下角语言选择中输入<code>assembly</code>，以使用汇编语言的高亮方案。（如果被讨论区平台吞了那当我没说）（哇居然真的被吞了）</p>
 <p>本文系赶工完成，所有代码均未经过本人检查，不建议拿来直接用，如果产生抄袭的情况，请自重。</p>
-<h3 id="_4">夹带私货环节</h3>
+<h3 id="_4">夹带私货环节<a class="headerlink" href="#_4" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h3>
 <p>感谢冯·卡拉扬先生、柏林交响乐团、贝多芬先生的第六交响曲“田园”对于我在图书馆看教程理解递归的过程中提供的帮助。</p>
 <p>感谢泰勒斯威夫特女士和她的《Evermore》专辑对我Debug的精神支持。</p>
 <p>Consolas字体的 <code>$</code> 中间那根杠是斜的！！！所以我推荐大家用Adobe家的Source Code Pro</p>
@@ -958,25 +1171,32 @@ DfsStart:
               
             </article>
             
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
         
       </main>
       
         <footer class="md-footer">
   
     
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../2021-12-5-No-Collision-System-Dynamic-Update/" class="md-footer__link md-footer__link--prev" aria-label="Previous: No Collision System | TrickEye&#39;s Personal Blog" rel="prev">
+        <a href="../2021-12-5-No-Collision-System-Dynamic-Update/" class="md-footer__link md-footer__link--prev" aria-label="上一页: No Collision System | TrickEye&#39;s Personal Blog" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Previous
+                上一页
               </span>
               No Collision System | TrickEye's Personal Blog
             </div>
@@ -985,11 +1205,11 @@ DfsStart:
       
       
         
-        <a href="../2022-01-28-Beijing2022-Diary/" class="md-footer__link md-footer__link--next" aria-label="Next: 我的冬奥会 | My Beijing 2022" rel="next">
+        <a href="../2022-01-28-Beijing2022-Diary/" class="md-footer__link md-footer__link--next" aria-label="下一页: 我的冬奥会 | My Beijing 2022" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Next
+                下一页
               </span>
               我的冬奥会 | My Beijing 2022
             </div>
@@ -1013,6 +1233,22 @@ DfsStart:
   
 </div>
       
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/TrickEye" target="_blank" rel="noopener" title="GitHub主页" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailo:trickeye@buaa.edu.cn" target="_blank" rel="noopener" title="向我发邮件" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m511.6 36.86-64 415.1a32.008 32.008 0 0 1-31.65 27.147c-4.188 0-8.319-.815-12.29-2.472l-122.6-51.1-50.86 76.29C226.3 508.5 219.8 512 212.8 512c-11.5 0-20.8-9.3-20.8-20.8v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96 122.3 360.3 19.69 317.5C8.438 312.8.812 302.2.062 289.1s5.47-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -1021,10 +1257,16 @@ DfsStart:
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.tabs.link", "content.code.annotate", "search.suggest"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>

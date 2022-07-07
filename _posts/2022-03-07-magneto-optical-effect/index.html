@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="zh" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -51,12 +51,16 @@
   
     
     
+      
     
     
     
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="purple">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -65,7 +69,7 @@
       
         
         <a href="#-" class="md-skip">
-          Skip to content
+          跳转至
         </a>
       
     </div>
@@ -77,7 +81,7 @@
       
 
 <header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
     <a href="../.." title="TrickEye&#39;s Blog" class="md-header__button md-logo" aria-label="TrickEye's Blog" data-md-component="logo">
       
   
@@ -104,6 +108,28 @@
       </div>
     </div>
     
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
     
     
       <label class="md-header__button md-icon" for="__search">
@@ -113,24 +139,26 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="查找">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" aria-label="清空当前内容" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            正在初始化搜索引擎
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -141,13 +169,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/trickeye/trickeye.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/trickeye/trickeye.github.io/" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    GitHub
+    TrickEye.github.io
   </div>
 </a>
       </div>
@@ -161,6 +189,97 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      TrickEye's Personal Blog
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../about/" class="md-tabs__link">
+      About Me
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../archive/" class="md-tabs__link">
+      Archive
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../tags/" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../2021-10-12-J-K-Flip-Flop/" class="md-tabs__link md-tabs__link--active">
+         posts
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../guidance/" class="md-tabs__link">
+        Guidance
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -173,8 +292,10 @@
                   <div class="md-sidebar__inner">
                     
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="TrickEye&#39;s Blog" class="md-nav__button md-logo" aria-label="TrickEye's Blog" data-md-component="logo">
       
@@ -186,13 +307,13 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/trickeye/trickeye.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/trickeye/trickeye.github.io/" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
   </div>
   <div class="md-source__repository">
-    GitHub
+    TrickEye.github.io
   </div>
 </a>
     </div>
@@ -250,6 +371,21 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -257,18 +393,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_4">
+        <label class="md-nav__link" for="__nav_5">
            posts
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label=" posts" data-md-level="1">
-        <label class="md-nav__title" for="__nav_4">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
            posts
         </label>
@@ -430,21 +566,23 @@
   
   
     
-    <li class="md-nav__item md-nav__item--nested">
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_11" type="checkbox" id="__nav_4_11" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_11" type="checkbox" id="__nav_5_11" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_4_11">
+        <label class="md-nav__link" for="__nav_5_11">
           BUAA CO
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="BUAA CO" data-md-level="2">
-        <label class="md-nav__title" for="__nav_4_11">
+        <label class="md-nav__title" for="__nav_5_11">
           <span class="md-nav__icon md-icon"></span>
           BUAA CO
         </label>
@@ -477,6 +615,82 @@
   
 
     
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Guidance
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guidance" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Guidance
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance/" class="md-nav__link">
+        使用指引
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance/1-meta/" class="md-nav__link">
+        meta
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance/2-admonition/" class="md-nav__link">
+        admonition文本框
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -490,7 +704,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="目录">
   
   
   
@@ -507,129 +721,127 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/trickeye/trickeye.github.io/edit/master/docs/_posts/2022-03-07-magneto-optical-effect.md" title="Edit this page" class="md-content__button md-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+
+  
 
 
 
-<h1 id="-">基础物理实验-法拉第磁光效应</h1>
+<h1 id="-">基础物理实验-法拉第磁光效应<a class="headerlink" href="#-" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h1>
 <p>老师您好，欢迎在这里查看我的代码。</p>
 <p>我采用<code>Python</code>脚本来完成以下的目的：
 - 确定磁感应强度随电流线性变化的线性区间
 - 在确定的线性区间内，使用一元线性拟合法计算回归方程，以及不确定度和相关系数
 - 辅助磁光调制实验倍频曲线的画图</p>
-<p>下面是我的<code>Python</code>脚本：</p>
-<pre><code class="language-python">import pandas as pd
-import numpy as np
-import math
-import matplotlib.pyplot as plt
+<p>下面是我的<code>Python</code>脚本：
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 
-def calcRelativity(data, fr=0, to=all):
-    if to == all:
-        to = len(data[0])
-    length = to - fr + 1
-    sigmax = 0.0
-    sigmay = 0.0
-    sigmaxy = 0.0
-    sigmaxSquare = 0.0
-    sigmaySquare = 0.0
-    for i in range(fr, to):
-        sigmax += data[0][i]
-        sigmaxSquare += data[0][i] * data[0][i]
-        sigmay += data[1][i]
-        sigmaySquare += data[1][i] * data[1][i]
-        sigmaxy += data[0][i] * data[1][i]
-    avrgx = sigmax / length
-    avrgy = sigmay / length
-    avrgxy = sigmaxy / length
-    avrgxSquare = sigmaxSquare / length
-    avrgySquare = sigmaySquare / length
-    relativity = (avrgxy - avrgx * avrgy) / (math.sqrt((avrgxSquare - avrgx * avrgx) * (avrgySquare - avrgy * avrgy)))
-    return relativity
+<span class="k">def</span> <span class="nf">calcRelativity</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">fr</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">to</span><span class="o">=</span><span class="nb">all</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">to</span> <span class="o">==</span> <span class="nb">all</span><span class="p">:</span>
+        <span class="n">to</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="n">to</span> <span class="o">-</span> <span class="n">fr</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">sigmax</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">sigmay</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">sigmaxy</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">sigmaxSquare</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">sigmaySquare</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">fr</span><span class="p">,</span> <span class="n">to</span><span class="p">):</span>
+        <span class="n">sigmax</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">sigmaxSquare</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">sigmay</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">sigmaySquare</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">sigmaxy</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">avrgx</span> <span class="o">=</span> <span class="n">sigmax</span> <span class="o">/</span> <span class="n">length</span>
+    <span class="n">avrgy</span> <span class="o">=</span> <span class="n">sigmay</span> <span class="o">/</span> <span class="n">length</span>
+    <span class="n">avrgxy</span> <span class="o">=</span> <span class="n">sigmaxy</span> <span class="o">/</span> <span class="n">length</span>
+    <span class="n">avrgxSquare</span> <span class="o">=</span> <span class="n">sigmaxSquare</span> <span class="o">/</span> <span class="n">length</span>
+    <span class="n">avrgySquare</span> <span class="o">=</span> <span class="n">sigmaySquare</span> <span class="o">/</span> <span class="n">length</span>
+    <span class="n">relativity</span> <span class="o">=</span> <span class="p">(</span><span class="n">avrgxy</span> <span class="o">-</span> <span class="n">avrgx</span> <span class="o">*</span> <span class="n">avrgy</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">avrgxSquare</span> <span class="o">-</span> <span class="n">avrgx</span> <span class="o">*</span> <span class="n">avrgx</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">avrgySquare</span> <span class="o">-</span> <span class="n">avrgy</span> <span class="o">*</span> <span class="n">avrgy</span><span class="p">)))</span>
+    <span class="k">return</span> <span class="n">relativity</span>
 
 
-def linearModel(data, fr=0, to=all):
-    if to == all:
-        to = len(data[0])
-    length = to - fr + 1
-    sigmax = 0.0
-    sigmay = 0.0
-    sigmaxy = 0.0
-    sigmaxSquare = 0.0
-    sigmaySquare = 0.0
-    for i in range(fr, to):
-        sigmax += data[0][i]
-        sigmaxSquare += data[0][i] * data[0][i]
-        sigmay += data[1][i]
-        sigmaySquare += data[1][i] * data[1][i]
-        sigmaxy += data[0][i] * data[1][i]
-    avrgx = sigmax / length
-    avrgy = sigmay / length
-    avrgxy = sigmaxy / length
-    avrgxSquare = sigmaxSquare / length
-    avrgySquare = sigmaySquare / length
+<span class="k">def</span> <span class="nf">linearModel</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">fr</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">to</span><span class="o">=</span><span class="nb">all</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">to</span> <span class="o">==</span> <span class="nb">all</span><span class="p">:</span>
+        <span class="n">to</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">length</span> <span class="o">=</span> <span class="n">to</span> <span class="o">-</span> <span class="n">fr</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="n">sigmax</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">sigmay</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">sigmaxy</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">sigmaxSquare</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">sigmaySquare</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">fr</span><span class="p">,</span> <span class="n">to</span><span class="p">):</span>
+        <span class="n">sigmax</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">sigmaxSquare</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">sigmay</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">sigmaySquare</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+        <span class="n">sigmaxy</span> <span class="o">+=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">*</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">avrgx</span> <span class="o">=</span> <span class="n">sigmax</span> <span class="o">/</span> <span class="n">length</span>
+    <span class="n">avrgy</span> <span class="o">=</span> <span class="n">sigmay</span> <span class="o">/</span> <span class="n">length</span>
+    <span class="n">avrgxy</span> <span class="o">=</span> <span class="n">sigmaxy</span> <span class="o">/</span> <span class="n">length</span>
+    <span class="n">avrgxSquare</span> <span class="o">=</span> <span class="n">sigmaxSquare</span> <span class="o">/</span> <span class="n">length</span>
+    <span class="n">avrgySquare</span> <span class="o">=</span> <span class="n">sigmaySquare</span> <span class="o">/</span> <span class="n">length</span>
 
-    b = (avrgx * avrgy - avrgxy) / (avrgx * avrgx - avrgxSquare)
-    a = avrgy - b * avrgx
-    uncertaintyb = math.sqrt((1 / length)*((1 / (calcRelativity(data, fr, to)*calcRelativity(data, fr, to))) - 1))
-    uncertaintya = math.sqrt(avrgxSquare)*uncertaintyb
-    return b, a, uncertaintyb, uncertaintya
+    <span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="n">avrgx</span> <span class="o">*</span> <span class="n">avrgy</span> <span class="o">-</span> <span class="n">avrgxy</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">avrgx</span> <span class="o">*</span> <span class="n">avrgx</span> <span class="o">-</span> <span class="n">avrgxSquare</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">avrgy</span> <span class="o">-</span> <span class="n">b</span> <span class="o">*</span> <span class="n">avrgx</span>
+    <span class="n">uncertaintyb</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="mi">1</span> <span class="o">/</span> <span class="n">length</span><span class="p">)</span><span class="o">*</span><span class="p">((</span><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="n">calcRelativity</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">fr</span><span class="p">,</span> <span class="n">to</span><span class="p">)</span><span class="o">*</span><span class="n">calcRelativity</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">fr</span><span class="p">,</span> <span class="n">to</span><span class="p">)))</span> <span class="o">-</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">uncertaintya</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">avrgxSquare</span><span class="p">)</span><span class="o">*</span><span class="n">uncertaintyb</span>
+    <span class="k">return</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">uncertaintyb</span><span class="p">,</span> <span class="n">uncertaintya</span>
 
-def main():
-    data = pd.read_csv(&quot;Ampere-Tesla.csv&quot;, header=None)
-    data = np.array(data)
-    # input data.
-    fig = plt.figure()
-    ax1 = fig.add_subplot(2, 2, 1)
-    ax2 = fig.add_subplot(2, 2, 2)
-    ax3 = fig.add_subplot(2, 2, 3)
-    # ax4 = fig.add_subplot(2, 2, 4)
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Ampere-Tesla.csv&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="c1"># input data.</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+    <span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">ax3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="c1"># ax4 = fig.add_subplot(2, 2, 4)</span>
 
-    current = data[0][4:26]
-    array = np.zeros(30)
-    index = np.arange(5, 27)
-    for i in range(5, 27):
-        array[i] = calcRelativity(data, 0, i)
-    ax1.plot(current, array[5:27], alpha=0.8)
-    ax1.scatter(current, array[5:27], alpha=0.8)
-    for a, b in zip(current[6:], array[11:27]):
-        ax1.text(a, b, '%.2f\n%.5f' % (a,b), ha='center', va='center', fontsize=5)
-    ax1.vlines(1.8, 0.987, 1, color=&quot;000000&quot;, linestyles=&quot;dashed&quot;)
-    ax1.hlines(0.999, 0, 3, color=&quot;grey&quot;, linestyles=&quot;dotted&quot;)
-    # draw ax1. The relativity - current chart.
+    <span class="n">current</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">4</span><span class="p">:</span><span class="mi">26</span><span class="p">]</span>
+    <span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+    <span class="n">index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">27</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">27</span><span class="p">):</span>
+        <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">calcRelativity</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">current</span><span class="p">,</span> <span class="n">array</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">27</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">current</span><span class="p">,</span> <span class="n">array</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">27</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">current</span><span class="p">[</span><span class="mi">6</span><span class="p">:],</span> <span class="n">array</span><span class="p">[</span><span class="mi">11</span><span class="p">:</span><span class="mi">27</span><span class="p">]):</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%.2f</span><span class="se">\n</span><span class="si">%.5f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">),</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">vlines</span><span class="p">(</span><span class="mf">1.8</span><span class="p">,</span> <span class="mf">0.987</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;000000&quot;</span><span class="p">,</span> <span class="n">linestyles</span><span class="o">=</span><span class="s2">&quot;dashed&quot;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">hlines</span><span class="p">(</span><span class="mf">0.999</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;grey&quot;</span><span class="p">,</span> <span class="n">linestyles</span><span class="o">=</span><span class="s2">&quot;dotted&quot;</span><span class="p">)</span>
+    <span class="c1"># draw ax1. The relativity - current chart.</span>
 
-    ax2.scatter(data[0], data[1], alpha=0.8)
-    x1 = np.linspace(0, 1.8, 10)
-    x2 = np.linspace(0, 3, 10)
-    b, a, ub, ua = linearModel(data, 0, 20)
-    y1 = b * x1 + a
-    y2 = b * x2 + a
-    ax2.plot(x1, y1, color='red', linewidth=3)
-    ax2.plot(x2, y2, linestyle='dashed')
-    ax2.text(2.5, 75, 'y = b * x + a\nb = %.5f \na = %.5f  \nUb = %.5f \nUa = %.5f ' % (b, a, ub, ua), ha='center', va='center', fontsize=16, font='courier new')
-    # draw ax2. The linear solution of the I - B relation.
+    <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>
+    <span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.8</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+    <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">ub</span><span class="p">,</span> <span class="n">ua</span> <span class="o">=</span> <span class="n">linearModel</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+    <span class="n">y1</span> <span class="o">=</span> <span class="n">b</span> <span class="o">*</span> <span class="n">x1</span> <span class="o">+</span> <span class="n">a</span>
+    <span class="n">y2</span> <span class="o">=</span> <span class="n">b</span> <span class="o">*</span> <span class="n">x2</span> <span class="o">+</span> <span class="n">a</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dashed&#39;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="mf">2.5</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="s1">&#39;y = b * x + a</span><span class="se">\n</span><span class="s1">b = </span><span class="si">%.5f</span><span class="s1"> </span><span class="se">\n</span><span class="s1">a = </span><span class="si">%.5f</span><span class="s1">  </span><span class="se">\n</span><span class="s1">Ub = </span><span class="si">%.5f</span><span class="s1"> </span><span class="se">\n</span><span class="s1">Ua = </span><span class="si">%.5f</span><span class="s1"> &#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">ub</span><span class="p">,</span> <span class="n">ua</span><span class="p">),</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">font</span><span class="o">=</span><span class="s1">&#39;courier new&#39;</span><span class="p">)</span>
+    <span class="c1"># draw ax2. The linear solution of the I - B relation.</span>
 
-    pi = 3.1415926
-    x1 = np.arange(0, 10 * pi, 0.1)
-    current = np.sin(x1)
-    ax3.plot(x1, current, linewidth=0.5, linestyle='dotted')
+    <span class="n">pi</span> <span class="o">=</span> <span class="mf">3.1415926</span>
+    <span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">pi</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">)</span>
+    <span class="n">current</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">current</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;dotted&#39;</span><span class="p">)</span>
 
-    for alpha in (0, pi / 4, pi / 2):
-        intensity = np.cos(alpha + current * 0.1) ** 2  # np.sin(x1)**2
-        ax3.plot(x1, intensity, linewidth=0.6)
+    <span class="k">for</span> <span class="n">alpha</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">pi</span> <span class="o">/</span> <span class="mi">4</span><span class="p">,</span> <span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="n">intensity</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">alpha</span> <span class="o">+</span> <span class="n">current</span> <span class="o">*</span> <span class="mf">0.1</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span>  <span class="c1"># np.sin(x1)**2</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">intensity</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.6</span><span class="p">)</span>
 
-    # draw ax3. The double frequency illustration plot
+    <span class="c1"># draw ax3. The double frequency illustration plot</span>
 
-    plt.show()
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 
-if __name__ == &quot;__main__&quot;:
-    main()
-
-</code></pre>
-<p>以上脚本分为三个部分。
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+以上脚本分为三个部分。
 - 第一部分，计算排除了最后n个数据之后的余下数据的相关系数，其结果（详细计算结果请参见纸质实验报告）通过折线图体现，可以看到在<code>0~1.8A</code>的范围内<code>B-I</code>的线性相关度比较好。
 - 第二部分，选取<code>0~1.8A</code>范围内的数据，使用一元线性回归法拟合得到线性关系，可以在下图中看到，拟合度比较好。
 - 第三部分，演示了α分别取0，45°，90°的接收光强曲线和发射信号参照。</p>
@@ -638,25 +850,32 @@ if __name__ == &quot;__main__&quot;:
               
             </article>
             
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
           </div>
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            回到页面顶部
+          </a>
         
       </main>
       
         <footer class="md-footer">
   
     
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+    <nav class="md-footer__inner md-grid" aria-label="页脚" >
       
         
-        <a href="../2022-01-28-Beijing2022-Diary/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 我的冬奥会 | My Beijing 2022" rel="prev">
+        <a href="../2022-01-28-Beijing2022-Diary/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 我的冬奥会 | My Beijing 2022" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Previous
+                上一页
               </span>
               我的冬奥会 | My Beijing 2022
             </div>
@@ -665,11 +884,11 @@ if __name__ == &quot;__main__&quot;:
       
       
         
-        <a href="../BUAA_CO/BUAA-CO/" class="md-footer__link md-footer__link--next" aria-label="Next: Archive - BUAA-CO Series | TrickEye&#39;s Personal Blog" rel="next">
+        <a href="../BUAA_CO/BUAA-CO/" class="md-footer__link md-footer__link--next" aria-label="下一页: Archive - BUAA-CO Series | TrickEye&#39;s Personal Blog" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
-                Next
+                下一页
               </span>
               Archive - BUAA-CO Series | TrickEye's Personal Blog
             </div>
@@ -693,6 +912,22 @@ if __name__ == &quot;__main__&quot;:
   
 </div>
       
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/TrickEye" target="_blank" rel="noopener" title="GitHub主页" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailo:trickeye@buaa.edu.cn" target="_blank" rel="noopener" title="向我发邮件" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m511.6 36.86-64 415.1a32.008 32.008 0 0 1-31.65 27.147c-4.188 0-8.319-.815-12.29-2.472l-122.6-51.1-50.86 76.29C226.3 508.5 219.8 512 212.8 512c-11.5 0-20.8-9.3-20.8-20.8v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96 122.3 360.3 19.69 317.5C8.438 312.8.812 302.2.062 289.1s5.47-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -701,10 +936,16 @@ if __name__ == &quot;__main__&quot;:
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.tabs.link", "content.code.annotate", "search.suggest"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\uff0c\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
