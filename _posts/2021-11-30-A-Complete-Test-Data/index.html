@@ -408,9 +408,86 @@
   
   
   
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          安装和配置
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="安装和配置" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          安装和配置
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guidance/install/" class="md-nav__link">
+        Material for Mkdocs 安装和配置
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          书写和使用
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="书写和使用" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          书写和使用
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../guidance/1-meta/" class="md-nav__link">
-        meta
+        meta宏
       </a>
     </li>
   
@@ -424,7 +501,7 @@
   
     <li class="md-nav__item">
       <a href="../../guidance/2-admonition/" class="md-nav__link">
-        admonition
+        Admonition文本框
       </a>
     </li>
   
@@ -438,7 +515,7 @@
   
     <li class="md-nav__item">
       <a href="../../guidance/3-annotation/" class="md-nav__link">
-        annotation
+        Annotation弹出式注释
       </a>
     </li>
   
@@ -452,7 +529,7 @@
   
     <li class="md-nav__item">
       <a href="../../guidance/4-buttons/" class="md-nav__link">
-        button
+        Button美观化按键链接
       </a>
     </li>
   
@@ -466,7 +543,7 @@
   
     <li class="md-nav__item">
       <a href="../../guidance/5-codeblocks/" class="md-nav__link">
-        code blocks
+        Code blocks 代码块
       </a>
     </li>
   
@@ -480,7 +557,7 @@
   
     <li class="md-nav__item">
       <a href="../../guidance/6-contenttabs/" class="md-nav__link">
-        content tabs
+        Content Tabs 内容标签页
       </a>
     </li>
   
@@ -494,7 +571,7 @@
   
     <li class="md-nav__item">
       <a href="../../guidance/7-footnotes/" class="md-nav__link">
-        footnotes
+        Footnote 脚注
       </a>
     </li>
   
@@ -508,7 +585,7 @@
   
     <li class="md-nav__item">
       <a href="../../guidance/8-images/" class="md-nav__link">
-        images
+        Images 图片
       </a>
     </li>
   
@@ -522,7 +599,7 @@
   
     <li class="md-nav__item">
       <a href="../../guidance/9-lists/" class="md-nav__link">
-        lists
+        List 列表
       </a>
     </li>
   
@@ -536,8 +613,15 @@
   
     <li class="md-nav__item">
       <a href="../../guidance/10-inlinemath/" class="md-nav__link">
-        math
+        Math 数学公式显示
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -632,7 +716,7 @@
 
 
 
-<h1 id="p5">手搓一个较为完备的P5测试数据<a class="headerlink" href="#p5" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h1>
+<h1 id="p5">手搓一个较为完备的P5测试数据<a class="headerlink" href="#p5" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h1>
 <p>话不多说，上代码：
 <a href="https://bhpan.buaa.edu.cn:443/link/AD40478BB18B3CEB7ABBC65EDFBF69FF">北航云盘链接</a></p>
 <p>这个数据可以做到覆盖率测试转发情况和暂停情况拿到满分，但是，仍然不代表CPU的设计正确性。</p>
@@ -640,61 +724,59 @@
 <ul>
 <li>例如，测试器没有检验执行结果的有效性。例如咱们构造的数据，如果在某个点因为不转发/不阻塞/跳飞了等等异常情况导致并没有按预期执行，但是产生了跟正常执行的结果一摸一样的输出，那么这一部分的检验是不完美的。大家要小心这种情况：比如这些代码：</li>
 </ul>
-<div class="highlight"><pre><span></span><code>jal label00
-nop
-label00: nop
-lui $1, 0
-# 不管跳不跳都到一个地方
-# try this:
-jal label00
-nop
-j label01
-nop
-label00: lui $1, 0
-label01: nop
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>jal label00
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>nop
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>label00: nop
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>lui $1, 0
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a># 不管跳不跳都到一个地方
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a># try this:
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>jal label00
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>nop
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>j label01
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>nop
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>label00: lui $1, 0
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>label01: nop
 </code></pre></div>
-<div class="highlight"><pre><span></span><code># All DM not filled and were initialized with 0.
-ori $2, $0, 0xefff
-lw $1, 0($2)
-# 不管转不转发都取到0
-# try fill DM with random values.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a># All DM not filled and were initialized with 0.
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>ori $2, $0, 0xefff
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>lw $1, 0($2)
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a># 不管转不转发都取到0
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a># try fill DM with random values.
 </code></pre></div>
 <p>接下来，介绍一下我用来“自动送测覆盖率检查”的脚本：</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># TEST.bat</span>
-CodeGenerate.exe
-<span class="c1"># 一个C语言文件，接收一个字符串，把文件名同这个字符串的文件复制并重命名为mips.asm</span>
-java -jar Mars4_5.jar nc mc CompactDataAtZero a dump .text HexText code.txt mips.asm
-<span class="c1"># 用Mars导出十六进制码</span>
-java -jar Mars4_5.jar nc mc CompactDataAtZero a dump .text HexText analysis<span class="se">\c</span>ode.txt mips.asm
-<span class="c1"># 导出两次，到不同的位置</span>
-java -jar Mars.jar db mc CompactDataAtZero nc mips6.asm &gt;result.txt  
-<span class="c1"># 执行，采用讨论区魔改版Mars，谢谢@申浩佳</span>
-java -jar analysis<span class="se">\H</span>azard-Calculator.jar --hz --im-base 0x00003000 --dm-base 0x00000000 --im-size <span class="m">3072</span> --dm-size <span class="m">4096</span> analysis<span class="se">\c</span>ode.txt
-<span class="c1"># 执行并产生相应的时间范围、hazard信息</span>
-move /Y hazard.json analysis<span class="se">\</span>
-<span class="c1"># 处理文件输出位置的问题</span>
-analysis<span class="se">\7</span>za a analysis<span class="se">\w</span>ork<span class="se">\P</span>5_MyCode_testCase0.zip code.txt
-<span class="c1"># 用到7z命令行版本7za，请参考GitHub项目：https://github.com/sparanoid/7z</span>
-<span class="nb">cd</span> analysis<span class="se">\w</span>ork<span class="se">\</span>
-..<span class="se">\7</span>za a P5_LX_example.zip P5_MyCode_testCase0.zip
-del P5_MyCode_testCase0.zip
-<span class="nb">cd</span> ..<span class="se">\.</span>.<span class="se">\</span>
-<span class="nb">cd</span> analysis<span class="se">\</span>
-python analyzer.py
-<span class="c1"># 送测</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># TEST.bat</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>CodeGenerate.exe
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># 一个C语言文件，接收一个字符串，把文件名同这个字符串的文件复制并重命名为mips.asm</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>java -jar Mars4_5.jar nc mc CompactDataAtZero a dump .text HexText code.txt mips.asm
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># 用Mars导出十六进制码</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>java -jar Mars4_5.jar nc mc CompactDataAtZero a dump .text HexText analysis<span class="se">\c</span>ode.txt mips.asm
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># 导出两次，到不同的位置</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>java -jar Mars.jar db mc CompactDataAtZero nc mips6.asm &gt;result.txt  
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="c1"># 执行，采用讨论区魔改版Mars，谢谢@申浩佳</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>java -jar analysis<span class="se">\H</span>azard-Calculator.jar --hz --im-base 0x00003000 --dm-base 0x00000000 --im-size <span class="m">3072</span> --dm-size <span class="m">4096</span> analysis<span class="se">\c</span>ode.txt
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># 执行并产生相应的时间范围、hazard信息</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>move /Y hazard.json analysis<span class="se">\</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># 处理文件输出位置的问题</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>analysis<span class="se">\7</span>za a analysis<span class="se">\w</span>ork<span class="se">\P</span>5_MyCode_testCase0.zip code.txt
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="c1"># 用到7z命令行版本7za，请参考GitHub项目：https://github.com/sparanoid/7z</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="nb">cd</span> analysis<span class="se">\w</span>ork<span class="se">\</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>..<span class="se">\7</span>za a P5_LX_example.zip P5_MyCode_testCase0.zip
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>del P5_MyCode_testCase0.zip
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="nb">cd</span> ..<span class="se">\.</span>.<span class="se">\</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="nb">cd</span> analysis<span class="se">\</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>python analyzer.py
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="c1"># 送测</span>
 </code></pre></div>
 <p>以及一些好用的VSCode快捷键，陪伴了我搓代码的始末：</p>
 <p><code>Alt+↑/↓</code> 调整光标所在行与上/下行顺序</p>
 <p><code>Alt+Shift+↑/↓</code> 复制并在上/下行插入光标所在行</p>
 <p><code>中键拖动</code> 纵向框选</p>
 <p><code>Alt+鼠标点击</code> 在当前点击位置创建一个平行光标</p>
-<h1 id="ok">OK完事，（为什么我过了这个数据上周课上还是炸了呢？）<a class="headerlink" href="#ok" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h1>
+<h1 id="ok">OK完事，（为什么我过了这个数据上周课上还是炸了呢？）<a class="headerlink" href="#ok" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h1>
 
               
             </article>
             
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
-
           </div>
         </div>
         
@@ -743,7 +825,7 @@ python analyzer.py
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.tabs.link", "content.code.annotate", "search.suggest", "navigation.instant", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.code.annotate", "search.suggest", "navigation.instant", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>

@@ -412,9 +412,88 @@
   
   
   
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          安装和配置
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="安装和配置" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          安装和配置
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install/" class="md-nav__link">
+        Material for Mkdocs 安装和配置
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          书写和使用
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="书写和使用" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          书写和使用
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../1-meta/" class="md-nav__link">
-        meta
+        meta宏
       </a>
     </li>
   
@@ -437,12 +516,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          admonition
+          Admonition文本框
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        admonition
+        Admonition文本框
       </a>
       
         
@@ -504,7 +583,7 @@
   
     <li class="md-nav__item">
       <a href="../3-annotation/" class="md-nav__link">
-        annotation
+        Annotation弹出式注释
       </a>
     </li>
   
@@ -518,7 +597,7 @@
   
     <li class="md-nav__item">
       <a href="../4-buttons/" class="md-nav__link">
-        button
+        Button美观化按键链接
       </a>
     </li>
   
@@ -532,7 +611,7 @@
   
     <li class="md-nav__item">
       <a href="../5-codeblocks/" class="md-nav__link">
-        code blocks
+        Code blocks 代码块
       </a>
     </li>
   
@@ -546,7 +625,7 @@
   
     <li class="md-nav__item">
       <a href="../6-contenttabs/" class="md-nav__link">
-        content tabs
+        Content Tabs 内容标签页
       </a>
     </li>
   
@@ -560,7 +639,7 @@
   
     <li class="md-nav__item">
       <a href="../7-footnotes/" class="md-nav__link">
-        footnotes
+        Footnote 脚注
       </a>
     </li>
   
@@ -574,7 +653,7 @@
   
     <li class="md-nav__item">
       <a href="../8-images/" class="md-nav__link">
-        images
+        Images 图片
       </a>
     </li>
   
@@ -588,7 +667,7 @@
   
     <li class="md-nav__item">
       <a href="../9-lists/" class="md-nav__link">
-        lists
+        List 列表
       </a>
     </li>
   
@@ -602,8 +681,15 @@
   
     <li class="md-nav__item">
       <a href="../10-inlinemath/" class="md-nav__link">
-        math
+        Math 数学公式显示
       </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -744,47 +830,45 @@
 
 
 
-<h1 id="admonition">Admonition文本框使用说明<a class="headerlink" href="#admonition" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h1>
-<h3 id="_1">基本语法<a class="headerlink" href="#_1" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h3>
+<h1 id="admonition">Admonition文本框使用说明<a class="headerlink" href="#admonition" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h1>
+<h3 id="_1">基本语法<a class="headerlink" href="#_1" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
 <p>用三连感叹号来开启一个文本框，看下面markdown例子：
-<div class="highlight"><pre><span></span><code>!!! note
-
-    some text here!
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>!!! note
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    some text here!
 </code></pre></div>
 效果：</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>some text here!</p>
 </div>
-<h3 id="_2">更换标题和主题<a class="headerlink" href="#_2" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>!!! note &quot;title for the block&quot; （也可以使用&quot;&quot;省略标题）
-    （支持的主题包括：note, abstract(summary, tldr), info(todo), tip(hint), success(check, done), question(help, faq), warning(caution, attention), failure(fail, missing), danger(error), bug, example, quote）
-
-    some more text here!
+<h3 id="_2">更换标题和主题<a class="headerlink" href="#_2" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>!!! note &quot;title for the block&quot; （也可以使用&quot;&quot;省略标题）
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    （支持的主题包括：note, abstract(summary, tldr), info(todo), tip(hint), success(check, done), question(help, faq), warning(caution, attention), failure(fail, missing), danger(error), bug, example, quote）
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    some more text here!
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">title for the block</p>
 <p>some more text here!</p>
 </div>
 <p>其实甚至是可以自定义主题的，但是比较麻烦</p>
-<h3 id="_3">居左居右<a class="headerlink" href="#_3" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h3>
+<h3 id="_3">居左居右<a class="headerlink" href="#_3" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
 <p>通过设置inline或者inline end可以实现与下一个紧邻的元素的左右排版</p>
 <div class="admonition example inline end">
 <p class="admonition-title">illustration</p>
 <p>some text.</p>
 </div>
-<div class="highlight"><pre><span></span><code>!!! example inline end &quot;illustration&quot;
-
-    some text.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>!!! example inline end &quot;illustration&quot;
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    some text.
 </code></pre></div>
-<h3 id="_4">参考资料<a class="headerlink" href="#_4" title="转到对应这个位置的链接，看看地址栏你就知道了">&para;</a></h3>
+<h3 id="_4">参考资料<a class="headerlink" href="#_4" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
 <p><a class="md-button" href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/"><strong>阅读原始说明</strong></a></p>
 
               
             </article>
             
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
-
           </div>
         </div>
         
@@ -801,7 +885,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../1-meta/" class="md-footer__link md-footer__link--prev" aria-label="Previous: meta" rel="prev">
+        <a href="../1-meta/" class="md-footer__link md-footer__link--prev" aria-label="Previous: meta宏" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -810,20 +894,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              meta
+              meta宏
             </div>
           </div>
         </a>
       
       
         
-        <a href="../3-annotation/" class="md-footer__link md-footer__link--next" aria-label="Next: annotation" rel="next">
+        <a href="../3-annotation/" class="md-footer__link md-footer__link--next" aria-label="Next: Annotation弹出式注释" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              annotation
+              Annotation弹出式注释
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -869,7 +953,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.tabs.link", "content.code.annotate", "search.suggest", "navigation.instant", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.code.annotate", "search.suggest", "navigation.instant", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
