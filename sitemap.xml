@@ -86,6 +86,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://TrickEye.github.io/guidance/10-inlinemath/</loc>
+         <lastmod>2022-07-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://TrickEye.github.io/guidance/2-admonition/</loc>
          <lastmod>2022-07-08</lastmod>
          <changefreq>daily</changefreq>
@@ -97,6 +102,31 @@
     </url>
     <url>
          <loc>https://TrickEye.github.io/guidance/4-buttons/</loc>
+         <lastmod>2022-07-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TrickEye.github.io/guidance/5-codeblocks/</loc>
+         <lastmod>2022-07-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TrickEye.github.io/guidance/6-contenttabs/</loc>
+         <lastmod>2022-07-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TrickEye.github.io/guidance/7-footnotes/</loc>
+         <lastmod>2022-07-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TrickEye.github.io/guidance/8-images/</loc>
+         <lastmod>2022-07-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://TrickEye.github.io/guidance/9-lists/</loc>
          <lastmod>2022-07-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
