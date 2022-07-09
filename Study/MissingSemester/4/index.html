@@ -997,10 +997,10 @@ Here is a simple illustration of REGEX to substitute s string. The basic mode is
 <p><code>wc -l</code> counts the number of lines.</p>
 <h2 id="awk">awk<a class="headerlink" href="#awk" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
 <p><code>awk</code> is another language enables you to process the text treating like arguments. Here's an illustration:<br />
-```BASH
-| awk '{print <span class="arithmatex">\(2}' | 
-| awk '\)</span>1 == 1 &amp;&amp; <span class="arithmatex">\(2 ~ /^c[^ ]*e\)</span>/ { print $2 }' |
-| awk 'BEGIN{rows = 0} $1 == 1 &amp;&amp; <span class="arithmatex">\(2~/^c[^ ]*e\)</span>/ {rows+=1} END {print rows} |</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">|</span> awk <span class="s1">&#39;{print $2}&#39;</span> <span class="p">|</span> 
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">|</span> awk <span class="s1">&#39;$1 == 1 &amp;&amp; $2 ~ /^c[^ ]*e$/ { print $2 }&#39;</span> <span class="p">|</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">|</span> awk <span class="s1">&#39;BEGIN{rows = 0} $1 == 1 &amp;&amp; $2~/^c[^ ]*e$/ {rows+=1} END {print rows}&#39;</span> <span class="p">|</span>
+</code></pre></div></p>
 
               
             </article>
