@@ -602,10 +602,58 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    表单
+  </a>
+  
+    <nav class="md-nav" aria-label="表单">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    标签
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    下拉表单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    文本域
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2/" class="md-nav__link">
+        CSS Cheat List
+      </a>
     </li>
   
 
@@ -1018,6 +1066,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    表单
+  </a>
+  
+    <nav class="md-nav" aria-label="表单">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    标签
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    下拉表单
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    文本域
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1183,6 +1265,108 @@
 <p>列表包括以下几种：无序列表，有序列表，自定义列表</p>
 <p>无序列表和有序列表标签不同，分别使用<code class="highlight"><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span></code>和<code class="highlight"><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span></code>围绕，而表格内部的单元都是使用<code class="highlight"><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;/</span><span class="nt">li</span><span class="p">&gt;</span></code>围绕的</p>
 <p>自定义列表比较类似material for mkdocs中的解释列表，或者<span class="arithmatex">\(\LaTeX\)</span>的description环境。使用<code class="highlight"><span class="p">&lt;</span><span class="nt">dl</span><span class="p">&gt;&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span></code>围绕，内部单元格涉及词条<code class="highlight"><span class="p">&lt;</span><span class="nt">dt</span><span class="p">&gt;&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span></code>和解释<code class="highlight"><span class="p">&lt;</span><span class="nt">dd</span><span class="p">&gt;&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span></code></p>
+<h2 id="_7">表单<a class="headerlink" href="#_7" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
+<p>表单域指标签对<code class="highlight"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;&lt;/</span><span class="nt">form</span><span class="p">&gt;</span></code>，这对标签围绕的空间为表单域，在提交的时候将会一并将输入的数据提交到对应的服务器。<code class="highlight"><span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span></code>标签具有以下属性：<code>action="url"</code>指出接受数据的服务器，<code>method="(get, post)"</code>指出接收方式，<code>name</code>指出表单域名称</p>
+<p>输入标签<code class="highlight"><span class="p">&lt;</span><span class="nt">input</span><span class="p">&gt;&lt;/</span><span class="nt">input</span><span class="p">&gt;</span></code>有多种种类。用<code>type</code>属性来指出。</p>
+<div class="admonition example inline end">
+<p class="admonition-title">input.html</p>
+<p><a class="md-button md-button--primary" href="../_assets/input.html">跳转到新的界面查看</a></p>
+<p><iframe width="100%" height="500" src="../_assets/input.html"></iframe></p>
+</div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">input.html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span>
+<span class="normal"><a href="#__codelineno-2-22">22</a></span>
+<span class="normal"><a href="#__codelineno-2-23">23</a></span>
+<span class="normal"><a href="#__codelineno-2-24">24</a></span>
+<span class="normal"><a href="#__codelineno-2-25">25</a></span>
+<span class="normal"><a href="#__codelineno-2-26">26</a></span>
+<span class="normal"><a href="#__codelineno-2-27">27</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;zh-cn&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>        <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>input<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>    <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>        <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;demo.php&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;get&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;表单域名称&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>            用户名：<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;缺省的输入&quot;</span> <span class="na">maxlength</span><span class="o">=</span><span class="s">&quot;8&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;username&quot;</span><span class="p">/&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>            <span class="cm">&lt;!--(1)--&gt;</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>            密码：<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;password&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">pwd/</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a>            性别：男 <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;gender&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;male&quot;</span><span class="p">/&gt;</span> 
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a>                 女 <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;gender&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;female&quot;</span><span class="p">/&gt;</span> 
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a>                 <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a>            <span class="cm">&lt;!--(2)--&gt;</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a>            多选：A <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;selection&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;A&quot;</span><span class="p">/&gt;</span> 
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a>                 B <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;selection&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;B&quot;</span><span class="p">/&gt;</span> 
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a>                 C <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;selection&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;C&quot;</span> <span class="na">checked</span><span class="o">=</span><span class="s">&quot;checked&quot;</span><span class="p">/&gt;</span> 
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a>                 D <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;selection&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;D&quot;</span><span class="p">/&gt;</span> 
+<a id="__codelineno-2-20" name="__codelineno-2-20"></a>                 <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21"></a>            <span class="cm">&lt;!--(3)--&gt;</span> <span class="cm">&lt;!--(4)--&gt;</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22"></a>            提交：<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;点击提交&quot;</span><span class="p">/&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23"></a>            普通按钮：<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;按钮&quot;</span> <span class="p">/&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24"></a>            文件上传：<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;file&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;上传文件&quot;</span> <span class="p">/&gt;</span> <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25"></a>        <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p>注：mkdocs并没有对input标签提供完整支持。</p>
+<ol>
+<li>input标签的value属性在text/password类型的输入框中将会呈现为缺省的文本，在选择框中体现为向后台反应的结果（不会在前端显示）maxlength属性指出了最大的长度，超过此长度的输入会被舍弃。</li>
+<li>radio类型的输入要求多选一，选项间互斥，使用name属性来分组和区别不同的互斥范围</li>
+<li>checkbox复选框支持多选，仍然需要使用名称来分组</li>
+<li>在单选和多选可以添加checked属性，在一开始打开界面的时候就标记为选中</li>
+</ol>
+<h3 id="_8">标签<a class="headerlink" href="#_8" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p><code class="highlight"><span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;&lt;/</span><span class="nt">label</span><span class="p">&gt;</span></code>标签用于绑定一个表单的元素，以实现当点击label包围的文本时，将焦点转到对应的表单元素上。通过label标签的for属性和input标签的id来实现索引。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;element_id&quot;</span><span class="p">&gt;</span>用户名<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;element_id&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+<h3 id="_9">下拉表单<a class="headerlink" href="#_9" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">Example</p>
+<p><select>
+    <option>选项1</option>
+    <option>选项2</option>
+    <option>选项3</option>
+    <option>选项4</option>
+</select></p>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">select</span><span class="p">&gt;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>选项1<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>选项2<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>选项3<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>选项4<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</code></pre></div>
+<p>option标签中，加上<code>selected="selected"</code>会在页面加载时默认选中</p>
+<h3 id="_10">文本域<a class="headerlink" href="#_10" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<div class="admonition example inline end">
+<p class="admonition-title">Example</p>
+<p><textarea rows="3" cols="20">
+看看我
+</textarea></p>
+</div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">rows</span><span class="o">=</span><span class="s">&quot;3&quot;</span> <span class="na">cols</span><span class="o">=</span><span class="s">&quot;20&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>看看我
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="p">&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+</code></pre></div>
 <div class="footnote">
 <hr />
 <ol>
@@ -1227,13 +1411,13 @@
       
       
         
-        <a href="../../../guidance/" class="md-footer__link md-footer__link--next" aria-label="Next: 使用指引" rel="next">
+        <a href="../2/" class="md-footer__link md-footer__link--next" aria-label="Next: CSS Cheat List" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              使用指引
+              CSS Cheat List
             </div>
           </div>
           <div class="md-footer__button md-icon">
