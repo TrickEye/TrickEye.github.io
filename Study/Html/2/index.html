@@ -544,9 +544,101 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          CSS Cheat List
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         CSS Cheat List
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    选择器
+  </a>
+  
+    <nav class="md-nav" aria-label="选择器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    基础选择器-标签选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    基础选择器-类选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-id" class="md-nav__link">
+    基础选择器-id选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_2" class="md-nav__link">
+    基础选择器-通配符选择器
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    属性
+  </a>
+  
+    <nav class="md-nav" aria-label="属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    字体属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    文本属性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -906,6 +998,82 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    选择器
+  </a>
+  
+    <nav class="md-nav" aria-label="选择器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    基础选择器-标签选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_1" class="md-nav__link">
+    基础选择器-类选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-id" class="md-nav__link">
+    基础选择器-id选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_2" class="md-nav__link">
+    基础选择器-通配符选择器
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    属性
+  </a>
+  
+    <nav class="md-nav" aria-label="属性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    字体属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    文本属性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -933,6 +1101,64 @@
 
 <h1 id="css">CSS总结<a class="headerlink" href="#css" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h1>
 <p>CSS由以下主要部分组成：选择器和声明（一条或多条）</p>
+<p>最简单的，在html文件的head部分，添加如下：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span><span class="w"></span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+</code></pre></div>
+<h2 id="_1">选择器<a class="headerlink" href="#_1" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
+<p>选择器用来选择标签，有针对性地设置样式</p>
+<h3 id="-">基础选择器-标签选择器<a class="headerlink" href="#-" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<div class="highlight"><span class="filename">语法</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">标签名</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="err">属性:</span><span class="w"> </span><span class="err">属性值</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="err">属性:</span><span class="w"> </span><span class="err">属性值</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="err">属性:</span><span class="w"> </span><span class="err">属性值</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<h3 id="-_1">基础选择器-类选择器<a class="headerlink" href="#-_1" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<div class="highlight"><span class="filename">html</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#39;red&#39;</span><span class="p">&gt;</span> <span class="cm">&lt;!--(1)--&gt;</span> 红色类 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+<ol>
+<li>在html中，使用class属性分类</li>
+</ol>
+<div class="highlight"><span class="filename">css</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">.</span><span class="nc">red</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">red</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<p>多类名：当一个html元素希望属于多个类的时候，在class属性中使用空格来分割多个类名。</p>
+<h3 id="-id">基础选择器-id选择器<a class="headerlink" href="#-id" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p>类似类选择器，但是在css中用#来开头，id为每个元素独有。</p>
+<h3 id="-_2">基础选择器-通配符选择器<a class="headerlink" href="#-_2" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p>在css中使用*来选择</p>
+<h2 id="_2">属性<a class="headerlink" href="#_2" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
+<h3 id="_3">字体属性<a class="headerlink" href="#_3" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<dl>
+<dt><code>font-family</code></dt>
+<dd>字体系列，举例：<code class="highlight"><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;微软雅黑&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">Arial</span><span class="p">,</span><span class="w"> </span><span class="n">Helvatica</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span></code>，浏览器顺序匹配第一支持字体。</dd>
+<dt><code>font-size</code></dt>
+<dd>字体大小，举例<code class="highlight"><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span></code>，对body指定可以指定整个页面的字体大小</dd>
+<dt><code>font-weight</code></dt>
+<dd>字重，举例<code class="highlight"><span class="p">.</span><span class="nc">bold</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span></code>，属性值有以下选项：<code>normal, bold, bolder, lighter, number</code>，系统选择字体支持的最近的字重匹配。数字方面，<code>400=normal, 700=bold</code></dd>
+<dt><code>font-style</code></dt>
+<dd>文字样式，<code class="highlight"><span class="nt">p</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">font-style</span><span class="p">:</span><span class="w"> </span><span class="kc">normal</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span></code>，也有<code>italic</code>可选</dd>
+</dl>
+<p>综上，可以使用<code>font</code>来对字体属性整体定义，先后顺序为<code class="highlight"><span class="nt">font</span><span class="o">:</span><span class="w"> </span><span class="nt">font-style</span><span class="w">  </span><span class="nt">font-weight</span><span class="w">  </span><span class="nt">font-size</span><span class="o">/</span><span class="nt">line-height</span><span class="w">  </span><span class="nt">font-family</span><span class="o">;</span><span class="w"></span></code></p>
+<h3 id="_4">文本属性<a class="headerlink" href="#_4" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<dl>
+<dt><code>color</code></dt>
+<dd>颜色接受以下几种表述方式：预定义颜色，<code>#RRGGBB</code>，RGB代码<code>rgb(r, g, b)</code>，其中r,g,b为0-255数字或百分比</dd>
+<dt><code>text-align</code></dt>
+<dd>文本水平对齐方式（<code>left, right, center, justify</code>）</dd>
+<dt><code>text-decoration</code></dt>
+<dd>不修饰<code>none</code>，下划线<code>underline</code>，上划线<code>overline</code>，删除线<code>linethrough</code>，可以通过修改这个来移除超链接丑丑的下划线</dd>
+<dt><code>text-indent</code></dt>
+<dd>首行缩进，这里可以用<code>em</code>（当前元素的一个<code>font-size</code>大小）</dd>
+<dt><code>line-height</code></dt>
+<dd>行高，行间距</dd>
+</dl>
 
               
             </article>
