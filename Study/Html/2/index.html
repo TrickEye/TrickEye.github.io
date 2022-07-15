@@ -734,13 +734,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    隐藏元素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    杂项
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     样式表引入方式
   </a>
   
@@ -755,21 +769,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
+  <a href="#_17" class="md-nav__link">
     层叠性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
+  <a href="#_18" class="md-nav__link">
     继承性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#_19" class="md-nav__link">
     优先级
   </a>
   
@@ -1328,13 +1342,27 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    隐藏元素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    杂项
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_14" class="md-nav__link">
+  <a href="#_16" class="md-nav__link">
     样式表引入方式
   </a>
   
@@ -1349,21 +1377,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_15" class="md-nav__link">
+  <a href="#_17" class="md-nav__link">
     层叠性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_16" class="md-nav__link">
+  <a href="#_18" class="md-nav__link">
     继承性
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_17" class="md-nav__link">
+  <a href="#_19" class="md-nav__link">
     优先级
   </a>
   
@@ -1623,7 +1651,7 @@
 <dt><code class="highlight"><span class="nt">top</span><span class="o">/</span><span class="nt">bottom</span><span class="o">/</span><span class="nt">left</span><span class="o">/</span><span class="nt">right</span><span class="o">:</span><span class="w"> </span><span class="nt">10px</span><span class="o">;</span><span class="w"></span></code></dt>
 <dd>边偏移，定义元素相对于其父元素相应边线的距离。</dd>
 </dl>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">static 静态定位</label><label for="__tabbed_2_2">relative 相对定位</label><label for="__tabbed_2_3">absolute 绝对定位</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">static 静态定位</label><label for="__tabbed_2_2">relative 相对定位</label><label for="__tabbed_2_3">absolute 绝对定位</label><label for="__tabbed_2_4">fixed 固定定位</label><label for="__tabbed_2_5">sticky 粘性定位</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>默认定位方式，不存在边偏移，按照标准流特性摆放。在布局的时候用的比较少</p>
@@ -1637,9 +1665,72 @@
 <p>没有祖先元素，或者祖先元素没有定位，则以浏览器为准定位。否则以最亲一级有定位的祖先元素为参考点。</p>
 <p><strong>脱标</strong>，在标准流下的位置不保留</p>
 </div>
+<div class="tabbed-block">
+<p>固定于浏览器可视区的位置，与父元素没有任何关系，不随滚动条滚动</p>
+<p><strong>脱标</strong>，在标准流下的位置不保留</p>
+</div>
+<div class="tabbed-block">
+<p>以浏览器可视窗口作为参照点移动元素，占有原先的位置，必须要添加top/bottom/left/right其中的一个才有效</p>
 </div>
 </div>
-<h2 id="_14">样式表引入方式<a class="headerlink" href="#_14" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
+</div>
+<hr />
+<p>在生产实践中，常用的一种定位策略是“子绝父相”，也就是子元素采用绝对定位，父元素采用相对定位</p>
+<dl>
+<dt><code class="highlight"><span class="nt">z-index</span><span class="o">:</span><span class="w"> </span><span class="nt">number</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>Z轴顺序，数值越大，盒子越靠上。</dd>
+</dl>
+<h3 id="_14">隐藏元素<a class="headerlink" href="#_14" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<dl>
+<dt>通过以下这些属性的设置都可以从某种意义上隐藏这个元素，但是具体的细节有不同。</dt>
+<dt><code class="highlight"><span class="nt">display</span><span class="o">:</span><span class="w"> </span><span class="nt">none</span><span class="w"></span></code></dt>
+<dd>
+<dl>
+<dt>隐藏元素，同时原位置不予保留，下面的元素会往上走。</dt>
+<dt><code class="highlight"><span class="nt">visibility</span><span class="o">:</span><span class="w"> </span><span class="nt">hidden</span><span class="o">/</span><span class="nt">visible</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>
+<dl>
+<dt>被隐藏的元素原有位置仍被保留。</dt>
+<dt><code>#!overflow: visible/auto/hidden/scroll;</code></dt>
+<dd>visible:完全显示，hidden:隐藏溢出的部分，scroll:显示滚动条（即使不产生溢出也显示滚动条），auto:自动决定是否显示滚动条</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<h3 id="_15">杂项<a class="headerlink" href="#_15" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<dl>
+<dt><code class="highlight"><span class="nt">cursor</span><span class="o">:</span><span class="w"> </span><span class="nt">default</span><span class="o">/</span><span class="nt">pointer</span><span class="o">/</span><span class="nt">move</span><span class="o">/</span><span class="nt">text</span><span class="o">/</span><span class="nt">not-allowed</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>
+<dl>
+<dt>改变鼠标图标</dt>
+<dt><code class="highlight"><span class="nt">outline</span><span class="w"></span></code></dt>
+<dd>
+<dl>
+<dt>改变（input）的文本框形状</dt>
+<dt><code class="highlight"><span class="nt">resize</span><span class="o">:</span><span class="w"> </span><span class="nt">none</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>
+<dl>
+<dt>对textarea标签应用此样式，不允许拖拽改变其形状</dt>
+<dt><code class="highlight"><span class="nt">vertical-align</span><span class="o">:</span><span class="w"> </span><span class="nt">baseline</span><span class="o">/</span><span class="nt">top</span><span class="o">/</span><span class="nt">middle</span><span class="o">/</span><span class="nt">bottom</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>
+<dl>
+<dt>设置一个行内块/行内元素的垂直对齐方式。</dt>
+<dt>溢出文字省略号显示</dt>
+<dd>需要满足以下几个条件：
+1.  强制一行内显示：<code class="highlight"><span class="nt">white-space</span><span class="o">:</span><span class="w"> </span><span class="nt">nowrap</span><span class="o">;</span><span class="w"></span></code>不允许换行
+1.  超出部分隐藏：<code>!#css overflow: hidden;</code>
+1.  用省略号替换超出部分：<code class="highlight"><span class="nt">text-overflow</span><span class="o">:</span><span class="w"> </span><span class="nt">ellipsis</span><span class="o">;</span><span class="w"></span></code>，否则默认clip会切掉</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<h2 id="_16">样式表引入方式<a class="headerlink" href="#_16" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
 <dl>
 <dt>内部样式表</dt>
 <dd>在Html文件中head部分添加<code class="highlight"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code>并在之间写css内容</dd>
@@ -1649,12 +1740,12 @@
 <dd>在html中使用<code class="highlight"><span class="p">&lt;</span><span class="nt">link</span><span class="p">&gt;</span></code>标签来引入一个外部的css文件，对html全文生效。<code class="highlight"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;path_to_css&quot;</span><span class="p">&gt;</span></code></dd>
 </dl>
 <h2 id="css_1">CSS特性<a class="headerlink" href="#css_1" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
-<h3 id="_15">层叠性<a class="headerlink" href="#_15" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<h3 id="_17">层叠性<a class="headerlink" href="#_17" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
 <p><strong>相同的选择器</strong>为标签设置相同的样式，此时一个样式会层叠另一个被冲突的样式，具体采用的样式遵从就近原则。距离此标签最近的一个样式生效。</p>
-<h3 id="_16">继承性<a class="headerlink" href="#_16" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<h3 id="_18">继承性<a class="headerlink" href="#_18" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
 <p>子标签继承父标签某些样式，包括<code>text-</code>, <code>font-</code>, <code>line-</code>, <code>color</code>属性</p>
 <p>一个特别的例子，涉及<code>line-height</code>的继承时，如果采用相对比例（line-height = 1.5表示为1.5个字符高度）</p>
-<h3 id="_17">优先级<a class="headerlink" href="#_17" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<h3 id="_19">优先级<a class="headerlink" href="#_19" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
 <p>不同选择器间有如下的权重：</p>
 <div class="admonition note">
 <p class="admonition-title">选择器权重</p>
