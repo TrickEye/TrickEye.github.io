@@ -794,6 +794,75 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#css3" class="md-nav__link">
+     CSS3新增
+  </a>
+  
+    <nav class="md-nav" aria-label=" CSS3新增">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-_7" class="md-nav__link">
+    新选择器-属性选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_8" class="md-nav__link">
+    新选择器-结构伪类选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_9" class="md-nav__link">
+    新选择器-伪元素选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#box-sizing" class="md-nav__link">
+    box-sizing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    图像模糊
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calc" class="md-nav__link">
+    calc()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    属性过渡
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation" class="md-nav__link">
+    动画animation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1402,6 +1471,75 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#css3" class="md-nav__link">
+     CSS3新增
+  </a>
+  
+    <nav class="md-nav" aria-label=" CSS3新增">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#-_7" class="md-nav__link">
+    新选择器-属性选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_8" class="md-nav__link">
+    新选择器-结构伪类选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_9" class="md-nav__link">
+    新选择器-伪元素选择器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#box-sizing" class="md-nav__link">
+    box-sizing
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    图像模糊
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calc" class="md-nav__link">
+    calc()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    属性过渡
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animation" class="md-nav__link">
+    动画animation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1785,6 +1923,87 @@
 </table>
 </div>
 <p>当同时被不同种选择器选中时按照优先级来计算。复合选择器权重叠加。</p>
+<h2 id="css3"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m5 3-.65 3.34h13.59L17.5 8.5H3.92l-.66 3.33h13.59l-.76 3.81-5.48 1.81-4.75-1.81.33-1.64H2.85l-.79 4 7.85 3 9.05-3 1.2-6.03.24-1.21L21.94 3H5Z"/></svg></span> CSS3新增<a class="headerlink" href="#css3" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
+<h3 id="-_7">新选择器-属性选择器<a class="headerlink" href="#-_7" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<dl>
+<dt><code class="highlight"><span class="nt">E</span><span class="o">[</span><span class="nt">att</span><span class="o">]</span><span class="w"></span></code></dt>
+<dd>选择具有att属性的E元素</dd>
+<dt><code class="highlight"><span class="nt">E</span><span class="o">[</span><span class="nt">att</span><span class="o">=</span><span class="s2">&quot;val&quot;</span><span class="o">]</span><span class="w"></span></code></dt>
+<dd>选择具有att属性，值为val的元素</dd>
+<dt><code class="highlight"><span class="nt">E</span><span class="o">[</span><span class="nt">att</span><span class="o">^=</span><span class="s2">&quot;val&quot;</span><span class="o">/</span><span class="nt">att</span><span class="o">$=</span><span class="s2">&quot;val&quot;</span><span class="o">/</span><span class="nt">att</span><span class="o">*=</span><span class="s2">&quot;val&quot;</span><span class="o">]</span><span class="w"></span></code></dt>
+<dd>选择具有att属性，以val开头/结尾/包含val的E元素，这里类似正则表达式，支持字符串匹配，比如<code>class^=icon</code>可以选择出"icon1, icon2, icon3"这些类</dd>
+</dl>
+<h3 id="-_8">新选择器-结构伪类选择器<a class="headerlink" href="#-_8" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p>通过文档结构来选择元素，语法类似伪类选择器，常用于根据父级选择器选择其子元素</p>
+<dl>
+<dt><code class="highlight"><span class="nt">E</span><span class="p">:</span><span class="nd">first-child</span><span class="o">/</span><span class="nt">last-child</span><span class="o">/</span><span class="nt">nth-child</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span><span class="w"></span></code></dt>
+<dd>选择父元素中的第一个/最后一个/第n个子元素E</dd>
+<dt><code class="highlight"><span class="nt">E</span><span class="p">:</span><span class="nd">first-of-type</span><span class="o">/</span><span class="nt">last-of-type</span><span class="o">/</span><span class="nt">nth-of-type</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span><span class="w"></span></code></dt>
+<dd>选择指定类型E的第一个/最后一个/第n个。上面n可以是数字，关键字，公式。n为数字的时候，从1开始选择。n为关键字可以使用even和odd，n为公式的时候从n=0开始计算，常用的公式包括：<code>2n -&gt; 偶数; 2n+1 -&gt; 奇数; 5n -&gt; 第5n个; n+5 -&gt; 从第五个起; -n+5 -&gt; 前五个</code></dd>
+</dl>
+<h3 id="-_9">新选择器-伪元素选择器<a class="headerlink" href="#-_9" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p>利用css创建新标签，而不需要html标签，从而简化html结构。</p>
+<dl>
+<dt><code>element::before {} / element::after {}</code></dt>
+<dd>在元素内部的前面/后面插入内容</dd>
+</dl>
+<p>必须要有content属性；新创建的元素在文档树中找不到；创建的元素被视为行内元素，可以使用display属性来转换</p>
+<h3 id="box-sizing">box-sizing<a class="headerlink" href="#box-sizing" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<dl>
+<dt><code class="highlight"><span class="nt">box-sizing</span><span class="o">:</span><span class="w"> </span><span class="nt">content-box</span><span class="o">/</span><span class="nt">border-box</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>指定盒子模型，以content还是border来作为计算高度宽度的边界。</dd>
+</dl>
+<h3 id="_20">图像模糊<a class="headerlink" href="#_20" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<dl>
+<dt><code class="highlight"><span class="nt">filter</span><span class="o">:</span><span class="w"> </span><span class="nt">function</span><span class="o">();</span><span class="w"></span></code></dt>
+<dd>使用一种由function指出的滤镜。这里主要介绍图像模糊<code>blur()</code>函数，括号内需要一个长度单位，示例：<code>filter: blur(5px);</code></dd>
+</dl>
+<h3 id="calc"><code>calc()</code><a class="headerlink" href="#calc" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<dl>
+<dt><code class="highlight"><span class="nt">width</span><span class="o">:</span><span class="w"> </span><span class="nt">calc</span><span class="o">(</span><span class="nt">100</span><span class="o">%</span><span class="w"> </span><span class="nt">-</span><span class="w"> </span><span class="nt">80px</span><span class="o">);</span><span class="w"></span></code></dt>
+<dd>这一行使用了calc函数，接收一个表示长度的表达式，计算出长度并以此值赋给width属性。</dd>
+</dl>
+<h3 id="_21">属性过渡<a class="headerlink" href="#_21" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<dl>
+<dt><code class="highlight"><span class="nt">transition</span><span class="o">:</span><span class="w"> </span><span class="nt">height</span><span class="w"> </span><span class="nt">1s</span><span class="w"> </span><span class="nt">ease-in</span><span class="w"> </span><span class="nt">0</span><span class="p">.</span><span class="nc">5s</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>
+<p>此属性对其他属性的过渡指出行为，包括：要过渡的属性，花费的时间，运动曲线，从何时开始。</p>
+<p>要过渡的属性直接用名字指出，或者用all表示全部，如果要对多个属性添加过渡，在一行transition属性中，用逗号分隔多个属性的过渡方案</p>
+<p>这里运动曲线是指动画的曲线，有<code>linear, ease（默认值）, ease-in, ease-out, ease-in-out</code>取值</p>
+</dd>
+</dl>
+<h3 id="animation">动画animation<a class="headerlink" href="#animation" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p>CSS对动画过程的描述采用关键帧方法，动画需要预先定义，使用时调用，类似编程语言中的函数。</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">当动画被描述时</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span>
+<span class="normal"><a href="#__codelineno-6-5">5</a></span>
+<span class="normal"><a href="#__codelineno-6-6">6</a></span>
+<span class="normal"><a href="#__codelineno-6-7">7</a></span>
+<span class="normal"><a href="#__codelineno-6-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="hll"><span class="p">@</span><span class="k">keyframes</span><span class="w"> </span><span class="c">/* (1) */</span><span class="w"> </span><span class="nt">name_of_animation</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</span><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">    </span><span class="nt">0</span><span class="o">%</span><span class="p">{</span><span class="w"> </span><span class="c">/* (2) */</span><span class="w"></span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">        </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">    </span><span class="nt">100</span><span class="o">%</span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">        </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<ol>
+<li>使用<code>@keyframes</code>指出动画，后接动画名称</li>
+<li>使用百分比指出在此进度的时候达到的效果</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">当动画被调用时</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nt">div</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="w">    </span><span class="k">animation-name</span><span class="p">:</span><span class="w"> </span><span class="n">name_of_animation</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">    </span><span class="k">animation-duration</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">s</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>上面这一段样式，会在页面被加载之初就播放此动画。</p>
+<p>动画常用的一个属性为：<code>transform: translate(10px, 20px);</code>这会使元素产生一个向右10px，向下20px的平动</p>
 
               
             </article>

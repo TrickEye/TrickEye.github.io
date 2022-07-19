@@ -1442,6 +1442,99 @@
 <p>html5在原有的div基础上提供了更具有语义化的标签，而不再需要通过为div设置class来区分之间的语义。对于搜索引擎来说也可以精准的理解标签的语义。<code class="highlight"><span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>,<span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>,<span class="p">&lt;</span><span class="nt">artivle</span><span class="p">&gt;</span>,<span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>,<span class="p">&lt;</span><span class="nt">aside</span><span class="p">&gt;</span>,<span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span></code></p>
 <h3 id="_12">新的媒体标签<a class="headerlink" href="#_12" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
 <p><code class="highlight"><span class="p">&lt;</span><span class="nt">audio</span><span class="p">&gt;</span>,<span class="p">&lt;</span><span class="nt">video</span><span class="p">&gt;</span></code>标签可以在页面中插入音频和视频。<code>video</code>标签主要支持MP4格式。语法如<code class="highlight"><span class="p">&lt;</span><span class="nt">video</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;path_to_video&quot;</span> <span class="na">controls</span><span class="o">=</span><span class="s">&quot;controls&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">video</span><span class="p">&gt;</span></code></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><code class="highlight"><span class="p">&lt;</span><span class="nt">video</span><span class="p">&gt;&lt;/</span><span class="nt">video</span><span class="p">&gt;</span></code></label><label for="__tabbed_1_2"><code class="highlight"><span class="p">&lt;</span><span class="nt">audio</span><span class="p">&gt;&lt;/</span><span class="nt">audio</span><span class="p">&gt;</span></code></label><label for="__tabbed_1_3"><code class="highlight"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span></code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul>
+<li><code>src="path_to_video"</code>指出要播放的视频位置。</li>
+<li><code>autoplay</code>自动播放。但是在chronuim内核需要配合mute才能自动播放。</li>
+<li><code>muted</code>静音</li>
+<li><code>controls</code>向用户显示播放控件</li>
+<li><code>loop</code>是否循环播放</li>
+<li><code>preload="auto/none"</code>预先加载视频或不加载视频</li>
+<li><code>poster="img_url"</code>加载等待的时候的画面图片</li>
+</ul>
+<p>一种兼容性比较好的写法是：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">video</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;320&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;240&quot;</span> <span class="na">controls</span><span class="p">&gt;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;movie.mp4&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;video/mp4&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;movie.ogg&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;video/ogg&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    你的浏览器不支持 video 标签
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="p">&lt;/</span><span class="nt">video</span><span class="p">&gt;</span>
+</code></pre></div></p>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><code>autoplay</code>自动播放</li>
+<li><code>controls</code>向用户显示播放控件</li>
+<li><code>loop</code>循环</li>
+<li><code>src</code>要播放的音频</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">audio</span> <span class="na">controls</span><span class="p">&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;horce.ogg&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;audio/ogg&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="p">&lt;</span><span class="nt">source</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;horce.mp3&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;audio/mpeg&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="p">&lt;/</span><span class="nt">audio</span><span class="p">&gt;</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>html5对input类型进行了扩充，包括：</p>
+<table>
+<thead>
+<tr>
+<th>属性值</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>email</td>
+<td>限制输入为邮箱</td>
+</tr>
+<tr>
+<td>url</td>
+<td>限制输入为url</td>
+</tr>
+<tr>
+<td>date</td>
+<td>限制输入日期</td>
+</tr>
+<tr>
+<td>time</td>
+<td>限制输入时间</td>
+</tr>
+<tr>
+<td>month</td>
+<td>月份</td>
+</tr>
+<tr>
+<td>week</td>
+<td>周</td>
+</tr>
+<tr>
+<td>number</td>
+<td>数字</td>
+</tr>
+<tr>
+<td>tel</td>
+<td>手机号码</td>
+</tr>
+<tr>
+<td>search</td>
+<td>搜索框</td>
+</tr>
+<tr>
+<td>color</td>
+<td>选择颜色</td>
+</tr>
+</tbody>
+</table>
+<p>此外，对input表单新增了<code>required</code>属性，当具有<code>required="required"</code>属性时，提交时不能为空。</p>
+<p>新增<code>placeholder</code>属性，当<code>placeholder="something"</code>时，输入框呈现灰色的something，输入任何内容后消失。</p>
+<p>新增<code>autofocus</code>属性，当具有此属性时，页面被加载时自动将光标置于此输入框。</p>
+<p>新增<code>autocomplete</code>属性，默认基于输入记录补全，但是通常使用此属性=off来关闭，避免隐私泄露。</p>
+<p>新增<code>multiple</code>属性，可以使输入的文件可以多选。</p>
+</div>
+</div>
+</div>
 <div class="footnote">
 <hr />
 <ol>
