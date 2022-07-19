@@ -40,6 +40,8 @@
       
     
     
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1819,54 +1821,30 @@
 <dd>Z轴顺序，数值越大，盒子越靠上。</dd>
 </dl>
 <h3 id="_14">隐藏元素<a class="headerlink" href="#_14" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p>通过以下这些属性的设置都可以从某种意义上隐藏这个元素，但是具体的细节有不同。</p>
 <dl>
-<dt>通过以下这些属性的设置都可以从某种意义上隐藏这个元素，但是具体的细节有不同。</dt>
 <dt><code class="highlight"><span class="nt">display</span><span class="o">:</span><span class="w"> </span><span class="nt">none</span><span class="w"></span></code></dt>
-<dd>
-<dl>
-<dt>隐藏元素，同时原位置不予保留，下面的元素会往上走。</dt>
+<dd>隐藏元素，同时原位置不予保留，下面的元素会往上走。</dd>
 <dt><code class="highlight"><span class="nt">visibility</span><span class="o">:</span><span class="w"> </span><span class="nt">hidden</span><span class="o">/</span><span class="nt">visible</span><span class="o">;</span><span class="w"></span></code></dt>
-<dd>
-<dl>
-<dt>被隐藏的元素原有位置仍被保留。</dt>
-<dt><code>#!overflow: visible/auto/hidden/scroll;</code></dt>
+<dd>被隐藏的元素原有位置仍被保留。</dd>
+<dt><code class="highlight"><span class="nt">overflow</span><span class="o">:</span><span class="w"> </span><span class="nt">visible</span><span class="o">/</span><span class="nt">auto</span><span class="o">/</span><span class="nt">hidden</span><span class="o">/</span><span class="nt">scroll</span><span class="o">;</span><span class="w"></span></code></dt>
 <dd>visible:完全显示，hidden:隐藏溢出的部分，scroll:显示滚动条（即使不产生溢出也显示滚动条），auto:自动决定是否显示滚动条</dd>
-</dl>
-</dd>
-</dl>
-</dd>
 </dl>
 <h3 id="_15">杂项<a class="headerlink" href="#_15" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
 <dl>
 <dt><code class="highlight"><span class="nt">cursor</span><span class="o">:</span><span class="w"> </span><span class="nt">default</span><span class="o">/</span><span class="nt">pointer</span><span class="o">/</span><span class="nt">move</span><span class="o">/</span><span class="nt">text</span><span class="o">/</span><span class="nt">not-allowed</span><span class="o">;</span><span class="w"></span></code></dt>
-<dd>
-<dl>
-<dt>改变鼠标图标</dt>
+<dd>改变鼠标图标</dd>
 <dt><code class="highlight"><span class="nt">outline</span><span class="w"></span></code></dt>
-<dd>
-<dl>
-<dt>改变（input）的文本框形状</dt>
+<dd>改变（input）的文本框形状</dd>
 <dt><code class="highlight"><span class="nt">resize</span><span class="o">:</span><span class="w"> </span><span class="nt">none</span><span class="o">;</span><span class="w"></span></code></dt>
-<dd>
-<dl>
-<dt>对textarea标签应用此样式，不允许拖拽改变其形状</dt>
+<dd>对textarea标签应用此样式，不允许拖拽改变其形状</dd>
 <dt><code class="highlight"><span class="nt">vertical-align</span><span class="o">:</span><span class="w"> </span><span class="nt">baseline</span><span class="o">/</span><span class="nt">top</span><span class="o">/</span><span class="nt">middle</span><span class="o">/</span><span class="nt">bottom</span><span class="o">;</span><span class="w"></span></code></dt>
-<dd>
-<dl>
-<dt>设置一个行内块/行内元素的垂直对齐方式。</dt>
+<dd>设置一个行内块/行内元素的垂直对齐方式。</dd>
 <dt>溢出文字省略号显示</dt>
 <dd>需要满足以下几个条件：
 1.  强制一行内显示：<code class="highlight"><span class="nt">white-space</span><span class="o">:</span><span class="w"> </span><span class="nt">nowrap</span><span class="o">;</span><span class="w"></span></code>不允许换行
 1.  超出部分隐藏：<code>!#css overflow: hidden;</code>
 1.  用省略号替换超出部分：<code class="highlight"><span class="nt">text-overflow</span><span class="o">:</span><span class="w"> </span><span class="nt">ellipsis</span><span class="o">;</span><span class="w"></span></code>，否则默认clip会切掉</dd>
-</dl>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd>
-</dl>
-</dd>
 </dl>
 <h2 id="_16">样式表引入方式<a class="headerlink" href="#_16" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
 <dl>

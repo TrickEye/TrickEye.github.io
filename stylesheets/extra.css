@@ -1,0 +1,4 @@
+.md-typeset__table > table {
+    display: table !important;
+    width: max(min(700px, 40vw), min(700px, 80vw)) !important;
+}
