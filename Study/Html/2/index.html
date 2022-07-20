@@ -1982,6 +1982,21 @@
 </code></pre></div></td></tr></table></div>
 <p>上面这一段样式，会在页面被加载之初就播放此动画。</p>
 <p>动画常用的一个属性为：<code>transform: translate(10px, 20px);</code>这会使元素产生一个向右10px，向下20px的平动</p>
+<p>除此以外，在调用一个动画时，还可以用以下的属性来描述动画：</p>
+<dl>
+<dt><code class="highlight"><span class="nt">animation-timing-function</span><span class="o">:</span><span class="w"> </span><span class="nt">ease</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">linear</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">ease-in</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">ease-out</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">ease-in-out</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">steps</span><span class="o">(</span><span class="nt">10</span><span class="o">);</span><span class="w"></span></code></dt>
+<dd>动画曲线，默认为<code>ease</code>，<code>steps()</code>函数接受一个数字作为参数，将整个动画均分为这么多个步。</dd>
+<dt><code class="highlight"><span class="nt">animation-delay</span><span class="o">:</span><span class="w"> </span><span class="nt">1s</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>动画延迟，从何时开始</dd>
+<dt><code class="highlight"><span class="nt">animation-iteration-count</span><span class="o">:</span><span class="w"> </span><span class="nt">4</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">infinite</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>动画被播放的次数，默认为1</dd>
+<dt><code class="highlight"><span class="nt">animation-direction</span><span class="o">:</span><span class="w"> </span><span class="nt">normal</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">alternate</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>动画被播放的方向</dd>
+<dt><code class="highlight"><span class="nt">animation-play-state</span><span class="o">:</span><span class="w"> </span><span class="nt">running</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">pause</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>规定动画是否正在运行或暂停</dd>
+<dt><code class="highlight"><span class="nt">animation-fill-mode</span><span class="o">:</span><span class="w"> </span><span class="nt">forwards</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">backwards</span><span class="o">;</span><span class="w"></span></code></dt>
+<dd>动画结束后的状态，forwards保持或者backwards回到初始状态。</dd>
+</dl>
 
               
             </article>
