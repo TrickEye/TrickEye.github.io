@@ -668,6 +668,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tensor" class="md-nav__link">
+    张量 Tensor
+  </a>
+  
+    <nav class="md-nav" aria-label="张量 Tensor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tensor_1" class="md-nav__link">
+    Tensor 的创建
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor_2" class="md-nav__link">
+    Tensor 方法和属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor_3" class="md-nav__link">
+    Tensor 数据类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor_4" class="md-nav__link">
+    Tensor 其他操作
+  </a>
+  
+    <nav class="md-nav" aria-label="Tensor 其他操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    运算
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1043,6 +1097,60 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#tensor" class="md-nav__link">
+    张量 Tensor
+  </a>
+  
+    <nav class="md-nav" aria-label="张量 Tensor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tensor_1" class="md-nav__link">
+    Tensor 的创建
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor_2" class="md-nav__link">
+    Tensor 方法和属性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor_3" class="md-nav__link">
+    Tensor 数据类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tensor_4" class="md-nav__link">
+    Tensor 其他操作
+  </a>
+  
+    <nav class="md-nav" aria-label="Tensor 其他操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    运算
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1077,10 +1185,126 @@
 </code></pre></div>
 <p>下载过程太慢的请参考<a href="../../../guidance/install/#pip">如何为pip换源</a></p>
 <p>安装过程中有必要为Windows开启长路径支持，请参考<a href="https://pip.pypa.io/warnings/enable-long-paths">https://pip.pypa.io/warnings/enable-long-paths</a></p>
-<p><a href="../_notebooks/note.ipynb">notebook</a></p>
 <div class="admonition note">
 <p class="admonition-title">安装情况校验</p>
+<p><iframe width="100%" height="400" scrolling="no" src="https://nbviewer.org/urls/trickeye.github.io/Study/Pytorch/_notebooks/note.ipynb"></iframe></p>
 </div>
+<h2 id="tensor">张量 <abbr title="张量">Tensor</abbr><a class="headerlink" href="#tensor" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
+<p>张量是一个很大的概念，按阶数分，张量可以分为：{0阶张量：标量和常熟；1阶张量：向量；2阶张量：矩阵；...N阶张量}</p>
+<p>在python输出的结果里面，有几层方括号/方括号的最大深度，<abbr title="张量">Tensor</abbr> 就有多少阶</p>
+<h3 id="tensor_1"><abbr title="张量">Tensor</abbr> 的创建<a class="headerlink" href="#tensor_1" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">python列表，序列</label><label for="__tabbed_1_2">numpy数组</label><label for="__tabbed_1_3">torch API</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">tensor</span><span class="p">([[</span> <span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">],</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="p">[</span> <span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">]])</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]))</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">tensor</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<ul>
+<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span></code>创建3行，4列的空tensor，使用无用数据填充，所以你不应当相信它会被初始化为0</li>
+<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span></code>创建3行4列的全1张量，请注意列表括号</li>
+<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span></code>创建3行4列的全0张量</li>
+<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span></code>创建3行4列全随机张量，值的取值范围为<code>[0,1)</code></li>
+<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">low</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">high</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span></code>创建3行4列全随机整数张量，值的取值范围为<code>[low, high)</code></li>
+<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span></code>创建3行4列随机张量，值的分布遵循标准正态分布</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">torch.tensor与torch.<abbr title="张量">Tensor</abbr></p>
+<p>两者的一个区别在于调用torch.tensor(x)，（x为一个数字）的时候。<code>Tensor()</code>认为这个数字描述了他的形状，使用随机的数字来填充这个张量，只有在传入一个可迭代对象的时候，<code>Tensor()</code>会认为这是数据。
+<div class="highlight"><span class="filename">torch.tensor(2)</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">tensor</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">torch.Tensor(2)</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">tensor</span><span class="p">([</span><span class="mf">1.0415e-37</span><span class="p">,</span> <span class="mf">4.5907e-41</span><span class="p">])</span>
+</code></pre></div></p>
+</div>
+<h3 id="tensor_2"><abbr title="张量">Tensor</abbr> 方法和属性<a class="headerlink" href="#tensor_2" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<dl>
+<dt><code>item()</code></dt>
+<dd>对于任意阶，只有一个元素的 <abbr title="张量">Tensor</abbr> 返回那个唯一的元素。如果元素不唯一的，报错。</dd>
+<dt><code>numpy()</code></dt>
+<dd>转换为numpy数组</dd>
+<dt><code>size()</code></dt>
+<dd>获取这个 <abbr title="张量">Tensor</abbr> 的形状。当含参的时候，返回对应位置的形状数字，也可以像python列表那样使用负数从后往前取值</dd>
+<dt><code>view()</code></dt>
+<dd>接受几个参数（或者把这些参数写进一个元组/列表），转换 <abbr title="张量">Tensor</abbr> 到对应的形状，<strong>浅拷贝</strong>，仅仅发生形状改变。如果一个参数为-1，则此参数对应的尺寸采用自适应</dd>
+<dt><code>dim()</code></dt>
+<dd>获取阶数</dd>
+<dt><code>max() / min() / std()</code></dt>
+<dd>获取最大值，最小值，标准差，以一个仅有唯一元素的 tensor 来反映。std()只支持内容为浮点的对象，通过t1.float()来转换</dd>
+<dt><code>t()</code></dt>
+<dd>转置。只能转置一个小于等于2阶的 <abbr title="张量">Tensor</abbr>，大于此阶数的需要用 <code>transpose()</code>指出要转置的维度，或者<code>permute()</code>来指定维度的交换顺序。例如，<code>transpose(0,1)</code>与<code>permute(1,0,2)</code>是等价的</dd>
+</dl>
+<p><abbr title="张量">Tensor</abbr> 中数据的访问和赋值使用 <code>t[1,2,3]</code> 来指出各个维度的索引。也可以使用<code>t[:,1]</code>来进行切片</p>
+<h3 id="tensor_3"><abbr title="张量">Tensor</abbr> 数据类型<a class="headerlink" href="#tensor_3" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<table>
+<thead>
+<tr>
+<th align="left">数据类型</th>
+<th align="left"><code>tensor.dtype</code></th>
+<th align="left"><code>tensor type</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">32b 浮点</td>
+<td align="left"><code>torch.float32 | torch.float</code></td>
+<td align="left"><code>torch.*.FloatTensor</code></td>
+</tr>
+<tr>
+<td align="left">64b 浮点</td>
+<td align="left"><code>torch.float64 | torch.double</code></td>
+<td align="left"><code>torch.*.DoubleTensor</code></td>
+</tr>
+<tr>
+<td align="left">16b 浮点</td>
+<td align="left"><code>torch.float16 | torch.half</code></td>
+<td align="left"><code>torch.*.HalfTensor</code></td>
+</tr>
+<tr>
+<td align="left">8b uint</td>
+<td align="left"><code>torch.uint8</code></td>
+<td align="left"><code>torch.*.ByteTensor</code></td>
+</tr>
+<tr>
+<td align="left">8b int</td>
+<td align="left"><code>torch.int8</code></td>
+<td align="left"><code>torch.*.CharTensor</code></td>
+</tr>
+<tr>
+<td align="left">16b int</td>
+<td align="left"><code>torch.int16 | torch.short</code></td>
+<td align="left"><code>torch.*.ShortTensor</code></td>
+</tr>
+<tr>
+<td align="left">32b int</td>
+<td align="left"><code>torch.int32 | torch.int</code></td>
+<td align="left"><code>torch.*.IntTensor</code></td>
+</tr>
+<tr>
+<td align="left">64b int</td>
+<td align="left"><code>torch.int64 | torch.long</code></td>
+<td align="left"><code>torch.*.LongTensor</code></td>
+</tr>
+</tbody>
+</table>
+<p>通过<code>t.dtype</code>获取 <abbr title="张量">Tensor</abbr> 的数据类型。在使用torch API创建 <abbr title="张量">Tensor</abbr> 的时候也可以指定数据类型，或者使用最右边这一列的类型来实例化</p>
+<p>要产生类型转换，可以使用<code>t.int()</code></p>
+<h3 id="tensor_4"><abbr title="张量">Tensor</abbr> 其他操作<a class="headerlink" href="#tensor_4" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<h4 id="_2">运算<a class="headerlink" href="#_2" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h4>
+<p>相同形状的 <abbr title="张量">Tensor</abbr> 可以被使用<code>+</code>符号相加，也可以使用torch函数 <code>t1.add(t2)</code>，这个函数不会造成t1的修改，相应的，<code>t1.add_(t2)</code>会<strong>就地修改</strong>t1</p>
 
               
             </article>

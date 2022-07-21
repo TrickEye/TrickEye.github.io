@@ -3,8 +3,17 @@
     width: max(min(700px, 40vw), min(700px, 80vw)) !important;
 }
 
+table th, table td {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
 .with-border {
     border: 10px solid white;
     border-radius: 4px;
     box-shadow: 0 0 10px 2px;
+}
+
+iframe {
+    border: none;
 }
