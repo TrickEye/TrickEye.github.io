@@ -2,3 +2,9 @@
     display: table !important;
     width: max(min(700px, 40vw), min(700px, 80vw)) !important;
 }
+
+.with-border {
+    border: 10px solid white;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 2px;
+}
