@@ -3,7 +3,7 @@
     width: max(min(700px, 40vw), min(700px, 80vw)) !important;
 }
 
-table th, table td {
+.md-typeset__table th, .md-typeset__table td {
     padding-top: 0.5em !important;
     padding-bottom: 0.5em !important;
 }
