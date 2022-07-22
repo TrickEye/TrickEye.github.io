@@ -1,0 +1,1648 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="TrickEye">
+      
+      
+        <link rel="canonical" href="https://TrickEye.github.io/Study/Html/4-js/">
+      
+      <link rel="icon" href="../../../_assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>JavaScript Cheat List - TrickEye's Blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#javascript" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="TrickEye&#39;s Blog" class="md-header__button md-logo" aria-label="TrickEye's Blog" data-md-component="logo">
+      
+  <img src="../../../_assets/favicon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TrickEye's Blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              JavaScript Cheat List
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="cyan" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/trickeye/trickeye.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TrickEye.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../.." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../MissingSemester/main/" class="md-tabs__link md-tabs__link--active">
+        Study
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../guidance/" class="md-tabs__link">
+        Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../about/" class="md-tabs__link">
+        About Me
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="TrickEye&#39;s Blog" class="md-nav__button md-logo" aria-label="TrickEye's Blog" data-md-component="logo">
+      
+  <img src="../../../_assets/favicon.svg" alt="logo">
+
+    </a>
+    TrickEye's Blog
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/trickeye/trickeye.github.io/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TrickEye.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Study
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Study" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Study
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_1" type="checkbox" id="__nav_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_1">
+          The Missing Semester Of Your CS Education
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="The Missing Semester Of Your CS Education" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          The Missing Semester Of Your CS Education
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MissingSemester/main/" class="md-nav__link">
+        介绍
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MissingSemester/1/" class="md-nav__link">
+        初识Shell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MissingSemester/2/" class="md-nav__link">
+        Shell工具，编写脚本
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MissingSemester/4/" class="md-nav__link">
+        数据处理
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MissingSemester/5/" class="md-nav__link">
+        命令行开发环境
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MissingSemester/6/" class="md-nav__link">
+        版本控制与Git
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MissingSemester/7/" class="md-nav__link">
+        调试
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Web, Html and JavaScript
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Web, Html and JavaScript" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Web, Html and JavaScript
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1/" class="md-nav__link">
+        Html Cheat List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2/" class="md-nav__link">
+        CSS Cheat List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3/" class="md-nav__link">
+        Emmet Cheat List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mobile-dev/" class="md-nav__link">
+        响应式开发总结
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          JavaScript Cheat List
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        JavaScript Cheat List
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#js" class="md-nav__link">
+    js 使用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#js_1" class="md-nav__link">
+    js 基本语法
+  </a>
+  
+    <nav class="md-nav" aria-label="js 基本语法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    I/O
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    变量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#js_2" class="md-nav__link">
+    js 对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#js_3" class="md-nav__link">
+    js 事件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#js_4" class="md-nav__link">
+    js 控制流
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#js-throw-try-catch" class="md-nav__link">
+    js 错误，throw, try &amp; catch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#js_5" class="md-nav__link">
+    js 严格模式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#js_6" class="md-nav__link">
+    js 表单
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Pytorch
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Pytorch" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Pytorch
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pytorch/1/" class="md-nav__link">
+        神经网络
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pytorch/2/" class="md-nav__link">
+        Pytorch安装，入门
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/" class="md-nav__link">
+        使用指引
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          安装和配置
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="安装和配置" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          安装和配置
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/install/" class="md-nav__link">
+        Material for Mkdocs 安装和配置
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3">
+          书写和使用
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="书写和使用" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          书写和使用
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/1-meta/" class="md-nav__link">
+        meta宏
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/2-admonition/" class="md-nav__link">
+        Admonition文本框
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/3-annotation/" class="md-nav__link">
+        Annotation弹出式注释
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/4-buttons/" class="md-nav__link">
+        Button美观化按键链接
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/5-codeblocks/" class="md-nav__link">
+        Code blocks 代码块
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/6-contenttabs/" class="md-nav__link">
+        Content Tabs 内容标签页
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/7-footnotes/" class="md-nav__link">
+        Footnote 脚注
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/8-images/" class="md-nav__link">
+        Images 图片
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/9-lists/" class="md-nav__link">
+        List 列表
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guidance/10-inlinemath/" class="md-nav__link">
+        Math 数学公式显示
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          About Me
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="About Me" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          About Me
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        About Me
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#js" class="md-nav__link">
+    js 使用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#js_1" class="md-nav__link">
+    js 基本语法
+  </a>
+  
+    <nav class="md-nav" aria-label="js 基本语法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    I/O
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    变量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#js_2" class="md-nav__link">
+    js 对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#js_3" class="md-nav__link">
+    js 事件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#js_4" class="md-nav__link">
+    js 控制流
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#js-throw-try-catch" class="md-nav__link">
+    js 错误，throw, try &amp; catch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#js_5" class="md-nav__link">
+    js 严格模式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#js_6" class="md-nav__link">
+    js 表单
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+  
+
+  <nav class="md-tags" >
+    
+      
+        <a href="../../../tags/#javascript" class="md-tag">
+          JavaScript
+        </a>
+      
+    
+  </nav>
+
+
+
+<h1 id="javascript">JavaScript 总结<a class="headerlink" href="#javascript" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h1>
+<blockquote>
+<p>在 JavaScript 中，分号是<strong>可选</strong>的，解释器读完一个完整的语句后自动闭合</p>
+</blockquote>
+<h2 id="js"><abbr title="`JavaScript`">js</abbr> 使用<a class="headerlink" href="#js" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
+<p>浏览器会自动解释执行由<code class="highlight"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code>标签包含的 <abbr title="`JavaScript`">js</abbr> 代码</p>
+<p>如果不是放在函数里面，那么 <abbr title="`JavaScript`">js</abbr> 代码将会在页面加载的时候被执行，因此通常我们将 <abbr title="`JavaScript`">js</abbr> 代码放在函数中，在事件发生时调用此函数。</p>
+<p>有了这个思想，也就意味着 <abbr title="`JavaScript`">js</abbr> 代码不必出现在事件发生的现场，脚本可以位于各种地方，甚至不需要位于调用者之前。</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><abbr title="`JavaScript`">js</abbr> in <code>&lt;head&gt;</code></label><label for="__tabbed_1_2"><abbr title="`JavaScript`">js</abbr> in <code>&lt;body&gt;</code></label><label for="__tabbed_1_3">external <abbr title="`JavaScript`">js</abbr></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="hll"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+</span><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="hll"><span class="kd">function</span><span class="w"> </span><span class="nx">myFunction</span><span class="p">()</span><span class="w"></span>
+</span><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="hll"><span class="p">{</span><span class="w"></span>
+</span><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="hll"><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;demo&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s2">&quot;我的第一个 JavaScript 函数&quot;</span><span class="p">;</span><span class="w"></span>
+</span><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="hll"><span class="p">}</span><span class="w"></span>
+</span><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="hll"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;demo&quot;</span><span class="p">&gt;</span>一个段落<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;myFunction()&quot;</span><span class="p">&gt;</span>尝试一下<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;demo&quot;</span><span class="p">&gt;</span>一个段落<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick</span><span class="o">=</span><span class="s">&quot;myFunction()&quot;</span><span class="p">&gt;</span>尝试一下<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="hll"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="w"></span>
+</span><a id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="hll"><span class="kd">function</span><span class="w"> </span><span class="nx">myFunction</span><span class="p">()</span><span class="w"></span>
+</span><a id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="hll"><span class="p">{</span><span class="w"></span>
+</span><a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="hll"><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;demo&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s2">&quot;我的第一个 JavaScript 函数&quot;</span><span class="p">;</span><span class="w"></span>
+</span><a id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="hll"><span class="p">}</span><span class="w"></span>
+</span><a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="hll"><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span><a id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<p><div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">index.html</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span>
+<span class="normal"><a href="#__codelineno-2-4">4</a></span>
+<span class="normal"><a href="#__codelineno-2-5">5</a></span>
+<span class="normal"><a href="#__codelineno-2-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="hll"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;myScript.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span><a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">myScript.js</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">myFunction</span><span class="p">()</span><span class="w"></span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;demo&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="o">=</span><span class="s2">&quot;我的第一个 JavaScript 函数&quot;</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div></p>
+</div>
+</div>
+</div>
+<h2 id="js_1"><abbr title="`JavaScript`">js</abbr> 基本语法<a class="headerlink" href="#js_1" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
+<h3 id="io"><code>I/O</code><a class="headerlink" href="#io" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p><abbr title="`JavaScript`">js</abbr> 不提供打印或输出的方法，但可以通过调用这些方法：<code>windows.alert()</code>弹出警告，<code>document.write()</code>将内容写到html，<code>innerHTML</code>写入到html元素，<code>console.log()</code>写到浏览器控制台</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>其他的几种都还算简单，这边示范一下<code>innerHTML</code>的用法：我们假设这是一个段落，拥有<code>demo</code>的ID。</p>
+<p><p id="demo">哈哈，我就是这个段落</p></p>
+<p>再假设有一个按钮，他执行这样的一串代码（使用函数封装）：</p>
+<p><code class="highlight"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;demo&quot;</span><span class="p">).</span><span class="nx">innerHTML</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;段落修改后的值&quot;</span><span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></p>
+<p><script>
+    function change() {
+        document.getElementById("demo").innerHTML = "段落修改后的值"
+    }
+</script></p>
+<p><a class="md-button" onclick="change()">哈哈，我就是这个按钮</a></p>
+<p>那么按下这个按钮，观察上面的那一段，是不是就是改变了内容？</p>
+<p>玩够了就点刷新！</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>注意这里<code>document.write()</code>如果在页面加载时被执行，则会把对应的内容写到html的最后，如果在页面加载完后被执行，则会替换原有的所有html内容。</p>
+</div>
+<p>正如 <abbr title="`JavaScript`">js</abbr> 输出手段的特殊，<abbr title="`JavaScript`">js</abbr> 的输入手段也很特殊，因为浏览器从一诞生开始就是脱离了控制台的，与用户打交道的都是html元素，因此输入也是和html元素打交道。</p>
+<p>例如上面提到的<code>innerHTML</code>方法，也可以不进行赋值，只进行查询。</p>
+<h3 id="_1">变量<a class="headerlink" href="#_1" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<div class="admonition note">
+<p class="admonition-title"><abbr title="`JavaScript`">js</abbr> 字面量</p>
+<table>
+<thead>
+<tr>
+<th align="right">字面量种类</th>
+<th align="left">描述</th>
+<th align="left">示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><strong>数字</strong></td>
+<td align="left">整数，小数或科学计数</td>
+<td align="left"><code class="highlight"><span class="mf">114514</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="mf">3.14</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="mf">1e9</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td align="right"><strong>字符串</strong></td>
+<td align="left">用单、双引号引起</td>
+<td align="left"><code class="highlight"><span class="s1">&#39;hello&#39;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="s2">&quot;world&quot;</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td align="right"><strong>表达式</strong></td>
+<td align="left">/</td>
+<td align="left"><code class="highlight"><span class="mf">5</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">6</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">4</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td align="right"><strong>数组</strong></td>
+<td align="left">类似python列表</td>
+<td align="left"><code class="highlight"><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">]</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td align="right"><strong>对象</strong></td>
+<td align="left">类似python字典</td>
+<td align="left"><code class="highlight"><span class="p">{</span><span class="nx">name</span><span class="o">:</span><span class="s2">&quot;TrickEye&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">age</span><span class="o">:</span><span class="mf">18</span><span class="p">}</span><span class="w"></span></code></td>
+</tr>
+<tr>
+<td align="right"><strong>函数</strong></td>
+<td align="left">用function定义</td>
+<td align="left"><code class="highlight"><span class="kd">function</span><span class="w"> </span><span class="nx">f</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="w"> </span><span class="nx">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">a</span><span class="o">*</span><span class="nx">b</span><span class="p">;}}</span><span class="w"></span></code></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">变量</p>
+<p>使用<code>var</code>关键字定义变量，<code class="highlight"><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="p">,</span><span class="w"> </span><span class="nx">length</span><span class="p">;</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="p">;</span><span class="w"> </span><span class="nx">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;very long&quot;</span><span class="p">;</span><span class="w"></span></code></p>
+<p>所以说其实 <abbr title="`JavaScript`">js</abbr> 也类型不敏感是吧。变量的数据类型可以通过<code class="highlight"><span class="ow">typeof</span><span class="w"> </span><span class="nx">variable</span><span class="w"></span></code>来查询（不用加括号，但是加了也不会有什么事情）</p>
+<p>重复声明一个变量不会冲刷掉之前的变量值，除非第二次声明时赋值。</p>
+<p>ES6之后，可以使用<code class="highlight"><span class="kd">let</span><span class="w"> </span><span class="nx">与</span><span class="w"> </span><span class="kd">const</span><span class="w"></span></code>来声明变量了。<code class="highlight"><span class="kd">let</span><span class="w"></span></code>体现了作用域的思想，其声明的变量只在当前所在的作用域有效，而<code class="highlight"><span class="kd">var</span><span class="w"></span></code>则不能做到，除非在函数体内，或者全局使用，which两种声明方法行为类似。</p>
+<p>变量和字面值通过算数运算和赋值操作符来计算和赋值，具体的符号和其他语言大致类似。</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">数据类型</p>
+<p>数据类型包括基本类和对象（引用）。<abbr title="`JavaScript`">js</abbr> 具有动态类型。（动态类型是坏文明！）</p>
+<p><strong>基本数据类型 Primitive Data Types</strong></p>
+<dl>
+<dt><code>Boolean</code></dt>
+<dd>只可取<code>true | false</code></dd>
+<dt><code>Null &amp; Undefined</code></dt>
+<dd>表示这个变量没有值，只声明不赋值的变量为Undefined，也可以对一个变量设为null。用typeof来检测，null的类型是Object，而undefined的类型就是undefined</dd>
+<dt><code>Number</code></dt>
+<dd><abbr title="`JavaScript`">js</abbr> 只有一种数字，数字可以是小数，整数或科学计数（类似数字字面值）</dd>
+<dt><code>String</code></dt>
+<dd>类似字符串字面值。可以通过<code>stringName[index]</code>来索引某一个字符。字符串具有内置属性length</dd>
+</dl>
+<hr />
+<p><strong>引用数据类型 Object Data Types</strong></p>
+<dl>
+<dt><code>Array</code></dt>
+<dd>创建方式：<code class="highlight"><span class="kd">var</span><span class="w"> </span><span class="nx">cars</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Array</span><span class="p">();</span><span class="w"> </span><span class="nx">cars</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Saab&quot;</span><span class="p">;</span><span class="w"> </span><span class="nx">cars</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Volvo&quot;</span><span class="p">;</span><span class="w"></span></code>，或者紧凑地写：<code class="highlight"><span class="kd">var</span><span class="w"> </span><span class="nx">cars</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">Array</span><span class="p">(</span><span class="s2">&quot;Saab&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Volvo&quot;</span><span class="p">);</span><span class="w"></span></code>，或者直接赋值为数组字面值。访问一个数组元素的语法与C语言类似。用typeof检测，Array类型会返回Object，因为数组可以视为一个特殊的对象。</dd>
+<dt><code>Date</code></dt>
+<dd>一个特殊的对象，通过<code>var d = new Date()</code>查询获取。</dd>
+<dt><code>Object</code></dt>
+<dd>类似于对象字面值。要访问，可以用<code>name = objectName.keyword</code>或者<code>name = objectName["keyword"]</code>两种方法中的一种。</dd>
+</dl>
+<p>可以在声明一个变量时指定类型，使用关键词<code>new</code>。例如<code class="highlight"><span class="kd">var</span><span class="w"> </span><span class="nx">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nb">String</span><span class="p">;</span><span class="w"></span></code></p>
+<hr />
+<p>一个变量或者字面量的<code>constructor</code>属性会返回这个变量属性的构造函数。由此原理，可以通过以下代码来判断一个变量是否是Array，或者是Date
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">isArray</span><span class="p">(</span><span class="nx">array</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">array</span><span class="p">.</span><span class="kr">constructor</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;Array&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kd">function</span><span class="w"> </span><span class="nx">isDate</span><span class="p">(</span><span class="nx">date</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">date</span><span class="p">.</span><span class="kr">constructor</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;Date&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></p>
+<p><strong>变量之间可以互相转换。</strong></p>
+<p>数字 to 字符串</p>
+<ol>
+<li>全局方法<code>String()</code>，此方法适用于任何的数字，字母，变量和表达式</li>
+<li>数字类型的方法<code>toString()</code>，更具体的转换成字符串的方法还有：<code>toExponential(), toFixed(), toPrecision()</code></li>
+</ol>
+<p>布尔 to 字符串</p>
+<ol>
+<li><code class="highlight"><span class="nb">String</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;false&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">String</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;true&#39;</span><span class="w"></span></code></li>
+<li><code class="highlight"><span class="kc">true</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;true&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">.</span><span class="nx">toString</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;false&#39;</span><span class="w"></span></code></li>
+</ol>
+<p>Date to 字符串</p>
+<ol>
+<li><code>Date()</code> 返回字符串</li>
+<li><code>String(new Date())</code></li>
+<li><code>var d = new Date(); d.toString()</code></li>
+<li>Date类型还提供其他各种提取信息的函数，例如<code>getDate()</code></li>
+</ol>
+<p>字符串 to 数字</p>
+<ol>
+<li><code>Number()</code>将正确字符串转换为数字，空串转换为0，非法字符串转换为<code>NaN</code></li>
+<li><code>parseInt()</code> 和 <code>parseFloat()</code></li>
+<li><code>+</code>也可以用于将变量转化为数字，<code class="highlight"><span class="o">+</span><span class="s1">&#39;5&#39;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span><span class="w"></span></code>，非法的字符串被转化后会变成<code>NaN</code></li>
+</ol>
+<p>布尔 to 数字</p>
+<ol>
+<li><code class="highlight"><span class="nb">Number</span><span class="p">(</span><span class="kc">false</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0</span><span class="p">;</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1</span><span class="w"></span></code></li>
+</ol>
+</div>
+<h3 id="js_2"><abbr title="`JavaScript`">js</abbr> 对象<a class="headerlink" href="#js_2" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p><abbr title="`JavaScript`">js</abbr> 中的对象是一个变量的容器，而这里面的变量是包罗万象的。比如，你可以在 <abbr title="`JavaScript`">js</abbr> 对象中装一个函数，以达到类似面向对象的效果：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">var</span><span class="w"> </span><span class="nx">person</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="nx">firstName</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Trick&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nx">lastName</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Eye&quot;</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="mf">123</span><span class="p">,</span><span class="w"></span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="nx">fullName</span><span class="o">:</span><span class="w"> </span><span class="kd">function</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">firstName</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot; &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="nx">lastName</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">person</span><span class="p">.</span><span class="nx">fullName</span><span class="p">());</span><span class="w"> </span><span class="c1">// (1)</span><span class="w"></span>
+</code></pre></div>
+<ol>
+<li>这里加括号代表调用函数，否则会返回这个函数的定义</li>
+</ol>
+<p><code>window</code>是一个特殊的对象，在一个变量被声明之前对这个变量的赋值将会被视为<code>window</code>的一个属性。不过，在此以后对他的访问不加<code>window</code>也可以正常访问到</p>
+<h3 id="js_3"><abbr title="`JavaScript`">js</abbr> 事件<a class="headerlink" href="#js_3" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p>Html元素中可以添加事件属性，一般的格式是<code class="highlight"><span class="p">&lt;</span><span class="nt">some-label</span> <span class="na">some-event</span><span class="o">=</span><span class="s">&quot;js code&quot;</span><span class="p">&gt;</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>下表给出了一些常用的html事件</p>
+<table>
+<thead>
+<tr>
+<th align="right">事件</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><code>onchange</code></td>
+<td align="left">Html元素改变</td>
+</tr>
+<tr>
+<td align="right"><code>onclick</code></td>
+<td align="left">Html元素被点击</td>
+</tr>
+<tr>
+<td align="right"><code>onmouseover</code></td>
+<td align="left">类似<code>:hover</code></td>
+</tr>
+<tr>
+<td align="right"><code>onmouseout</code></td>
+<td align="left">鼠标被移开</td>
+</tr>
+<tr>
+<td align="right"><code>onkeydown</code></td>
+<td align="left">键盘按键被按下</td>
+</tr>
+<tr>
+<td align="right"><code>onload</code></td>
+<td align="left">浏览器完成页面的加载</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="js_4"><abbr title="`JavaScript`">js</abbr> 控制流<a class="headerlink" href="#js_4" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p>js中的 if/else, switch, for, while, do/while 控制流与C语言几乎相同。for/in控制流参考java</p>
+<h3 id="js-throw-try-catch"><abbr title="`JavaScript`">js</abbr> 错误，throw, try &amp; catch<a class="headerlink" href="#js-throw-try-catch" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p>java的try/catch/finally控制流在 <abbr title="`JavaScript`">js</abbr> 中依然有用</p>
+<h3 id="js_5"><abbr title="`JavaScript`">js</abbr> 严格模式<a class="headerlink" href="#js_5" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
+<p>将 <code>"use strict";</code> 这句话放到一个作用域的开头，以表明这一作用域内使用严格模式，<abbr title="`JavaScript`">js</abbr> 解释器将会对一些不安全的代码做出警告</p>
+<h2 id="js_6"><abbr title="`JavaScript`">js</abbr> 表单<a class="headerlink" href="#js_6" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
+<p>下面是一个验证是否填写了合法的名字的表单的例子</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1"><abbr title="`JavaScript`">js</abbr></label><label for="__tabbed_2_2">html</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span>
+<span class="normal"><a href="#__codelineno-6-4">4</a></span>
+<span class="normal"><a href="#__codelineno-6-5">5</a></span>
+<span class="normal"><a href="#__codelineno-6-6">6</a></span>
+<span class="normal"><a href="#__codelineno-6-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">validateForm</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">forms</span><span class="p">[</span><span class="s2">&quot;formName&quot;</span><span class="p">][</span><span class="s2">&quot;fieldName&quot;</span><span class="p">].</span><span class="nx">value</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">        </span><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;需要输入名字。&quot;</span><span class="p">);</span><span class="w"></span>
+<a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span><span class="w"></span>
+<a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;myForm&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;demo_form.php&quot;</span> <span class="na">onsubmit</span><span class="o">=</span><span class="s">&quot;return validateForm()&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a>名字: <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;fname&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;提交&quot;</span><span class="p">&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div>
+</div>
+</div>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../mobile-dev/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 响应式开发总结" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              响应式开发总结
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../Pytorch/1/" class="md-footer__link md-footer__link--next" aria-label="Next: 神经网络" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              神经网络
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/TrickEye" target="_blank" rel="noopener" title="GitHub主页" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="mailo:trickeye@buaa.edu.cn" target="_blank" rel="noopener" title="向我发邮件" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="m511.6 36.86-64 415.1a32.008 32.008 0 0 1-31.65 27.147c-4.188 0-8.319-.815-12.29-2.472l-122.6-51.1-50.86 76.29C226.3 508.5 219.8 512 212.8 512c-11.5 0-20.8-9.3-20.8-20.8v-96.18c0-7.115 2.372-14.03 6.742-19.64L416 96 122.3 360.3 19.69 317.5C8.438 312.8.812 302.2.062 289.1s5.47-23.72 16.06-29.77l448-255.1c10.69-6.109 23.88-5.547 34 1.406S513.5 24.72 511.6 36.86z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "content.code.annotate", "search.suggest", "navigation.instant", "navigation.tracking"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
