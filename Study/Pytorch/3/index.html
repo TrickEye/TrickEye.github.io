@@ -1198,6 +1198,11 @@
 <p>下面这个Jupyter notebook给出了一个基本的手动实现线性回归的模型：</p>
 <iframe width="100%" height="2800" scrolling="yes" src="https://nbviewer.org/urls/trickeye.github.io/Study/Pytorch/_notebooks/gradation.ipynb"></iframe>
 
+<p>说一千道一万，我们的训练目标就是让这个loss函数达到最小值，梯度下降法就是通过反向传递，对决定loss取值的各个变量（参数）求偏导，（<code>backward()</code>），然后通过某种策略更新这些参数。充分训练能够让一个模型在给定的这些输入（定义域）中得出大致与目标相似的输出，而我们的模型的最终应用目标是在一个更广阔的定义域内都能模拟出目标函数的行为。</p>
+<hr />
+<p>功能强大的Pytorch支持的绝非仅有这么多。很多常用的损失函数的计算，甚至都不需要我们自己来操刀。</p>
+<p>常用的损失函数包括：<code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">L1Loss</span></code>（与target差之绝对值之和）<code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">MSELoss</span></code>（均方差，也就是上面讲的，线性回归使用的损失函数）<code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span></code>（常用于分类，既限制了模型的高置信度，也限制了模型的分布，）</p>
+
               
             </article>
             
