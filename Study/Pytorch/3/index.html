@@ -704,6 +704,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    损失函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    优化器
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -721,6 +735,34 @@
     <li class="md-nav__item">
       <a href="../4-modules/" class="md-nav__link">
         Pytorch神经网络模型
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-entire/" class="md-nav__link">
+        模型训练全过程
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-data/" class="md-nav__link">
+        数据，数据集
       </a>
     </li>
   
@@ -1105,6 +1147,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    损失函数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    优化器
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1200,8 +1256,23 @@
 
 <p>说一千道一万，我们的训练目标就是让这个loss函数达到最小值，梯度下降法就是通过反向传递，对决定loss取值的各个变量（参数）求偏导，（<code>backward()</code>），然后通过某种策略更新这些参数。充分训练能够让一个模型在给定的这些输入（定义域）中得出大致与目标相似的输出，而我们的模型的最终应用目标是在一个更广阔的定义域内都能模拟出目标函数的行为。</p>
 <hr />
+<h2 id="_2">损失函数<a class="headerlink" href="#_2" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
 <p>功能强大的Pytorch支持的绝非仅有这么多。很多常用的损失函数的计算，甚至都不需要我们自己来操刀。</p>
 <p>常用的损失函数包括：<code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">L1Loss</span></code>（与target差之绝对值之和）<code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">MSELoss</span></code>（均方差，也就是上面讲的，线性回归使用的损失函数）<code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">CrossEntropyLoss</span></code>（常用于分类，既限制了模型的高置信度，也限制了模型的分布，）</p>
+<p>使用损失函数计算损失过后，通过反向传播就可以将梯度回落到每一个可被训练的参数上，以供调整。</p>
+<hr />
+<h2 id="_3">优化器<a class="headerlink" href="#_3" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
+<p>Pytorch甚至写好了可以帮助你按照某种策略自动更新参数的优化器。通过新建一个对象，指定其管辖的参数，学习速率和其他用到的参数就可以构建一个优化器了：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">optim</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">optimizer</span> <span class="o">=</span> <span class="n">optim</span><span class="o">.</span><span class="n">Adam</span><span class="p">([</span><span class="n">var1</span><span class="p">,</span> <span class="n">var2</span><span class="p">],</span> <span class="n">lr</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span>
+</code></pre></div>
+<p>甚至可以设置因层而异的优化器：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">optim</span><span class="o">.</span><span class="n">SGD</span><span class="p">([</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>                <span class="p">{</span><span class="s1">&#39;params&#39;</span><span class="p">:</span> <span class="n">model</span><span class="o">.</span><span class="n">base</span><span class="o">.</span><span class="n">parameters</span><span class="p">()},</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>                <span class="p">{</span><span class="s1">&#39;params&#39;</span><span class="p">:</span> <span class="n">model</span><span class="o">.</span><span class="n">classifier</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="s1">&#39;lr&#39;</span><span class="p">:</span> <span class="mf">1e-3</span><span class="p">}</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>            <span class="p">],</span> <span class="n">lr</span><span class="o">=</span><span class="mf">1e-2</span><span class="p">,</span> <span class="n">momentum</span><span class="o">=</span><span class="mf">0.9</span><span class="p">)</span>
+</code></pre></div>
+<p>优化器的使用方面，可以使用zero_grad()方法清空梯度，调用损失函数的backward()方法更新梯度，再调用optimizer.step()更新参数。</p>
 
               
             </article>
