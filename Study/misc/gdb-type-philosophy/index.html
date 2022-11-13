@@ -10,14 +10,14 @@
         <meta name="author" content="TrickEye">
       
       
-        <link rel="canonical" href="https://TrickEye.github.io/Study/Pytorch/2/">
+        <link rel="canonical" href="https://TrickEye.github.io/Study/misc/gdb-type-philosophy/">
       
       <link rel="icon" href="../../../_assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Pytorch安装，入门 - TrickEye's Blog</title>
+        <title>GDB 类型哲学 - TrickEye's Blog</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pytorch" class="md-skip">
+        <a href="#gdb-gdb-type-philosophy" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Pytorch安装，入门
+              GDB 类型哲学
             
           </span>
         </div>
@@ -409,14 +409,16 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" checked>
       
       
       
@@ -437,11 +439,52 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../misc/gdb-type-philosophy/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          GDB 类型哲学
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         GDB 类型哲学
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    工具
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -696,16 +739,14 @@
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
       
       
       
@@ -728,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1/" class="md-nav__link">
+      <a href="../../Pytorch/1/" class="md-nav__link">
         神经网络
       </a>
     </li>
@@ -740,127 +781,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Pytorch安装，入门
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Pytorch/2/" class="md-nav__link">
         Pytorch安装，入门
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    安装
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tensor" class="md-nav__link">
-    张量 Tensor
-  </a>
-  
-    <nav class="md-nav" aria-label="张量 Tensor">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tensor_1" class="md-nav__link">
-    Tensor 的创建
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tensor_2" class="md-nav__link">
-    Tensor 方法和属性
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tensor_3" class="md-nav__link">
-    Tensor 数据类型
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tensor_4" class="md-nav__link">
-    Tensor 其他操作
-  </a>
-  
-    <nav class="md-nav" aria-label="Tensor 其他操作">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    运算
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gpu-tensor" class="md-nav__link">
-    GPU Tensor
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    在其他地方看到的不错的小玩意
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    附件
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -872,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3/" class="md-nav__link">
+      <a href="../../Pytorch/3/" class="md-nav__link">
         梯度下降和反向传播
       </a>
     </li>
@@ -886,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../4-modules/" class="md-nav__link">
+      <a href="../../Pytorch/4-modules/" class="md-nav__link">
         Pytorch神经网络模型
       </a>
     </li>
@@ -900,7 +825,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../5-entire/" class="md-nav__link">
+      <a href="../../Pytorch/5-entire/" class="md-nav__link">
         模型训练全过程
       </a>
     </li>
@@ -914,7 +839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../6-data/" class="md-nav__link">
+      <a href="../../Pytorch/6-data/" class="md-nav__link">
         数据，数据集
       </a>
     </li>
@@ -1283,82 +1208,7 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    安装
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tensor" class="md-nav__link">
-    张量 Tensor
-  </a>
-  
-    <nav class="md-nav" aria-label="张量 Tensor">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tensor_1" class="md-nav__link">
-    Tensor 的创建
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tensor_2" class="md-nav__link">
-    Tensor 方法和属性
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tensor_3" class="md-nav__link">
-    Tensor 数据类型
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tensor_4" class="md-nav__link">
-    Tensor 其他操作
-  </a>
-  
-    <nav class="md-nav" aria-label="Tensor 其他操作">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    运算
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gpu-tensor" class="md-nav__link">
-    GPU Tensor
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    在其他地方看到的不错的小玩意
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    附件
+    工具
   </a>
   
 </li>
@@ -1382,7 +1232,12 @@
     
       
       
-        <a href="../../../tags/#pytorch" class="md-tag">Pytorch</a>
+        <a href="../../../tags/#compiler" class="md-tag">Compiler</a>
+      
+    
+      
+      
+        <a href="../../../tags/#unixlinux" class="md-tag">Unix/Linux</a>
       
     
   </nav>
@@ -1390,181 +1245,17 @@
 
 
 
-<h1 id="pytorch">Pytorch安装与入门<a class="headerlink" href="#pytorch" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h1>
-<h2 id="_1">安装<a class="headerlink" href="#_1" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
-<p>如果你财力雄厚，电脑里面有一张可爱的N卡，甚至还能跑CUDA，那<a href="https://pytorch.org/get-started/locally/#start-locally">快去这里下载</a>，pytorch支持很多种包管理器，比如，要下载一个运行在windows系统，适用于Python语言，通过pip包管理器来安装，外加CUDA11.6的Pytorch，对应的命令是：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
+<h1 id="gdb-gdb-type-philosophy">GDB 类型哲学 | GDB Type Philosophy<a class="headerlink" href="#gdb-gdb-type-philosophy" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h1>
+<blockquote>
+<p>GCC (GNU Compiler Collection) 是一个编译器的集合，包括了C，C++，Pascal在内的诸多高级设计语言的前端。而 GDB (GNU symbolic DeBugger) 是与之搭配的调试器。这里提到了 <code>symbolic</code> 意味着 GDB 的调试过程离不开运行时符号表。单单讲述符号表的标识符是很无聊的，因为运行时的符号表至少还记录了标识符对应的对象类型，对象首地址等关键信息，而这里的对象类型就是本文要讨论的问题。</p>
+<p>GDB 是面向二进制文件的调试器，他的调试对象是各种语言通过GCC生成的代码。因此让GDB的运行时符号表类型系统全部建立在特定的某一个语言之上是没有道理的。——它至少应该有能力描述GCC所支持的所有语言前端使用的所有类型，基本类，派生类等等。GDB怎么通过生成的目标代码识别符号，建立运行时符号表，根据用户的查询命令来返回相应的信息，这是本文关心的问题。</p>
+</blockquote>
+<h2 id="_1">工具<a class="headerlink" href="#_1" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
+<p>直接读二进制代码我人会炸掉的，但是好在GCC提供了只编译不汇编的功能。</p>
+<p>要生成可以被GDB使用的目标代码，需要打开 <code>-g</code> 生成调试信息，打开 <code>-s</code> 只编译不汇编。另外，<code>-gstabs+</code> 可以生成（带有行号信息的）符号表。总之，通过如下的命令生成我们想要的汇编文件。（以C语言为例）</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">$(</span>CC<span class="k">)</span> -g -gstabs+ -o testfile.S -s testfile.c
 </code></pre></div>
-<p>下载过程太慢的请参考<a href="../../../guidance/install/#pip">如何为pip换源</a></p>
-<p>安装过程中有必要为Windows开启长路径支持，请参考<a href="https://pip.pypa.io/warnings/enable-long-paths">https://pip.pypa.io/warnings/enable-long-paths</a></p>
-<div class="admonition note">
-<p class="admonition-title">安装情况校验</p>
-<p><iframe width="100%" height="400" scrolling="yes" src="https://nbviewer.org/urls/trickeye.github.io/Study/Pytorch/_notebooks/note.ipynb"></iframe></p>
-</div>
-<h2 id="tensor">张量 <abbr title="张量">Tensor</abbr><a class="headerlink" href="#tensor" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
-<p>张量是一个很大的概念，按阶数分，张量可以分为：{0阶张量：标量和常数；1阶张量：向量；2阶张量：矩阵；...N阶张量}</p>
-<p>在python输出的结果里面，有几层方括号/方括号的最大深度，<abbr title="张量">Tensor</abbr> 就有多少阶</p>
-<h3 id="tensor_1"><abbr title="张量">Tensor</abbr> 的创建<a class="headerlink" href="#tensor_1" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">python列表，序列</label><label for="__tabbed_1_2">numpy数组</label><label for="__tabbed_1_3">torch API</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">tensor</span><span class="p">([[</span> <span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">],</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="p">[</span> <span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">]])</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]))</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">tensor</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">torch</span><span class="o">.</span><span class="n">int32</span><span class="p">)</span>
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<ul>
-<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">empty</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span></code>创建3行，4列的空tensor，使用无用数据填充，所以你不应当相信它会被初始化为0</li>
-<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">ones</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span></code>创建3行4列的全1张量，请注意列表括号</li>
-<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">zeros</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span></code>创建3行4列的全0张量</li>
-<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span></code>创建3行4列全随机张量，值的取值范围为<code>[0,1)</code></li>
-<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="n">low</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">high</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span></code>创建3行4列全随机整数张量，值的取值范围为<code>[low, high)</code></li>
-<li><code class="highlight"><span class="n">torch</span><span class="o">.</span><span class="n">randn</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span></code>创建3行4列随机张量，值的分布遵循标准正态分布</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">torch.tensor与torch.<abbr title="张量">Tensor</abbr></p>
-<p>两者的一个区别在于调用torch.tensor(x)，（x为一个数字）的时候。<code>Tensor()</code>认为这个数字描述了他的形状，使用随机的数字来填充这个张量，只有在传入一个可迭代对象的时候，<code>Tensor()</code>会认为这是数据。
-<div class="highlight"><span class="filename">torch.tensor(2)</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">tensor</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><span class="filename">torch.Tensor(2)</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">tensor</span><span class="p">([</span><span class="mf">1.0415e-37</span><span class="p">,</span> <span class="mf">4.5907e-41</span><span class="p">])</span>
-</code></pre></div></p>
-</div>
-<h3 id="tensor_2"><abbr title="张量">Tensor</abbr> 方法和属性<a class="headerlink" href="#tensor_2" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
-<dl>
-<dt><code>item()</code></dt>
-<dd>对于任意阶，只有一个元素的 <abbr title="张量">Tensor</abbr> 返回那个唯一的元素。如果元素不唯一的，报错。</dd>
-<dt><code>numpy()</code></dt>
-<dd>转换为numpy数组</dd>
-<dt><code>size()</code></dt>
-<dd>获取这个 <abbr title="张量">Tensor</abbr> 的形状。当含参的时候，返回对应位置的形状数字，也可以像python列表那样使用负数从后往前取值</dd>
-<dt><code>view()</code></dt>
-<dd>接受几个参数（或者把这些参数写进一个元组/列表），转换 <abbr title="张量">Tensor</abbr> 到对应的形状，<strong>浅拷贝</strong>，仅仅发生形状改变。如果一个参数为-1，则此参数对应的尺寸采用自适应</dd>
-<dt><code>dim()</code></dt>
-<dd>获取阶数</dd>
-<dt><code>max() / min() / std()</code></dt>
-<dd>获取最大值，最小值，标准差，以一个仅有唯一元素的 tensor 来反映。std()只支持内容为浮点的对象，通过<code>t1.float()</code>来转换</dd>
-<dt><code>t()</code></dt>
-<dd>转置。只能转置一个小于等于2阶的 <abbr title="张量">Tensor</abbr>，大于此阶数的需要用 <code>transpose()</code>指出要转置的维度，或者<code>permute()</code>来指定维度的交换顺序。例如，<code>transpose(0,1)</code>与<code>permute(1,0,2)</code>是等价的</dd>
-</dl>
-<p><abbr title="张量">Tensor</abbr> 中数据的访问和赋值使用 <code>t[1,2,3]</code> 来指出各个维度的索引。也可以使用<code>t[:,1]</code>来进行切片</p>
-<h3 id="tensor_3"><abbr title="张量">Tensor</abbr> 数据类型<a class="headerlink" href="#tensor_3" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
-<table>
-<thead>
-<tr>
-<th align="left">数据类型</th>
-<th align="left"><code>tensor.dtype</code></th>
-<th align="left"><code>tensor type</code></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">32b 浮点</td>
-<td align="left"><code>torch.float32 | torch.float</code></td>
-<td align="left"><code>torch.*.FloatTensor</code></td>
-</tr>
-<tr>
-<td align="left">64b 浮点</td>
-<td align="left"><code>torch.float64 | torch.double</code></td>
-<td align="left"><code>torch.*.DoubleTensor</code></td>
-</tr>
-<tr>
-<td align="left">16b 浮点</td>
-<td align="left"><code>torch.float16 | torch.half</code></td>
-<td align="left"><code>torch.*.HalfTensor</code></td>
-</tr>
-<tr>
-<td align="left">8b uint</td>
-<td align="left"><code>torch.uint8</code></td>
-<td align="left"><code>torch.*.ByteTensor</code></td>
-</tr>
-<tr>
-<td align="left">8b int</td>
-<td align="left"><code>torch.int8</code></td>
-<td align="left"><code>torch.*.CharTensor</code></td>
-</tr>
-<tr>
-<td align="left">16b int</td>
-<td align="left"><code>torch.int16 | torch.short</code></td>
-<td align="left"><code>torch.*.ShortTensor</code></td>
-</tr>
-<tr>
-<td align="left">32b int</td>
-<td align="left"><code>torch.int32 | torch.int</code></td>
-<td align="left"><code>torch.*.IntTensor</code></td>
-</tr>
-<tr>
-<td align="left">64b int</td>
-<td align="left"><code>torch.int64 | torch.long</code></td>
-<td align="left"><code>torch.*.LongTensor</code></td>
-</tr>
-</tbody>
-</table>
-<p>通过<code>t.dtype</code>获取 <abbr title="张量">Tensor</abbr> 的数据类型。在使用torch API创建 <abbr title="张量">Tensor</abbr> 的时候也可以指定数据类型，或者使用最右边这一列的类型来实例化</p>
-<p>要产生类型转换，可以使用<code>t.int()</code></p>
-<h3 id="tensor_4"><abbr title="张量">Tensor</abbr> 其他操作<a class="headerlink" href="#tensor_4" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h3>
-<h4 id="_2">运算<a class="headerlink" href="#_2" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h4>
-<p>相同形状的 <abbr title="张量">Tensor</abbr> 可以被使用<code>+</code>符号相加，也可以使用torch函数 <code>t1.add(t2)</code>，这个函数不会造成t1的修改，相应的，<code>t1.add_(t2)</code>会<strong>就地修改</strong>t1。</p>
-<p>当然了，在很多函数后面加下划线都可以就地修改调用此方法的 <abbr title="张量">Tensor</abbr></p>
-<h4 id="gpu-tensor">GPU <abbr title="张量">Tensor</abbr><a class="headerlink" href="#gpu-tensor" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h4>
-<p>首先你的电脑得有 <abbr title="Compute Unified Device Architecture">CUDA</abbr> 支持，然后通过下方的高亮行来定义device（这是一个可以增加可移植性的手段，毕竟大多数操作是与 <abbr title="张量">Tensor</abbr> 所在的设备无关的）</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-5-10">10</a></span>
-<span class="normal"><a href="#__codelineno-5-11">11</a></span>
-<span class="normal"><a href="#__codelineno-5-12">12</a></span>
-<span class="normal"><a href="#__codelineno-5-13">13</a></span>
-<span class="normal"><a href="#__codelineno-5-14">14</a></span>
-<span class="normal"><a href="#__codelineno-5-15">15</a></span>
-<span class="normal"><a href="#__codelineno-5-16">16</a></span>
-<span class="normal"><a href="#__codelineno-5-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="hll"><span class="n">device</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">device</span><span class="p">(</span><span class="s2">&quot;cuda:0&quot;</span> <span class="k">if</span> <span class="n">torch</span><span class="o">.</span><span class="n">cuda</span><span class="o">.</span><span class="n">is_available</span><span class="p">()</span> <span class="k">else</span> <span class="s2">&quot;cpu&quot;</span><span class="p">)</span>
-</span><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="n">device</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="o">&gt;</span>   <span class="n">device</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;cuda&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a>
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="n">t1</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">device</span><span class="p">)</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="o">&gt;</span>   <span class="n">tensor</span><span class="p">([[</span><span class="mf">1.3158</span><span class="p">,</span> <span class="mf">0.8438</span><span class="p">,</span> <span class="mf">1.0185</span><span class="p">],</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a>            <span class="p">[</span><span class="mf">1.3075</span><span class="p">,</span> <span class="mf">0.6439</span><span class="p">,</span> <span class="mf">1.0539</span><span class="p">],</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8"></a>            <span class="p">[</span><span class="mf">0.7498</span><span class="p">,</span> <span class="mf">1.2536</span><span class="p">,</span> <span class="mf">0.6547</span><span class="p">],</span>
-<a id="__codelineno-5-9" name="__codelineno-5-9"></a>            <span class="p">[</span><span class="mf">1.1569</span><span class="p">,</span> <span class="mf">1.3308</span><span class="p">,</span> <span class="mf">0.4558</span><span class="p">],</span>
-<a id="__codelineno-5-10" name="__codelineno-5-10"></a>            <span class="p">[</span><span class="mf">1.1605</span><span class="p">,</span> <span class="mf">0.9603</span><span class="p">,</span> <span class="mf">0.7494</span><span class="p">]],</span> <span class="n">device</span><span class="o">=</span><span class="s1">&#39;cuda:0&#39;</span><span class="p">)</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11"></a>
-<a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="n">t2</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="n">device</span><span class="o">=</span><span class="n">device</span><span class="p">)</span>
-<a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="o">&gt;</span>   <span class="n">tensor</span><span class="p">([[</span><span class="mf">0.2704</span><span class="p">,</span> <span class="mf">0.9654</span><span class="p">,</span> <span class="mf">0.8469</span><span class="p">],</span>
-<a id="__codelineno-5-14" name="__codelineno-5-14"></a>            <span class="p">[</span><span class="mf">0.1289</span><span class="p">,</span> <span class="mf">0.7989</span><span class="p">,</span> <span class="mf">0.0961</span><span class="p">],</span>
-<a id="__codelineno-5-15" name="__codelineno-5-15"></a>            <span class="p">[</span><span class="mf">0.6773</span><span class="p">,</span> <span class="mf">0.9391</span><span class="p">,</span> <span class="mf">0.5091</span><span class="p">],</span>
-<a id="__codelineno-5-16" name="__codelineno-5-16"></a>            <span class="p">[</span><span class="mf">0.4751</span><span class="p">,</span> <span class="mf">0.2946</span><span class="p">,</span> <span class="mf">0.5941</span><span class="p">],</span>
-<a id="__codelineno-5-17" name="__codelineno-5-17"></a>            <span class="p">[</span><span class="mf">0.6228</span><span class="p">,</span> <span class="mf">0.6008</span><span class="p">,</span> <span class="mf">0.3109</span><span class="p">]],</span> <span class="n">device</span><span class="o">=</span><span class="s1">&#39;cuda:0&#39;</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="_3">在其他地方看到的不错的小玩意<a class="headerlink" href="#_3" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
-<dl>
-<dt><code>torch.flatten(x)</code></dt>
-<dd>展平一个张量，无论他之前什么形状，都让它变成一个一维的张量</dd>
-</dl>
-<h2 id="_4">附件<a class="headerlink" href="#_4" title="对应这个位置的锚点链接，看看地址栏你就知道了">⚓︎</a></h2>
-<p>本篇涉及的python代码：请参考</p>
-<p><a class="md-button" href="../_notebooks/note_torchbasics.ipynb">torchbasics.ipynb</a></p>
-<div class="admonition note">
-<p><iframe width="100%" height="400" scrolling="yes" src="https://nbviewer.org/urls/trickeye.github.io/Study/Pytorch/_notebooks/note_torchbasics.ipynb"></iframe></p>
-</div>
+<p>如上命令可以产生一个汇编文件。目标语言是由编译器决定的。</p>
 
 
 
@@ -1590,7 +1281,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 神经网络" rel="prev">
+        <a href="../../HdlBits/hdlbits_1/" class="md-footer__link md-footer__link--prev" aria-label="Previous: HDLBits walkthrough" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1599,20 +1290,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              神经网络
+              HDLBits walkthrough
             </div>
           </div>
         </a>
       
       
         
-        <a href="../3/" class="md-footer__link md-footer__link--next" aria-label="Next: 梯度下降和反向传播" rel="next">
+        <a href="../../MissingSemester/main/" class="md-footer__link md-footer__link--next" aria-label="Next: 介绍" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              梯度下降和反向传播
+              介绍
             </div>
           </div>
           <div class="md-footer__button md-icon">
