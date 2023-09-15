@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import HeaderPic from '../assets/header.jpg';
-import { ref } from 'vue';
 import { NLayoutHeader, NH1, NSpace, NDivider, NButton, NCollapseTransition, NP, NA } from 'naive-ui';
-
-let show = ref(false);
 </script>
 
 <template>
@@ -13,12 +10,12 @@ let show = ref(false);
     </n-space>
     <n-divider class="m0"></n-divider>
     <n-space justify="center" class="header-2">
-      <n-button color="#a2cacf" @click="show=!show" round>Home</n-button>
-      <n-button color="#a2cacf" @click="show=!show" round>Blogs</n-button>
-      <n-button color="#a2cacf" @click="show=!show" round>Bio</n-button>
-      <n-button color="#a2cacf" @click="show=!show" round>Tech</n-button>
+      <n-a href="/"><n-button color="#a2cacf" round>Home</n-button></n-a>
+      <n-a href="/blogs"><n-button color="#a2cacf" round>Blogs</n-button></n-a>
+      <n-a href="todo"><n-button color="#a2cacf" round>Bio</n-button></n-a>
+      <n-a href="todo"><n-button color="#a2cacf" round>Tech</n-button></n-a>
     </n-space>
-    <n-collapse-transition :show="show">
+    <n-collapse-transition :show="true">
       <n-divider class="m0"></n-divider>
       <!-- <n-space justify="center">
         <n-h1 class="m0"><strong>下面的东西</strong></n-h1>

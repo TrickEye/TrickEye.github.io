@@ -44,7 +44,7 @@ import BackgroundPic from '../assets/background.jpg'
 
 .pic-annotation {
   position: absolute;
-  bottom: 5%;
+  bottom: 70px; /* footer is 56px tall */
   left: 50%;
   transform: translate(-50%);
 
