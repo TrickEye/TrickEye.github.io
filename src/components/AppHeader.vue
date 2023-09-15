@@ -52,5 +52,7 @@ import { NLayoutHeader, NH1, NSpace, NDivider, NButton, NCollapseTransition, NP,
 .header-2 {
   align-items: center;
   padding: 0.5rem;
+
+  white-space: nowrap;
 }
 </style>

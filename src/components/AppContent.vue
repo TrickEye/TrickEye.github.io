@@ -52,6 +52,8 @@ import BackgroundPic from '../assets/background.jpg'
   background-color: rgba(32, 32, 32, 0.5);
   color: white;
   border-radius: 5px;
+
+  white-space: nowrap;
 }
 
 .pic-annotation:hover {
