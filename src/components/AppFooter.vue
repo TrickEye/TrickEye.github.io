@@ -7,7 +7,7 @@ import { NLayoutFooter, NSpace, NButton, NDivider, NA, NP } from 'naive-ui';
     <n-space justify="center" class="footer">
       <n-button round>TrickEye.github.io</n-button>
       <n-divider vertical></n-divider>
-      <n-button round>TrickEye on GitHub</n-button>
+      <n-a href="https://github.com/TrickEye"><n-button round>TrickEye on GitHub</n-button></n-a>
       <n-divider vertical></n-divider>
       <n-button round>TrickEye's Notion</n-button>
       <n-divider vertical></n-divider>

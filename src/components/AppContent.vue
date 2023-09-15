@@ -1,16 +1,60 @@
 <script setup lang="ts">
-import { NLayoutContent } from 'naive-ui';
+import { NLayoutContent, NP, NA } from 'naive-ui';
+
+import BackgroundPic from '../assets/background.jpg'
 </script>
 
 <template>
   <n-layout-content>
-    <div v-for="i in 100" :key="i">hello</div>
+    <div class="content">
+      <router-view/>
+    </div>
+    <n-p class="pic-annotation">2023年8月 · 四川省 红原草原 · <n-a style="color: aquamarine;" :href="BackgroundPic">原图</n-a></n-p>
+
   </n-layout-content>
 </template>
 
 <style scoped>
 .n-layout-content {
   position: relative;
-  top: 150px;
+  width: 100%;
+  height: 100vh;
+  background-image: v-bind("'url(' + BackgroundPic + ')'");
+  filter: brightness(120%);
+  background-size: cover;
+}
+
+.content {
+  width: 100%;
+  height: 75%;
+  overflow-y: scroll;
+  
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translate(-50%);
+
+  align-content: center;
+  text-align: center;
+
+  background-image: linear-gradient(to bottom, rgba(32, 32, 32, 0.1), rgba(255, 255, 255, 0.6));
+  backdrop-filter: blur(3px);
+  box-shadow: 0px 40px 20px 10px rgba(255, 255, 255, 0.6), 0px -40px 20px 10px rgba(32, 32, 32, 0.1);
+}
+
+.pic-annotation {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+
+  padding: 5px 10px 5px;
+  background-color: rgba(32, 32, 32, 0.5);
+  color: white;
+  border-radius: 5px;
+}
+
+.pic-annotation:hover {
+  background-color: rgba(32, 32, 32, 0.8);
 }
 </style>
