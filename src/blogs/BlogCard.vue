@@ -21,7 +21,7 @@ const tagColor = {
       <n-space justify="center"><n-tag v-for="tag in blog.tags" :key="tag" round :color="tagColor">{{ tag }}</n-tag></n-space>
     </template>
     <template #action>
-      <n-a :href="'./blogs/' + blog.uuid"><n-button>阅读</n-button></n-a>
+      <n-a :href="'/#/blogs/' + blog.uuid"><n-button>阅读</n-button></n-a>
     </template>
   </n-card>
 </template>

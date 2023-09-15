@@ -11,7 +11,7 @@ import { NLayoutHeader, NH1, NSpace, NDivider, NButton, NCollapseTransition, NP,
     <n-divider class="m0"></n-divider>
     <n-space justify="center" class="header-2">
       <n-a href="/"><n-button color="#a2cacf" round>Home</n-button></n-a>
-      <n-a href="/blogs"><n-button color="#a2cacf" round>Blogs</n-button></n-a>
+      <n-a href="/#/blogs/"><n-button color="#a2cacf" round>Blogs</n-button></n-a>
       <n-a href="todo"><n-button color="#a2cacf" round>Bio</n-button></n-a>
       <n-a href="todo"><n-button color="#a2cacf" round>Tech</n-button></n-a>
     </n-space>
