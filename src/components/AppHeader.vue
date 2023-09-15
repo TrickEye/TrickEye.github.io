@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import HeaderPic from '../assets/header.jpg';
 import { ref } from 'vue';
 import { NLayoutHeader, NH1, NSpace, NDivider, NButton, NCollapseTransition, NP, NA } from 'naive-ui';
 
@@ -23,7 +24,7 @@ let show = ref(false);
         <n-h1 class="m0"><strong>下面的东西</strong></n-h1>
       </n-space> -->
       <n-space justify="center">
-        <n-p class="m0" style="color: aliceblue;">2023年2月 · 云南省 泸沽湖 · <n-a style="color: aquamarine;" href="src/assets/header.jpg">原图</n-a></n-p>
+        <n-p class="m0" style="color: aliceblue;">2023年2月 · 云南省 泸沽湖 · <n-a style="color: aquamarine;" :href="HeaderPic">原图</n-a></n-p>
       </n-space>
     </n-collapse-transition>
   </n-layout-header>
@@ -40,7 +41,7 @@ let show = ref(false);
 
 .n-layout-header {
   z-index: 9999;
-  background-image: url(src/assets/header.jpg);
+  background-image: v-bind("'url(' + HeaderPic + ')'");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position-y: 55%;
