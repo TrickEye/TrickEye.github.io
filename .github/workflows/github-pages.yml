@@ -1,0 +1,32 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - noueau
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18.x'
+      - name: Replace Vite Config Base
+        run: mv vite.config.js vite.config.azure.js && mv vite.config.github.js vite.config.js
+      - name: Install Yarn
+        run: npm install -g yarn
+      - name: Install Dependencies
+        run: yarn install
+      - name: Build
+        run: yarn build
+      - name: Touch .nojekyll
+        run: touch dist/.nojekyll
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages-nouveau
+          folder: dist
