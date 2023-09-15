@@ -5,11 +5,11 @@ import { NLayoutFooter, NSpace, NButton, NDivider, NA, NP } from 'naive-ui';
 <template>
   <n-layout-footer position="absolute" bordered>
     <n-space justify="center" class="footer">
-      <n-button round>TrickEye.github.io</n-button>
+      <n-a href="https://github.com/TrickEye/TrickEye.github.io"><n-button round>TrickEye.github.io</n-button></n-a>
       <n-divider vertical></n-divider>
       <n-a href="https://github.com/TrickEye"><n-button round>TrickEye on GitHub</n-button></n-a>
       <n-divider vertical></n-divider>
-      <n-button round>TrickEye's Notion</n-button>
+      <n-button round disabled>TrickEye's Notion</n-button>
       <n-divider vertical></n-divider>
       <n-a href="mailto:cuiyikai@buaa.edu.cn"><n-button round>Email TrickEye</n-button></n-a>
       <n-divider vertical></n-divider>
