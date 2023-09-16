@@ -9,7 +9,7 @@ import P1 from './P1.jpg';
 import { todoBlog, blogs } from '../meta'
 const blog = blogs["B0"]
 
-
+document.title = blog.title;
 </script>
 
 <template>

@@ -11,6 +11,8 @@ import P4 from './P4.drawio.png'
 
 import { blogs } from '../meta'
 const blog = blogs["B1"]
+
+document.title = blog.title;
 </script>
 
 <template>
