@@ -7,12 +7,14 @@ import Home from './pages/Home.vue'
 import Blogs from './pages/Blogs.vue'
 import B0 from './blogs/B0/B0.vue'
 import B1 from './blogs/B1/B1.vue'
+import About from './pages/About.vue'
 
 const routes = [
     { path: '/', component: Home },
     { path: '/blogs', component: Blogs },
     { path: '/blogs/B0', component: B0 },
     { path: '/blogs/B1', component: B1 },
+    { path: '/about', component: About },
 ]
 
 const router = createRouter({
