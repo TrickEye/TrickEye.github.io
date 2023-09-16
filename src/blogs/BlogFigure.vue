@@ -12,11 +12,11 @@ defineProps({
     },
     time: {
         type: String,
-        required: true
+        required: false
     },
     location: {
         type: String,
-        required: true
+        required: false
     }
 })
 </script>
@@ -27,7 +27,7 @@ defineProps({
     <div class="fl desc">
       <n-h2 prefix="bar">{{ title }}</n-h2>
       <n-p><slot></slot></n-p>
-      <n-tag>{{ time }} · {{ location }} · <n-a :href="src">原图</n-a></n-tag>
+      <n-tag v-if="time && location">{{ time }} · {{ location }} · <n-a :href="src">原图</n-a></n-tag>
     </div>
   </n-card>
 </template>
