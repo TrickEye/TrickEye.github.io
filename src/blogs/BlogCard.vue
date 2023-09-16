@@ -32,9 +32,6 @@ const tagColor = {
 }
 
 .card {
-  width: max(20%, 300px);
-  margin: 20px;
-
   text-align: left;
 }
 </style>
