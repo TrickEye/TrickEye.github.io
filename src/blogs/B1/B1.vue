@@ -79,11 +79,26 @@ document.title = blog.title;
       2. Compiler Path 字段要求填写 gcc 在本机中的位置，这取决于 gcc 编译器安装在你电脑中的哪个位置。不一定与我的完全相同。<br>
       修改好上面两个配置后 IntelliSense <em>应该</em>就可以自动工作了。
     </BlogFigure>
+    <BlogParagraph>
+      上面讲的是调试，需要强调的是调试和运行还不是完全一样的。  
+      一键运行需要另一个拓展：搜 Code Runner 并安装，安装好后，打开一个 C 语言文件，点右键就可以在菜单里面看到 Run Code 了。
+      这样就可以一键运行了。一键运行的原理是帮你在一个终端里面输入“编译-执行”操作所需要的指令并帮你按回车，所以还挺简单粗暴的。
+    </BlogParagraph>
     <n-divider></n-divider>
     <BlogParagraph>
-      一键运行需要另一个拓展：搜 Code Runner 并安装，安装好后，打开一个 C 语言文件，右键就可以看到 Run Code 了。
-      这样就可以一键运行了
+      容我再介绍一下 CLion ，是由 JetBrains 公司出品的一家商业化 C/C++ 开发环境。与 VS Code
+      相比最大的好处是上面所提到的插件全部都被收归国有，不需要再配置。
     </BlogParagraph>
+    <BlogParagraph>
+      此前一段时间 Clion 被人诟病不适用于新手的原因是因为它需要使用 cmakelist 或者 makefile 来管理项目，这其实比较适合大型项目，
+      但是对只有一两个文件的小项目来说很不友好。但是好在 2022.3 版本之后，官方提供了在 CLion 中运行单文件的功能。
+      这使得 CLion 仅有的缺点不再存在了，因此我在这里推荐各位有机会去试试。
+    </BlogParagraph>
+    <BlogParagraph>
+      CLion 这玩意儿是要收钱的，不过学生有特殊教育许可。要获取 CLion ，需要先访问 JetBrains 
+      官网，使用北航邮箱获得教育许可证，方可下载 CLion 。不在此赘述。
+    </BlogParagraph>
+    <br>
   </div>
 </template>
 

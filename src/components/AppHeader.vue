@@ -14,8 +14,8 @@ const buttonColor = '#a2eaef'
     <n-space justify="center" class="header-2">
       <n-a href="/"><n-button :color="buttonColor" style="color: black" round>Home</n-button></n-a>
       <n-a href="/#/blogs/"><n-button :color="buttonColor" style="color: black" round>Blogs</n-button></n-a>
-      <n-a href="todo"><n-button :color="buttonColor" style="color: black" round>Bio</n-button></n-a>
-      <n-a href="todo"><n-button :color="buttonColor" style="color: black" round>Tech</n-button></n-a>
+      <n-a href="/#/todo"><n-button :color="buttonColor" style="color: black" round>Bio</n-button></n-a>
+      <n-a href="/#/todo"><n-button :color="buttonColor" style="color: black" round>Tech</n-button></n-a>
     </n-space>
     <n-collapse-transition :show="true">
       <n-divider class="m0"></n-divider>
