@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NCard, NButton, NA, NTag, NSpace } from 'naive-ui'
+import { NCard, NButton, NA, NTag, NSpace, NP } from 'naive-ui'
 
 defineProps({
     blog: {
@@ -20,6 +20,7 @@ const tagColor = {
     <template #footer>
       <n-space justify="center"><n-tag v-for="tag in blog.tags" :key="tag" round :color="tagColor">{{ tag }}</n-tag></n-space>
     </template>
+    <n-p style="text-indent: 2em" v-for="line in ( blog.desc === undefined ? ['暂无简介'] : blog.desc )">{{ line }}</n-p>
     <template #action>
       <n-a :href="'/#/blogs/' + blog.uuid"><n-button>阅读</n-button></n-a>
     </template>
