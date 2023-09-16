@@ -117,3 +117,11 @@ export const blogs: {[key: string]: blogMetaTemplate} = {
         tags: ["Vue"]
     },
 };
+
+export const todoBlog: blogMetaTemplate = {
+    uuid: "TODO",
+    title: "待完成的帖子",
+    date: "2023-13-32",
+    tags: ["todo"],
+    desc: ['就快好了别急，键盘要冒烟了']
+}
