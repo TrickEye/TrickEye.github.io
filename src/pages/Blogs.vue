@@ -6,7 +6,7 @@ import BlogCard from '../blogs/BlogCard.vue'
 </script>
 
 <template>
-  <n-h1>没什么，这里是博客们</n-h1>
+  <n-h1 class="title" prefix="bar">没什么，这里是一些博客</n-h1>
   <div class="card-container">
     <div class="card" v-for="b in blogs" :key="b.uuid" >
       <BlogCard :blog="b" />
@@ -15,6 +15,12 @@ import BlogCard from '../blogs/BlogCard.vue'
 </template>
 
 <style scoped>
+.title {
+  width: 90%;
+  text-align: start;
+  margin: 20px auto;
+  font-weight: 600;
+}
 .card-container {
   width: 90%;
   margin: 20px auto;

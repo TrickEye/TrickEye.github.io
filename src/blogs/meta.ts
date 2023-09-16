@@ -34,93 +34,26 @@ export const blogs: {[key: string]: blogMetaTemplate} = {
     },
     "B2": {
         uuid: "B2",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
+        title: "响应式布局实现",
+        date: "2023-09-17",
+        tags: ["前端"],
+        desc: [
+            `我先放个预告在这里，介绍响应式布局的实现方式`,
+            `响应式布局是指这样一种布局：在不同的屏幕尺寸下，页面的布局会自动调整，以适应不同的屏幕尺寸`,
+            `很多都是用 JS 做的响应式布局，很难写而且代码不好看，本文中可以看到一个 CSS 的实现思路`,
+            `本文正在写作，未完成`
+        ]
     },
     "B3": {
         uuid: "B3",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B4": {
-        uuid: "B4",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B5": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B6": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B7": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B8": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B9": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B10": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B11": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B12": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B13": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B14": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B15": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
-    },
-    "B16": {
-        uuid: "B5",
-        title: "Hello World",
-        date: "2023-09-15",
-        tags: ["Vue"]
+        title: "GitHub Pages 和使用",
+        date: "2023-09-18",
+        tags: ["前端"],
+        desc: [
+            `本文将介绍什么是 GitHub Pages ，如何使用 GitHub Pages 提供的服务，如何使用 CI/CD 部署网站。`,
+            `此外参考本人经验和诸多博客，给出一些建站工具，以及列举一些建站的坑点。`,
+            `本文正在写作，未完成`
+        ]
     },
 };
 

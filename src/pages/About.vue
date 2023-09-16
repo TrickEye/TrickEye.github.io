@@ -71,6 +71,7 @@ import Bio5 from '../assets/bio-5.jpg'
                 </template>
                 <n-p>Email: cuiyikai@buaa.edu.cn</n-p>
                 <n-p>微信: TheRealTrickEye</n-p>
+                <n-p>GitHub: TrickEye</n-p>
                 <template #footer>
                     <n-tag>2023年8月 · 四川成都 凤凰山体育中心 · <n-a :href="Bio5">原图</n-a></n-tag>
                 </template>
