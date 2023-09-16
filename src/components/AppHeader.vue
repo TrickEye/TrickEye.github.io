@@ -41,6 +41,7 @@ import { NLayoutHeader, NH1, NSpace, NDivider, NButton, NCollapseTransition, NP,
   background-image: v-bind("'url(' + HeaderPic + ')'");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position-y: 55%;
 }
 
