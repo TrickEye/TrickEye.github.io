@@ -3,6 +3,10 @@ import HeaderPic from '../assets/header.jpg';
 import { NLayoutHeader, NH1, NSpace, NDivider, NButton, NCollapseTransition, NP, NA } from 'naive-ui';
 
 const buttonColor = '#a2eaef'
+
+function inCss(pic: string) {
+  return 'url(' + pic + ')';
+}
 </script>
 
 <template>
@@ -46,7 +50,7 @@ const buttonColor = '#a2eaef'
 
 .n-layout-header {
   z-index: 9999;
-  background-image: v-bind("'url(' + HeaderPic + ')'");
+  background-image: v-bind(inCss(HeaderPic));
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: cover;

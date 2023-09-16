@@ -2,6 +2,10 @@
 import { NLayoutContent, NP, NA } from 'naive-ui';
 
 import BackgroundPic from '../assets/background.jpg'
+
+function inCss(pic: string) {
+  return 'url(' + pic + ')';
+}
 </script>
 
 <template>
@@ -19,7 +23,7 @@ import BackgroundPic from '../assets/background.jpg'
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: v-bind("'url(' + BackgroundPic + ')'");
+  background-image: v-bind(inCss(BackgroundPic));
   filter: brightness(120%);
   background-size: cover;
 }
