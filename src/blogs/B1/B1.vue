@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NH1, NDivider, NA } from 'naive-ui'
+import { NH1, NDivider } from 'naive-ui'
 import BlogParagraph from '../BlogParagraph.vue';
 import BlogFigure from '../BlogFigure.vue';
 import BlogCodeBlock from '../BlogCodeBlock.vue';
@@ -60,8 +60,8 @@ const blog = blogs["B1"]
       点进去，按 Install ，就会给你的 VS Code 安装这个拓展。
     </BlogParagraph>
     <BlogParagraph>
-      装完这个拓展其实就可以调试了。调试按钮在左边侧边栏第四个，有个三角形那个。可以随便写一点 C 语言代码，比如
-      <n-a href="/src/blogs/B1/code.c">这个</n-a>，然后保存，点调试界面的 “Run and Debug” 按钮，然后会让你选一个配置
+      装完这个拓展其实就可以调试了。调试按钮在左边侧边栏第四个，有个三角形那个。可以随便写一点 C 语言代码，
+      然后保存，点调试界面的 “Run and Debug” 按钮，然后会让你选一个配置
     </BlogParagraph>
     <BlogFigure :src="P3" title="Debug 选择配置">
       如果你电脑中有 gcc ，那么这边<em>应该</em>会识别到你的编译器。点击它，VS Code 会闪一些字符，然后就可以调试了。<br>
