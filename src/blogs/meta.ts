@@ -24,7 +24,7 @@ export const blogs: {[key: string]: blogMetaTemplate} = {
         uuid: "B1",
         title: "VS Code配置C语言开发环境",
         date: "2023-09-16",
-        tags: ["Vue"],
+        tags: ["C", "IDE"],
         desc: [
             `本文旨在帮助尚无C语言开发基础，甚至尚无计算机科学基础的读者
             配置一个具有运行和调试C语言源文件能力的VS Code`,

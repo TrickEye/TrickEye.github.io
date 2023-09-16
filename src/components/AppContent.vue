@@ -26,7 +26,7 @@ import BackgroundPic from '../assets/background.jpg'
 
 .content {
   width: 100%;
-  height: 75%;
+  height: calc(100vh - 300px);
   overflow-y: scroll;
   
   position: absolute;
