@@ -50,7 +50,7 @@ let showDrawer = ref(false);
         <n-button :color="buttonColor" style="color: black" round @click="projectChecked=!projectChecked">Projects</n-button>
       </div>
     </n-space>
-    <n-collapse-transition :show="projectChecked">
+    <n-collapse-transition :show="projectChecked" class="wide-only">
       <n-space justify="center" style="padding-top: 20px; padding-bottom: 20px;">
         <n-a href="https://trickeye.github.io/dandelion/"><n-button :color="projButtonColor" style="color: black;">Dandelion</n-button></n-a>
         <n-a href="https://trickeye.github.io/paraTeX/"><n-button :color="projButtonColor" style="color: black;">ParaTeX</n-button></n-a>
