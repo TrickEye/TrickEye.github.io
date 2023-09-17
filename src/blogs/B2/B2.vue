@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { NH1, NDivider } from 'naive-ui'
 import BlogParagraph from '../BlogParagraph.vue';
-import BlogFigure from '../BlogFigure.vue';
-import BlogCodeBlock from '../BlogCodeBlock.vue';
+// import BlogFigure from '../BlogFigure.vue';
+// import BlogCodeBlock from '../BlogCodeBlock.vue';
 
 import { blogs } from '../meta'
 const blog = blogs["B2"]
