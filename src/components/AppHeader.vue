@@ -1,12 +1,16 @@
 <script setup lang="ts">
+import { ref } from 'vue';
 import HeaderPic from '../assets/header.jpg';
 import { NLayoutHeader, NH1, NSpace, NDivider, NButton, NCollapseTransition, NP, NA } from 'naive-ui';
 
 const buttonColor = '#a2eaef'
+const projButtonColor = '#4D8AFA'
 
 function inCss(pic: string) {
   return 'url(' + pic + ')';
 }
+
+let projectChecked = ref(false);
 </script>
 
 <template>
@@ -19,13 +23,17 @@ function inCss(pic: string) {
       <n-a href="/"><n-button :color="buttonColor" style="color: black" round>Home</n-button></n-a>
       <n-a href="/#/blogs/"><n-button :color="buttonColor" style="color: black" round>Blogs</n-button></n-a>
       <n-a href="/#/about/"><n-button :color="buttonColor" style="color: black" round>Bio</n-button></n-a>
+      <n-button :color="buttonColor" style="color: black" round @click="projectChecked = !projectChecked">Projects</n-button>
       <!-- <n-a href="/#/todo"><n-button :color="buttonColor" style="color: black" round>Tech</n-button></n-a> -->
     </n-space>
-    <n-collapse-transition :show="true">
       <n-divider class="m0"></n-divider>
-      <!-- <n-space justify="center">
-        <n-h1 class="m0"><strong>下面的东西</strong></n-h1>
-      </n-space> -->
+      <n-collapse-transition :show="projectChecked">
+        <n-space justify="center" style="padding-top: 20px; padding-bottom: 20px;">
+          <n-a href="https://trickeye.github.io/dandelion/"><n-button :color="projButtonColor" style="color: black;">Dandelion</n-button></n-a>
+          <n-a href="https://trickeye.github.io/paraTeX/"><n-button :color="projButtonColor" style="color: black;">ParaTeX</n-button></n-a>
+          <n-a href="https://trickeye.github.io/undefinedBehaviors/"><n-button :color="projButtonColor" style="color: black;">Undefined Behaviors</n-button></n-a>
+        </n-space>
+      </n-collapse-transition>
       <n-space justify="center">
         <n-p class="m0" style="
           color: aliceblue; 
@@ -35,7 +43,6 @@ function inCss(pic: string) {
           border-radius: 5px;
           ">2023年2月 · 云南省 泸沽湖 · <n-a style="color: aquamarine;" :href="HeaderPic">原图</n-a></n-p>
       </n-space>
-    </n-collapse-transition>
   </n-layout-header>
 </template>
 
