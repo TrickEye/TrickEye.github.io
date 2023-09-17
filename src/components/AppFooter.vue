@@ -33,7 +33,7 @@ import { NotebookLightning24Filled } from '@vicons/fluent'
           <n-text>Email TrickEye</n-text>
         </n-button>
       </n-a>
-      <n-divider vertical></n-divider>
+      <n-divider vertical class="wide-only"></n-divider>
       <n-p><n-text depth="3">powered by NodeJS, Vue3, Naive-UI</n-text></n-p>
     </n-space>
   </n-layout-footer>
@@ -46,7 +46,7 @@ import { NotebookLightning24Filled } from '@vicons/fluent'
 }
 
 @media (max-width: 1200px) {
-  .n-text {
+  .n-text, .wide-only {
     display: none;
   }
 }
