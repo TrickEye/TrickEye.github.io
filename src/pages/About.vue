@@ -1,11 +1,12 @@
 <script setup lang="ts">
-import { NH1, NDivider, NCard, NP, NTag, NA } from 'naive-ui'
+import { NH1, NDivider, NCard, NP, NTag, NA, NIcon } from 'naive-ui'
 
 import Bio1 from '../assets/bio-1.jpg'
 import Bio2 from '../assets/bio-2.jpg'
 import Bio3 from '../assets/bio-3.jpg'
 import Bio4 from '../assets/bio-4.jpg'
 import Bio5 from '../assets/bio-5.jpg'
+import Bio6 from '../assets/bio-6.jpg'
 
 </script>
 
@@ -76,6 +77,26 @@ import Bio5 from '../assets/bio-5.jpg'
                     <n-tag>2023年8月 · 四川成都 凤凰山体育中心 · <n-a :href="Bio5">原图</n-a></n-tag>
                 </template>
             </n-card>
+            <n-card class="card1" title="Other Projects">
+                <template #cover>
+                    <img class="card-img" :src="Bio6" alt="">
+                </template>
+                <n-p>
+                    <n-a href="https://trickeye.github.io/dandelion/"><n-icon size="xx-large"><strong>1</strong></n-icon></n-a>
+                    <div style="display: inline-block;">Dandelion: 蒲公英实践队展示网站<br>2023年8月-2023年9月</div>
+                </n-p>
+                <n-p>
+                    <n-a href="https://trickeye.github.io/paraTeX/"><n-icon size="xx-large"><strong>2</strong></n-icon></n-a>
+                    <div style="display: inline-block;">ParaTeX: Markdown -> LaTeX 转换工具<br>和一个 PyPI Package<br>2023年1月-2023年8月</div>
+                </n-p>
+                <n-p>
+                    <n-a href="https://trickeye.github.io/undefinedBehaviors/"><n-icon size="xx-large"><strong>3</strong></n-icon></n-a>
+                    <div style="display: inline-block">Undefined behaviors: C语言未定义行为分析<br>2023年3月-2023年6月</div>
+                </n-p>
+                <template #footer>
+                    <n-tag>2023年7月 · 家里的狗 · <n-a :href="Bio6">原图</n-a></n-tag>
+                </template>
+            </n-card>
         </div>
     </div>
   </div>
@@ -105,7 +126,7 @@ font-size: 1.5em;
     overflow-x: auto;
 
     .cards {
-        width: 2150px;
+        width: 2600px;
         height: 800px;
         
         .card1 {
