@@ -81,7 +81,7 @@ let showDrawer = ref(false);
 .n-layout-header {
   z-index: 100;
   background-image: v-bind(inCss(HeaderPic));
-  background-size: 100%;
+  background-color: #446688;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 55%;

@@ -29,13 +29,15 @@ function inCss(pic: string) {
 }
 
 .content {
+  --content-height: calc(100vh - 260px);
+  --content-offset: 150px;
   width: 100%;
-  height: calc(100vh - 300px);
+  height: var(--content-height);
   overflow-y: scroll;
   
   position: absolute;
   left: 50%;
-  top: 200px;
+  top: var(--content-offset);
   transform: translate(-50%);
 
   align-content: center;
@@ -47,8 +49,9 @@ function inCss(pic: string) {
 }
 
 .pic-annotation {
+  --annotation-offset: 70px; /* footer is 56px tall */
   position: absolute;
-  bottom: 70px; /* footer is 56px tall */
+  bottom: var(--annotation-offset);
   left: 50%;
   transform: translate(-50%);
 
@@ -58,6 +61,18 @@ function inCss(pic: string) {
   border-radius: 5px;
 
   white-space: nowrap;
+}
+
+
+@media (max-width: 1200px) {
+  .content {
+    --content-height: calc(100vh - 130px);
+    --content-offset: 80px;
+  }
+
+  .pic-annotation {
+    --annotation-offset: 10px;
+  }
 }
 
 .pic-annotation:hover {

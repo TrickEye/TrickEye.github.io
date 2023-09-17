@@ -6,7 +6,7 @@ import { NotebookLightning24Filled } from '@vicons/fluent'
 </script>
 
 <template>
-  <n-layout-footer position="absolute" bordered>
+  <n-layout-footer position="absolute" bordered class="wide-only">
     <n-space justify="center" class="footer">
       <n-a href="https://github.com/TrickEye/TrickEye.github.io">
         <n-button round>
@@ -33,7 +33,7 @@ import { NotebookLightning24Filled } from '@vicons/fluent'
           <n-text>Email TrickEye</n-text>
         </n-button>
       </n-a>
-      <n-divider vertical class="wide-only"></n-divider>
+      <n-divider vertical></n-divider>
       <n-p><n-text depth="3">powered by NodeJS, Vue3, Naive-UI</n-text></n-p>
     </n-space>
   </n-layout-footer>

@@ -9,7 +9,13 @@ import { NP } from 'naive-ui'
 <style scoped>
 .n-p {
   font-size: 1.5em;
-  text-indent: 3em;
+  text-indent: 2em;
   text-align: start;
+}
+
+@media (max-width: 1200px) {
+  .n-p {
+    font-size: 1em;
+  }
 }
 </style>
