@@ -6,9 +6,11 @@ import AppFooter from './components/AppFooter.vue';
 
 import hljs from 'highlight.js/lib/core'
 import c from 'highlight.js/lib/languages/c'
+import css from 'highlight.js/lib/languages/css'
 import bash from 'highlight.js/lib/languages/bash'
 import javascript from 'highlight.js/lib/languages/javascript'
 hljs.registerLanguage('c', c)
+hljs.registerLanguage('css', css)
 hljs.registerLanguage('bash', bash)
 hljs.registerLanguage('javascript', javascript)
 

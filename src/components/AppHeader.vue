@@ -175,7 +175,7 @@ let showDrawer = ref(false);
   }
 }
 
-@media (min-width: 1200.1px) {
+@media not (max-width: 1200px) {
   .narrow-only {
     display: none !important;
   }

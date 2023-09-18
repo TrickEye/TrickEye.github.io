@@ -18,8 +18,8 @@ defineProps({
 </script>
 
 <template>
-    <n-code :code="code" :language="language" show-line-numbers></n-code>
-    <n-p><slot></slot></n-p>
+    <n-code show-line-numbers :code="code" :language="language"/>
+    <n-p><slot></slot>{{ notation ? notation : '' }}</n-p>
 </template>
 
 <style scoped>
@@ -29,5 +29,12 @@ defineProps({
   border-radius: 5px;
   font-size: 1.5em;
   text-align: start;
+  overflow-x: auto;
+}
+
+@media (max-width: 1200px) {
+  .n-code {
+    font-size: 1em;
+  }
 }
 </style>
