@@ -1,9 +1,25 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import HeaderPic from '../assets/header.jpg';
-import { NLayoutHeader, NH1, NSpace, NButton, NCollapseTransition, NP, NA, NIcon, NDrawer, NDrawerContent, NList, NListItem } from 'naive-ui';
+import {
+  NLayoutHeader,
+  NH1,
+  NSpace,
+  NButton,
+  NCollapseTransition,
+  NP,
+  NA,
+  NIcon,
+  NDrawer,
+  NDrawerContent,
+  NList,
+  NListItem,
+  NDivider, NText
+} from 'naive-ui';
 import { RouterLink } from 'vue-router';
 import { MdMenu } from '@vicons/ionicons4'
+import {NotebookLightning24Filled} from "@vicons/fluent";
+import {GitPullRequestSharp, LogoGithub, Mail} from "@vicons/ionicons5";
 
 const buttonColor = '#a2eaef'
 const projButtonColor = '#4D8AFA'
@@ -23,7 +39,7 @@ let showDrawer = ref(false);
     </n-space>
     <n-space class="header-1 narrow-only">
       <n-button circle quaternary @click="showDrawer=!showDrawer" style="margin-left: 20px;" size="large"><n-icon size="30" color="#fff"><MdMenu/></n-icon></n-button>
-      <n-drawer v-model:show="showDrawer" placement="top" style="z-index: 200; padding-top: 20px;" height="50vh">
+      <n-drawer v-model:show="showDrawer" :auto-focus="false" placement="top" style="z-index: 200; padding-top: 20px;" height="50vh">
         <n-drawer-content title="Welcome Home! TrickEye">
           <n-list hoverable show-divider>
             <router-link to="/"><n-list-item>Home</n-list-item></router-link>
@@ -38,6 +54,32 @@ let showDrawer = ref(false);
               </n-list>
             </n-collapse-transition>
           </n-list>
+          <n-space justify="center" style="padding-top: 20px;">
+            <n-a href="https://github.com/TrickEye/TrickEye.github.io">
+              <n-button circle>
+                <template #icon><n-icon><git-pull-request-sharp/></n-icon></template>
+              </n-button>
+            </n-a>
+            <n-divider vertical></n-divider>
+            <n-a href="https://github.com/TrickEye">
+              <n-button circle>
+                <template #icon><n-icon><logo-github/></n-icon></template>
+              </n-button>
+            </n-a>
+            <n-divider vertical></n-divider>
+            <n-button circle disabled>
+              <template #icon><n-icon><NotebookLightning24Filled/></n-icon></template>
+            </n-button>
+            <n-divider vertical></n-divider>
+            <n-a href="mailto:cuiyikai@buaa.edu.cn">
+              <n-button circle>
+                <template #icon><n-icon><Mail/></n-icon></template>
+              </n-button>
+            </n-a>
+          </n-space>
+          <n-space justify="center" style="padding-top: 20px;">
+            <n-p><n-text depth="3">powered by NodeJS, Vue3, Naive-UI</n-text></n-p>
+          </n-space>
         </n-drawer-content>
       </n-drawer>
       <n-h1 class="m0" style="color: white; font-size: x-large;"><strong>Welcome Home! TrickEye</strong></n-h1>
