@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { NH1, NDivider } from 'naive-ui'
 import BlogParagraph from '../BlogParagraph.vue';
+import BlogLink from '../BlogLink.vue';
 // import BlogFigure from '../BlogFigure.vue';
 // import BlogCodeBlock from '../BlogCodeBlock.vue';
 
@@ -38,6 +39,10 @@ document.title = blog.title;
       响应式这个概念，比多端适配还要上一个层次。不仅对不同宽度的屏幕有适应性的适配，而且能随着屏幕尺寸的改变自动响应性地调整，比如字体大小，展示列数等等。
       本站采用了响应式技术，有好事者不妨改变一下窗口宽度看看。
     </BlogParagraph>
+    <BlogLink 
+      link="https://developer.mozilla.org/zh-CN/docs/Learn/CSS/CSS_layout/Responsive_Design" 
+      title="MDN上关于响应式的介绍"
+      intro="文中介绍了响应式的历史和一些简单的实现方式"/>
     
   </div>
 </template>
