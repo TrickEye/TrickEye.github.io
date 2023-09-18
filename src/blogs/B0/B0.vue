@@ -6,7 +6,7 @@ import BlogBanner from '../BlogBanner.vue'
 
 import P1 from './P1.jpg';
 
-import { todoBlog, blogs } from '../meta'
+import { blogs } from '../meta'
 const blog = blogs["B0"]
 
 document.title = blog.title;
@@ -34,9 +34,8 @@ document.title = blog.title;
     </BlogParagraph>
     <BlogParagraph>
       GitHub Pages 其实是一个非常方便的用于部署纯前端网页的 Serverless 服务，推荐大家都试试，我也会写一篇新的帖子来介绍介绍。
-      （我先放个 todo 在下面）
     </BlogParagraph>
-    <BlogBanner :blog="todoBlog"/>
+    <BlogBanner :blog="blogs['B2']"/>
 
     <BlogParagraph>
       这个网站是一个纯前端项目，主要内容还是有空的时候写写帖子，顺便练练前端 coding。

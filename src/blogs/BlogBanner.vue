@@ -29,4 +29,9 @@ const tagColor = {
 .n-a {
   text-decoration: none;
 }
+
+.n-alert {
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 20px 0px rgba(128, 128, 128, 0.9);
+}
 </style>

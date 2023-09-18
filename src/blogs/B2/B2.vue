@@ -140,7 +140,7 @@ const cssWaterFallCode =
     <BlogCodeBlock :code="cssWideOnlyCode2" language="css" notation="CSS 响应式显隐，另一种不是很推荐的实现"></BlogCodeBlock>
     <BlogParagraph>
       为什么不使用外界设置 .narrow-only { display: none; } 并在第一个 @media 框中设置另一个 display 呢？
-      因为一些组件库和自定义元素的 display 属性挺奇怪的，不一定是 normal ，也没办法在 @media 里面有一个统一的值来设置。
+      因为一些组件库和自定义元素的 display 属性挺奇怪的，比如 block, inline. 没办法在 @media 里面有一个统一的值来设置。
       另外，很多组件库施加的 CSS 会莫名其妙的比我们这里的 CSS 优先级高，导致我们的 CSS 在竞争中败北，所以需要用 !important。
     </BlogParagraph>
     <n-divider></n-divider>
@@ -159,15 +159,12 @@ const cssWaterFallCode =
     <BlogLink link="https://trickeye.github.io/#/blogs" title="Blogs" intro="以上便是此网站在 Blog 界面实现响应式瀑布流时使用的代码。欢迎去试试"></BlogLink>
     <n-divider></n-divider>
     <BlogFigure title="组件库的响应式" :src="P1">
-      有组件库提供响应式的功能。<br>
+      有组件库提供响应式布局功能。<br>
       <BlogLink link="https://vuetifyjs.com/en/components/grids/#offset-breakpoint" title="Vuetify" intro="Vuetify / v-container, v-row, v-col 响应式布局"></BlogLink>
       <BlogLink link="https://www.naiveui.com/zh-CN/os-theme/components/grid#responsive-item.vue" title="Naive ui" intro="Naive ui / n-grid, n-grid-item 响应式布局"></BlogLink>
       上面提到的两个组件库允许为栅格元素设置在不同宽度下占据的屏幕宽度。（将容器宽度划分为 x 等份，并用数字来指派占据的份额）<br>
       响应式体现在屏幕断点上，将不同大小的屏幕分类为 xxs, xs, sm, md, lg, xl, xxl 等类别，各自处理。<br>
     </BlogFigure>
-    <!-- <BlogParagraph>
-      组件库的响应式
-    </BlogParagraph> -->
     
   </div>
 </template>

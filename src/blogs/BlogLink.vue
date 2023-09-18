@@ -19,7 +19,7 @@ defineProps({
 
 <template>
   <n-a :href="link">
-    <n-alert :title="'链接：' + title" type="default" style="overflow: hidden">
+    <n-alert bordered :title="'链接：' + title" type="default" style="overflow: hidden">
       <template #icon>
         <span style="font-size: 100px; color: rgba(128, 128, 128, 0.5);">#</span>
       </template>
@@ -31,5 +31,10 @@ defineProps({
 <style scoped>
 .n-a {
   text-decoration: none;
+}
+
+.n-alert {
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 20px 0px rgba(128, 128, 128, 0.9);
 }
 </style>
