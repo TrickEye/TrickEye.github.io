@@ -53,6 +53,17 @@ export const blogs: {[key: string]: blogMetaTemplate} = {
             `本文正在写作，未完成`
         ]
     },
+    "B4": {
+        uuid: "B4",
+        title: "如何 Vue 单页面应用",
+        date: "2023-13-32",
+        tags: ["Vue"],
+        desc: [
+            `这个问题在我尝试消除 Vue-Router 在 URL 中留下的 # 时出现：研究了诸多文档，发现
+            使用 Vue 创建的应用是一个单页面应用。路由通过 JS 完成的，而不是通过访问对应位置文件完成的。
+            事实上那个对应位置根本就没有文件。这会引发一些 404 问题，带来一些坑，在此列举`
+        ]
+    }
 };
 
 export const todoBlog: blogMetaTemplate = {
