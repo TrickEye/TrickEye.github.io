@@ -21,6 +21,9 @@ document.title = blog.title;
     <n-h1 prefix="bar" class="date">{{ blog.date }}</n-h1>
     <n-divider></n-divider>
     <BlogParagraph>
+      写在前面，如果你是 Mac 用户，有可能需要先在终端输入 xcode-select --install 来安装必要的工具。
+    </BlogParagraph>
+    <BlogParagraph>
       要用VSCode来写C语言，总得先不用VSCode写C语言嘛对吧。或者说，得先搞懂C语言的运行是什么过程。
     </BlogParagraph>
     <BlogCodeBlock code='gcc code.c -o code.exe' language="bash">
