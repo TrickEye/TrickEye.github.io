@@ -50,7 +50,6 @@ export const blogs: {[key: string]: blogMetaTemplate} = {
         desc: [
             `本文将介绍什么是 GitHub Pages ，如何使用 GitHub Pages 提供的服务，如何使用 CI/CD 部署网站。`,
             `此外参考本人经验和诸多博客，给出一些建站工具，以及列举一些建站的坑点。`,
-            `本文正在写作，未完成`
         ]
     },
     "B4": {
@@ -63,6 +62,17 @@ export const blogs: {[key: string]: blogMetaTemplate} = {
             使用 Vue 创建的应用是一个单页面应用。路由是通过 JS 完成的，而不是通过访问对应位置文件完成的。
             事实上那个对应位置根本就没有文件。这会引发一些 404 问题，带来一些坑，在此列举`,
             `本文正在写作，未完成`
+        ]
+    },
+    "B5": {
+        uuid: "B5",
+        title: "使用 CSS 移除输入框自动填充的背景颜色",
+        date: "2023-08-04",
+        tags: ["CSS", "Vue"],
+        desc: [
+            `这是 Curve Summer Code Camp 的一份 PR 报告。`,
+            `Issuer 希望移除浏览器自动填充功能生效后的背景颜色，
+            但这并非一件易事。本文介绍问题分析，解决和测试的过程`
         ]
     }
 };
