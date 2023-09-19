@@ -4,6 +4,7 @@ export type blogMetaTemplate = {
     date: string;
     tags: string[];
     desc?: string[];
+    wait?: boolean;
 }
 
 export const blogs: {[key: string]: blogMetaTemplate} = {
@@ -62,7 +63,8 @@ export const blogs: {[key: string]: blogMetaTemplate} = {
             使用 Vue 创建的应用是一个单页面应用。路由是通过 JS 完成的，而不是通过访问对应位置文件完成的。
             事实上那个对应位置根本就没有文件。这会引发一些 404 问题，带来一些坑，在此列举`,
             `本文正在写作，未完成`
-        ]
+        ],
+        wait: true
     },
     "B5": {
         uuid: "B5",
