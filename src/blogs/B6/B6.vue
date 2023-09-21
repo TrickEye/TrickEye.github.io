@@ -15,8 +15,8 @@ document.title = blog.title;
 const rubyCaseEquality =
 `case year
     when 1800..1899 then "19th century"
-    when 1900..1999 then "19th century"
-    when 2000..2099 then "19th century"
+    when 1900..1999 then "20th century"
+    when 2000..2099 then "21th century"
     else "wtf"
 end`
 
@@ -42,6 +42,7 @@ ret4: 1`
     <n-divider></n-divider>
     <BlogParagraph>
       文法：能用 == 的地方就能用 ===，但是能用 === 的地方不一定能用 ==，需要结合 class 来具体分析，可以详细看看后面的具体语义分析。
+      另一方面，=== 是一个方法，所以 a === b 的时候相当于执行了 a.===(b) 方法。因此 === 可以被视为一个方法名，函数能用的地方也理应能用 ===。
     </BlogParagraph>
     <BlogParagraph>
       语义：基于 Programming Ruby 的解释，=== 操作符用于检测在 case 语句的 when 子句中的相等性。（ ===: Used to test equality within
