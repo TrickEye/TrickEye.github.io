@@ -76,6 +76,17 @@ export const blogs: {[key: string]: blogMetaTemplate} = {
             `Issuer 希望移除浏览器自动填充功能生效后的背景颜色，
             但这并非一件易事。本文介绍问题分析，解决和测试的过程`
         ]
+    },
+    "B6": {
+        uuid: "B6",
+        title: "Ruby 中 === 的机制分析",
+        date: "2023-09-21",
+        tags: ["Ruby"],
+        desc: [
+            `这是 2023 年 Ruby 课程作业的一部分。Ruby 语言中的 ===
+            操作，或者 case quality 操作符是与其它语言不完全相通的概念。`,
+            `本文搜索相关资料，提出 case quality 操作的语义分析`
+        ]
     }
 };
 

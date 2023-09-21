@@ -9,10 +9,12 @@ import c from 'highlight.js/lib/languages/c'
 import css from 'highlight.js/lib/languages/css'
 import bash from 'highlight.js/lib/languages/bash'
 import javascript from 'highlight.js/lib/languages/javascript'
+import ruby from 'highlight.js/lib/languages/ruby'
 hljs.registerLanguage('c', c)
 hljs.registerLanguage('css', css)
 hljs.registerLanguage('bash', bash)
 hljs.registerLanguage('javascript', javascript)
+hljs.registerLanguage('ruby', ruby)
 
 </script>
 
