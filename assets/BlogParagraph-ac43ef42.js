@@ -1,1 +1,0 @@
-import{d as e,g as o,w as _,u as s,o as t,K as r,e as n,_ as p}from"./index-2a3bb17b.js";const l=e({__name:"BlogParagraph",setup(c){return(a,d)=>(t(),o(s(n),null,{default:_(()=>[r(a.$slots,"default",{},void 0,!0)]),_:3}))}});const g=p(l,[["__scopeId","data-v-55d88186"]]);export{g as B};
