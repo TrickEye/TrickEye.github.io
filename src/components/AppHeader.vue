@@ -170,7 +170,9 @@ let showDrawer = ref(false);
   }
 
   .header-1 {
-    height: 5em;
+    height: 3em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     text-align: start;
   }
 }
