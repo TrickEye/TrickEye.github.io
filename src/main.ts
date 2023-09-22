@@ -10,6 +10,7 @@ const routes = [
     { path: '/blogs/B1', component: () => import('./blogs/B1/B1.vue') },
     { path: '/blogs/B2', component: () => import('./blogs/B2/B2.vue') },
     { path: '/blogs/B3', component: () => import('./blogs/B3/B3.vue') },
+    { path: '/blogs/B4', component: () => import('./blogs/B4/B4.vue') },
     { path: '/blogs/B5', component: () => import('./blogs/B5/B5.vue') },
     { path: '/blogs/B6', component: () => import('./blogs/B6/B6.vue') },
     { path: '/about', component: () => import('./pages/About.vue') },
