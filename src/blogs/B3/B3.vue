@@ -8,6 +8,7 @@ import BlogFigure from '../BlogFigure.vue';
 import P1 from './P1.png';
 
 import { blogs } from '../meta'
+import BackButton from "../BackButton.vue";
 const blog = blogs["B3"]
 
 document.title = blog.title;
@@ -53,8 +54,10 @@ document.title = blog.title;
       文章先在此告一段落，到现在我们了解了如何使用 GitHub Pages 服务来部署一个静态网站。在接下来的博客中会更进一步，介绍
       一些使用广泛的博客构建工具，以及如何使用 GitHub Actions 来自动构建网站。
     </BlogParagraph>
-    
+    <br>
   </div>
+
+  <BackButton></BackButton>
 </template>
 
 <style scoped>

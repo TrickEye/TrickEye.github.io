@@ -8,6 +8,7 @@ import BlogCodeBlock from '../BlogCodeBlock.vue';
 import P1 from './P1.drawio.png';
 
 import { blogs } from '../meta'
+import BackButton from "../BackButton.vue";
 const blog = blogs["B2"]
 
 document.title = blog.title;
@@ -165,8 +166,10 @@ const cssWaterFallCode =
       上面提到的两个组件库允许为栅格元素设置在不同宽度下占据的屏幕宽度。（将容器宽度划分为 x 等份，并用数字来指派占据的份额）<br>
       响应式体现在屏幕断点上，将不同大小的屏幕分类为 xxs, xs, sm, md, lg, xl, xxl 等类别，各自处理。<br>
     </BlogFigure>
-    
+    <br>
   </div>
+
+  <BackButton></BackButton>
 </template>
 
 <style scoped>

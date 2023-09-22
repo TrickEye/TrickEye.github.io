@@ -8,6 +8,7 @@ import BlogLink from '../BlogLink.vue';
 // import P1 from './P1.png';
 
 import { blogs } from '../meta'
+import BackButton from "../BackButton.vue";
 const blog = blogs["B5"]
 
 document.title = blog.title;
@@ -36,6 +37,7 @@ document.title = blog.title;
         或许这就是开源的乐趣。
     </BlogParagraph>
   </div>
+  <BackButton></BackButton>
 </template>
 
 <style scoped>

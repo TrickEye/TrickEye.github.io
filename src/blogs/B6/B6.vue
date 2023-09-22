@@ -7,6 +7,7 @@ import BlogCodeBlock from "../BlogCodeBlock.vue";
 import BlogFigure from "../BlogFigure.vue";
 
 import P1 from './P1.png'
+import BackButton from "../BackButton.vue";
 
 const blog = blogs["B6"]
 
@@ -81,6 +82,7 @@ ret4: 1`
       <BlogCodeBlock :code="caseEqualityTestResult" notation="以上为执行结果，可以验证一下猜想"/>
     </BlogFigure>
   </div>
+  <BackButton></BackButton>
 </template>
 
 <style scoped>

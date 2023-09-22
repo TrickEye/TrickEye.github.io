@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { NH1, NDivider, NA } from 'naive-ui'
+import BackButton from "../BackButton.vue";
 import BlogParagraph from '../BlogParagraph.vue';
 import BlogFigure from '../BlogFigure.vue';
 import BlogBanner from '../BlogBanner.vue'
@@ -67,6 +68,8 @@ document.title = blog.title;
     </BlogParagraph>
     <br>
   </div>
+
+  <BackButton></BackButton>
 </template>
 
 <style scoped>

@@ -10,6 +10,7 @@ import P3 from './P3.png'
 import P4 from './P4.drawio.png'
 
 import { blogs } from '../meta'
+import BackButton from "../BackButton.vue";
 const blog = blogs["B1"]
 
 document.title = blog.title;
@@ -103,6 +104,8 @@ document.title = blog.title;
     </BlogParagraph>
     <br>
   </div>
+  
+  <BackButton></BackButton>
 </template>
 
 <style scoped>
