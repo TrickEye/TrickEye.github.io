@@ -67,9 +67,11 @@ let showDrawer = ref(false);
               </n-button>
             </n-a>
             <n-divider vertical></n-divider>
-            <n-button circle disabled>
+            <n-a href="https://trick-eye-space.notion.site/trick-eye-space/e20f208a910943f3a351f254d0fc2eb3?v=4be8fbd6477c48d5a6b92da72dbde554">
+            <n-button circle>
               <template #icon><n-icon><NotebookLightning24Filled/></n-icon></template>
             </n-button>
+            </n-a>
             <n-divider vertical></n-divider>
             <n-a href="mailto:cuiyikai@buaa.edu.cn">
               <n-button circle>
