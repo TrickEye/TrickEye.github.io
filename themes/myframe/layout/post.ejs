@@ -1,0 +1,14 @@
+<article id="post">
+
+  <% if (is_post()) {%>
+    <%- partial('post/post_head') %>
+    <%- partial('post/post_content') %>
+    <%- partial('post/post_footer') %>
+    <% if (!page.hide_comment) {%>
+      <%- partial('post/post_comment') %>
+    <% } %> 
+  <%} else {%>
+    <%- partial('pages/page_head') %>
+    <%- partial('post/post_content') %>
+  <%} %>
+</article>
