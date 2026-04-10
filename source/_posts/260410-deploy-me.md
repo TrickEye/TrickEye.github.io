@@ -131,3 +131,6 @@ featured_image: assets/260410-1.png
         enable: true
         ...
     ```
+- 修改原主题的响应式布局：主要修改
+    - `themes/frame/source/css/media.styl`：几个断点和布局宽度
+    - `themes/frame/source/css/partials/profile.styl`：个人信息栏的分栏逻辑断点
