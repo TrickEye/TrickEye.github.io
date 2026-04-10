@@ -1,9 +1,9 @@
 
 # html lang
-language: zh_cn
+language: zh-cn
 
 # header
-site_brand_name: Frame.
+site_brand_name: TrickEye
 
 logo_image:
   enable: false

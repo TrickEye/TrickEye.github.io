@@ -2,6 +2,9 @@
 title: 本地部署 Overleaf Community
 date: 2026-04-02 23:48:31
 tags: latex
+categories:
+- [gallery]
+featured_image: assets/260402-1.png
 ---
 
 ## 硬件
