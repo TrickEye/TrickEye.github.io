@@ -115,3 +115,19 @@ featured_image: assets/260410-1.png
 
 - Gallery: 在每个想要添加到 gallery 的文章 front matter 添加 `categories: [gallery]` 即可
 - Featured image: 在每个想要添加 featured image 的文章 front matter 添加 `featured_image: <image-path>` 即可
+- Local Search：需要查看 [这一页的介绍](https://zoeingwingkei.github.io/frame-demo-site/2022/08/05/local-search/)，需要安装 `hexo-generator-searchdb` 插件。
+    - 在项目根安装插件：`npm install hexo-generator-searchdb`
+    - 在 `_config.yml` 中添加插件配置：
+    ```yaml
+        search:
+    path: search.xml
+    field: all
+    content: true
+    format: html
+    ```
+    - 在 `theme/frame/_config.yml` 中添加搜索框配置：
+    ```yaml
+    search:
+        enable: true
+        ...
+    ```
