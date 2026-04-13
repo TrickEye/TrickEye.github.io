@@ -23,6 +23,15 @@
         <span class="post-date">
             <%- date(page.date, theme.date_format) %>
         </span>
+        <div class="h-line-primary"></div>
+
+        <div class="post-toc">
+
+            <details open>
+            <summary>目录</summary>
+            <%- toc(page.content, {list_number: false}) %>
+            </details>
+        </div>
     </div>
     <div class="post-img">
         <% if (page.featured_image) {%>

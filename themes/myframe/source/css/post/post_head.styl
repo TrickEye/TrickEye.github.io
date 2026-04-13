@@ -12,7 +12,31 @@
 
         .post-date
             text-style(post-date)
+            margin-bottom $margin-m-1
+
     
+        .post-toc
+
+            summary
+                margin-top $margin-m-1
+                margin-bottom $margin-m-1
+                display block
+                cursor pointer
+                text-style(post-date)
+
+            ol, li
+                padding-left $padding-s-1
+                margin 0
+                list-style-type none
+
+                a
+                    underline-motion(underline-link)
+                    text-style(post-date)
+                    font-size 12*$px
+                    font-weight 300
+                    line-height 20*$px
+                    
+
     .post-img
-        margin-top $margin-l-1
+        margin-top $margin-m-1
 
