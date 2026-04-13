@@ -29,13 +29,12 @@ date_format: MMM D, YYYY
 
 # profile
 profile:
-  title: Hi, this is Frame. 
-  body: A minimal, elegant hexo theme.
-  image: /profile_cover.png
+  title: Hello world. 
+  body: Just stop your crying, it's a sign of the times.
+  image: /profile_cover.jpg
 
   links:
-    Home: /
-    Blogs: /archives/
+    Archive: /archives/
 
 # footer
 footer:
