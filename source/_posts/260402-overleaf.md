@@ -4,7 +4,7 @@ date: 2026-04-02 23:48:31
 tags: latex
 categories:
 - [gallery]
-featured_image: assets/260402-1.png
+featured_image: 260402-overleaf/260402-1.png
 ---
 
 ## 硬件

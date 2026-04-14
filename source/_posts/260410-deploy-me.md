@@ -4,7 +4,7 @@ date: 2026-04-10 15:55:23
 tags: markdown
 categories:
 - [gallery]
-featured_image: assets/260410-1.png
+featured_image: 260410-deploy-me/260410-1.png
 ---
 
 ## 硬件
