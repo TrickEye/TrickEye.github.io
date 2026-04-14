@@ -1,0 +1,16 @@
+<article id="album">
+
+    <%- partial('album/post_head') %>
+    <div>
+        <% Object.entries(page.chapters).map(function([chapter, index]) { %>
+            <h1 id="<%= chapter %>"><%= chapter %></h2>
+            <div class="album-image-group"><% Object.entries(index).map(function([image, caption]) { %>
+                <div class="album-image">
+                    <img src="<%= url_for(image) %>" alt="<%= caption %>">
+                    <div class="album-caption"><%= caption %></div>
+                </div>
+            <% }); %></div>
+        <% }); %>
+    </div>
+
+</article>

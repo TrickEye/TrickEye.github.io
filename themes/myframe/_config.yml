@@ -13,6 +13,7 @@ menu:
   Home: /
   Archive: /archives/
   Gallery: /categories/gallery/
+  Album: /categories/album/
 
 # stylesheets loaded in the <head>
 stylesheets:

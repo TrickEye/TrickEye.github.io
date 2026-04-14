@@ -1,0 +1,108 @@
+#album
+	--album-scrollbar-side-gap 12vw
+
+	.post-content
+		margin-top $margin-l-1
+
+	.album-image-group
+		display flex
+		flex-wrap nowrap
+		gap $margin-m-1
+		width 100vw
+		margin-left calc(50% - 50vw)
+		margin-right calc(50% - 50vw)
+		padding-left 50%
+		padding-right 50%
+		box-sizing border-box
+		overflow-x auto
+		overflow-y hidden
+		padding-bottom $margin-s-2
+		margin-top $margin-m-1
+		/* scroll-snap-type x proximity */
+		-webkit-overflow-scrolling touch
+		scrollbar-width thin
+		scrollbar-color rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.08)
+
+	.album-image-group::-webkit-scrollbar
+		height 10px
+
+	.album-image-group::-webkit-scrollbar-track
+		background rgba(255, 255, 255, 0.08)
+		border-radius 999px
+
+	.album-image-group::-webkit-scrollbar-track-piece:start
+		margin-left var(--album-scrollbar-side-gap)
+
+	.album-image-group::-webkit-scrollbar-track-piece:end
+		margin-right var(--album-scrollbar-side-gap)
+
+	.album-image-group::-webkit-scrollbar-thumb
+		background rgba(255, 255, 255, 0.35)
+		border-radius 999px
+		border 2px solid rgba(0, 0, 0, 0)
+		background-clip content-box
+
+	.album-image-group:hover::-webkit-scrollbar-thumb
+		background rgba(255, 255, 255, 0.55)
+
+	.album-image
+		position relative
+		flex 0 0 auto
+		height 30vw
+		width auto
+		overflow hidden
+		border-radius $radius-m
+		scroll-snap-align start
+		background $color-background-secondary
+
+	.album-image::after
+		content ""
+		position absolute
+		inset 0
+		z-index 1
+		transition background 0.25s ease
+
+	.album-image img
+		display block
+		width auto
+		height 100%
+		object-fit contain
+
+	.album-caption
+		position absolute
+		top 50%
+		left 50%
+		z-index 2
+		text-style(heading-h2)
+		transform translate(-50%, -50%)
+		width calc(100% - $margin-l-0)
+		text-align center
+		color rgba(255, 255, 255, 0.0)
+		text-shadow 0 2px 8px rgba(0, 0, 0, 0.0)
+		pointer-events none
+		transition color 0.25s ease, text-shadow 0.25s ease
+
+	.album-image:hover::after
+		background rgba(0, 0, 0, 0.3)
+
+	.album-image:hover .album-caption
+		color rgba(255, 255, 255, 0.94)
+		text-shadow 0 2px 8px rgba(0, 0, 0, 0.5)
+
+
+@media (max-width: 768px)
+	#album
+		--album-scrollbar-side-gap 10vw
+
+		.album-image
+			height 50vw
+
+@media (max-width: 480px)
+	#album
+		--album-scrollbar-side-gap 8vw
+
+		.album-image-group
+			gap $margin-s-1
+
+		.album-image
+			height 50vw
