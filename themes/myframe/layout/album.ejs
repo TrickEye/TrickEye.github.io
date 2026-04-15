@@ -7,10 +7,10 @@
             <div class="album-image-group"><% Object.entries(index).map(function([image, caption]) { %>
                 <div class="album-image">
                     <img src="<%= url_for(image) %>" alt="<%= caption %>">
-                    <div class="album-caption"><%= caption %></div>
+                    <div class="album-caption"><%- String(caption || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\"/g, '&quot;').replace(/'/g, '&#39;').replace(/\\n|\r\n|\r|\n/g, '<br>') %></div>
                 </div>
             <% }); %></div>
         <% }); %>
     </div>
-
+    <script src="/js/album.js"></script>
 </article>

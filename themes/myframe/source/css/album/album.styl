@@ -48,7 +48,7 @@
 	.album-image
 		position relative
 		flex 0 0 auto
-		height 30vw
+		height 35em
 		width auto
 		overflow hidden
 		border-radius $radius-m
@@ -85,7 +85,14 @@
 	.album-image:hover::after
 		background rgba(0, 0, 0, 0.3)
 
+	.album-image.album-image-clicked::after
+		background rgba(0, 0, 0, 0.3)
+
 	.album-image:hover .album-caption
+		color rgba(255, 255, 255, 0.94)
+		text-shadow 0 2px 8px rgba(0, 0, 0, 0.5)
+
+	.album-image.album-image-clicked .album-caption
 		color rgba(255, 255, 255, 0.94)
 		text-shadow 0 2px 8px rgba(0, 0, 0, 0.5)
 
@@ -94,8 +101,11 @@
 	#album
 		--album-scrollbar-side-gap 10vw
 
-		.album-image
-			height 50vw
+		.album-caption
+			text-style(heading-h4)
+			color rgba(255, 255, 255, 0.0)
+			text-shadow 0 2px 8px rgba(0, 0, 0, 0.0)
+
 
 @media (max-width: 480px)
 	#album
@@ -103,6 +113,7 @@
 
 		.album-image-group
 			gap $margin-s-1
+			text-style(heading-h6)
+			color rgba(255, 255, 255, 0.0)
+			text-shadow 0 2px 8px rgba(0, 0, 0, 0.0)
 
-		.album-image
-			height 50vw
