@@ -3,6 +3,6 @@ title: {{ title }}
 date: {{ date }}
 tags:
 categories:
-- [gallery]
+  - [gallery]
 featured_image: 
 ---

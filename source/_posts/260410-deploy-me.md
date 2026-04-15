@@ -1,9 +1,11 @@
 ---
 title: 部署本站
 date: 2026-04-10 15:55:23
-tags: markdown
+tags: 
+  - markdown
+  - hexo
 categories:
-- [gallery]
+  - [gallery]
 featured_image: 260410-deploy-me/260410-1.png
 ---
 
