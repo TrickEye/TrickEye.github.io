@@ -2,7 +2,7 @@
 title: {{ title }}
 layout: album
 categories: 
-    - [album]
+    - album
 date: {{ date }}
 featured_image: {{title}}/p0.jpg
 display_featured_image: false
