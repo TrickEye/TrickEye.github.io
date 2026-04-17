@@ -146,3 +146,9 @@ img.save(
 ### 添加路由：config 修改
 
 在 themes/frame/_config.yml 中的 menu 属性添加 album 的配置：Album: /categories/album/。这样会为album 分类专门生成一个类似于 gallery 的一览列表。
+
+## Feat: MathJax Support
+
+这个博客之前是没有数学公式支持的，hexo 的渲染引擎也一般通过插件标签 `{% katex %} ... {% endkatex %}` 来支持数学公式的渲染，超级麻烦。所以修改了 theme/frame/layout/partials/head.ejs （主要负责组装页面head部分），引入了 mathjax 的 cdn，设置 mathjax 识别 `$...$` 和 `\(...\)` 作为行内数学公式的标记。这样就可以直接在 markdown 中使用 `$...$` 来编写数学公式了。
+
+以此为例 $x =1\to n$
