@@ -178,3 +178,11 @@ NLA 训练出乎意料的有效。不过存在下面的失效模式：
   url={https://transformer-circuits.pub/2026/nla/index.html}
 }
 ```
+
+---
+
+# 其他资料链接
+
+[https://www.youtube.com/watch?v=j2knrqAzYVY](https://www.youtube.com/watch?v=j2knrqAzYVY)
+
+[https://github.com/kitft/natural_language_autoencoders](https://github.com/kitft/natural_language_autoencoders)
